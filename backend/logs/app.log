@@ -1,0 +1,20 @@
+2025-06-05 19:39:14 [INFO]: ✅ Configuration validée
+2025-06-05 19:39:15 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-05 19:39:15 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-05 19:39:15 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-05 19:39:15 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-05 19:39:15 [INFO]: 🌍 Environment: development
+2025-06-05 19:39:15 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-05 19:39:15 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-05 19:39:49 [INFO]: 🛑 Signal SIGINT reçu. Arrêt du serveur...
+2025-06-05 20:57:26 [INFO]: ✅ Configuration validée
+2025-06-05 20:57:27 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-05 20:57:27 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-05 20:57:27 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-05 20:57:27 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-05 20:57:27 [INFO]: 🌍 Environment: development
+2025-06-05 20:57:27 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-05 20:57:27 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-05 20:57:30 [INFO]: 🛑 Signal SIGINT reçu. Arrêt du serveur...
+2025-06-05 20:57:30 [INFO]: 📡 Serveur HTTP fermé
+2025-06-05 20:57:30 [INFO]: 🔌 Connexion PostgreSQL fermée

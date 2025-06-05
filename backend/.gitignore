@@ -1,0 +1,6 @@
+/tennis-migration-full/.env
+/tennis-migration-test/.env
+/tennis-migration-full/node_modules/
+/tennis-migration-test/node_modules/
+/node_modules/
+/migrations/node_modules/
