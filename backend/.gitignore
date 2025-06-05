@@ -1,3 +1,4 @@
 /node_modules/
 /migrations/node_modules/
 /.env
+/migrations/.env
