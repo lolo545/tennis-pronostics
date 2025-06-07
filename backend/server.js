@@ -13,6 +13,7 @@ try {
     config.validateConfig();
     logger.info('✅ Configuration validée');
 } catch (error) {
+    console.log(error);
     logger.error('❌ Configuration invalide:', error.message);
     process.exit(1);
 }

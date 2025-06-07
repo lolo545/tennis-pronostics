@@ -11,6 +11,7 @@ const morgan = require('morgan');
 
 const config = require('./config/config');
 const logger = require('./utils/logger');
+const path = require("path");
 
 const app = express();
 
@@ -18,8 +19,14 @@ const app = express();
 // MIDDLEWARES GLOBAUX
 // =============================================
 
-// Sécurité
-if (config.security.enableHelmet) {
+
+// =============================================
+// SÉCURITÉ - HELMET
+// =============================================
+
+// Désactiver Helmet complètement en développement pour éviter les problèmes CSP
+if (config.isProduction() && config.security.enableHelmet) {
+    // Helmet activé seulement en production
     app.use(helmet({
         contentSecurityPolicy: {
             directives: {
@@ -27,11 +34,25 @@ if (config.security.enableHelmet) {
                 styleSrc: ["'self'", "'unsafe-inline'"],
                 scriptSrc: ["'self'"],
                 imgSrc: ["'self'", "data:", "https:"],
+                connectSrc: ["'self'"],
+                fontSrc: ["'self'"],
+                objectSrc: ["'none'"],
+                mediaSrc: ["'self'"],
+                frameSrc: ["'none'"],
             },
         },
     }));
+    console.log('🛡️  Helmet activé en mode production');
+} else {
+    console.log('⚠️  Helmet désactivé en mode développement');
+    // En développement, on peut ajouter quelques headers de sécurité basiques sans CSP
+    app.use((req, res, next) => {
+        res.setHeader('X-Content-Type-Options', 'nosniff');
+        res.setHeader('X-Frame-Options', 'DENY');
+        res.setHeader('X-XSS-Protection', '1; mode=block');
+        next();
+    });
 }
-
 // CORS
 app.use(cors(config.cors));
 
@@ -170,6 +191,52 @@ app.get('/', (req, res) => {
             status: '/status',
             api: config.api.prefix
         }
+    });
+});
+
+// Ajoutez ces lignes dans votre fichier src/app.js après les autres routes API
+
+// =============================================
+// ROUTES API PRINCIPALES
+// =============================================
+
+// Routes de classements (nouveau)
+app.use(config.api.prefix + '/rankings', require('./routes/rankings'));
+
+// Routes de joueurs (à créer)
+// app.use(config.api.prefix + '/players', require('./routes/players'));
+
+// Routes de tournois (à créer)
+// app.use(config.api.prefix + '/tournaments', require('./routes/tournaments'));
+
+// Routes de matchs (à créer)
+// app.use(config.api.prefix + '/matches', require('./routes/matches'));
+
+// Routes de statistiques (à créer)
+// app.use(config.api.prefix + '/stats', require('./routes/stats'));
+
+// Route de serveur de fichiers statiques pour la page web
+app.use('/rankings', express.static(path.join(__dirname, '../public/rankings')));
+
+// Mise à jour de la route temporaire pour inclure les nouveaux endpoints
+app.get(config.api.prefix, (req, res) => {
+    res.json({
+        message: '🎾 Tennis Pronostics API v1',
+        available_endpoints: [
+            'GET /rankings/current - Classement actuel ATP/WTA',
+            'GET /rankings/historical - Dates de classements disponibles',
+            'GET /rankings/by-date - Classement à une date donnée',
+            'GET /rankings/player/:id/history - Historique d\'un joueur',
+            'GET /players - Liste des joueurs (à venir)',
+            'GET /tournaments - Liste des tournois (à venir)',
+            'GET /matches - Liste des matchs (à venir)',
+            'GET /stats - Statistiques (à venir)'
+        ],
+        documentation: config.api.enableSwagger ? '/api-docs' : null,
+        web_interface: {
+            rankings: '/rankings'
+        },
+        note: 'API de pronostics tennis avec données ATP/WTA'
     });
 });
 

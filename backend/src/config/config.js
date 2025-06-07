@@ -123,25 +123,20 @@ const config = {
 // Validation de la configuration
 function validateConfig() {
     const errors = [];
-
     if (!process.env.PG_PASSWORD) {
         errors.push('PG_PASSWORD est requis');
     }
-
     if (!process.env.ACCESS_CONNECTION_STRING) {
         errors.push('ACCESS_CONNECTION_STRING est requis pour la synchronisation');
     }
-
     if (config.NODE_ENV === 'production') {
         if (config.security.jwtSecret === 'default-secret-change-me') {
             errors.push('JWT_SECRET doit être défini en production');
         }
-
         if (!config.monitoring.sentryDsn && config.monitoring.enabled) {
             errors.push('SENTRY_DSN requis si monitoring activé');
         }
     }
-
     if (errors.length > 0) {
         throw new Error(`Configuration invalide:\n${errors.join('\n')}`);
     }

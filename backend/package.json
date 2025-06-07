@@ -13,9 +13,13 @@
     "clean:db": "node migrations/clean-database.js",
     "clean:db:force": "node migrations/clean-database.js --force",
     "sync:now": "node src/cron/syncJob.js --manual",
+    "sync:rankings": "node src/cron/rankingsSync.js --manual",
+    "sync:check": "node src/cron/rankingsSync.js --check",
     "db:seed": "node scripts/seed.js",
     "lint": "eslint src/",
-    "lint:fix": "eslint src/ --fix"
+    "lint:fix": "eslint src/ --fix",
+    "rankings:sync": "node src/cron/rankingsSync.js --manual",
+    "rankings:check": "node src/cron/rankingsSync.js --check"
   },
   "keywords": [
     "tennis",
