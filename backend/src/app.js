@@ -128,6 +128,16 @@ app.get('/status', async (req, res) => {
         });
     }
 });
+// Ajouter après la ligne des routes de rankings (vers la ligne 147)
+// Routes de joueurs
+app.use(config.api.prefix + '/players', require('./routes/players'));
+
+// Ajouter après la ligne des fichiers statiques rankings (vers la ligne 165)
+// Route pour servir la page player-stats avec routing dynamique
+app.use('/player-stats', express.static(path.join(__dirname, '../public/player-stats')));
+app.get('/player-stats/:id', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/player-stats/index.html'));
+});
 
 // =============================================
 // DOCUMENTATION API (SWAGGER)
