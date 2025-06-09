@@ -137,6 +137,23 @@ router.get('/:id', async (req, res) => {
             }
         }
 
+        // Récupérer les statistiques de matchs
+        const matchStatsQuery = `
+            SELECT 
+                COUNT(*) as total_matches,
+                COUNT(CASE WHEN winner_id = ? THEN 1 END) as total_wins,
+                COUNT(CASE WHEN loser_id = ? THEN 1 END) as total_losses
+            FROM matches
+            WHERE winner_id = ? OR loser_id = ?
+        `;
+
+        const matchStatsResult = await sequelize.query(matchStatsQuery, {
+            replacements: [id, id, id, id],
+            type: sequelize.QueryTypes.SELECT
+        });
+
+        const matchStats = matchStatsResult[0];
+
         // Réponse avec les nouvelles informations
         res.json({
             id: player.id,
@@ -146,7 +163,12 @@ router.get('/:id', async (req, res) => {
             country_code: player.country_code,
             tour: player.tour,
             current_ranking: currentRanking,
-            latest_ranking_date: latestDateResult[0]?.latest_date || null
+            latest_ranking_date: latestDateResult[0]?.latest_date || null,
+            career_stats: {
+                total_matches: parseInt(matchStats.total_matches) || 0,
+                total_wins: parseInt(matchStats.total_wins) || 0,
+                total_losses: parseInt(matchStats.total_losses) || 0
+            }
         });
 
         logger.tennis.apiRequest('GET', req.path);

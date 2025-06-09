@@ -34,7 +34,7 @@ function displayPlayerInfo(player) {
     // Cacher le loading
     document.getElementById('loading').classList.add('hidden');
 
-    // Construire le texte à afficher
+    // Construire le texte à afficher pour le nom
     let displayText = `${player.first_name} ${player.last_name}`;
 
     // Ajouter le pays s'il existe
@@ -53,9 +53,24 @@ function displayPlayerInfo(player) {
         displayText += ` : NC`;
     }
 
-    // Afficher le texte complet
+    // Afficher le nom avec classement
     const playerNameElement = document.getElementById('player-name');
     playerNameElement.textContent = displayText;
+
+    // Afficher les statistiques de carrière
+    if (player.career_stats) {
+        const careerStatsElement = document.getElementById('career-stats');
+        const totalMatches = player.career_stats.total_matches;
+        const totalWins = player.career_stats.total_wins;
+
+        // Calculer le pourcentage de victoires
+        const winPercentage = totalMatches > 0
+            ? Math.round((totalWins / totalMatches) * 100)
+            : 0;
+
+        careerStatsElement.textContent =
+            `${totalMatches} matchs - ${totalWins} victoires (${winPercentage}%)`;
+    }
 
     // Afficher la section player-info
     document.getElementById('player-info').classList.remove('hidden');
