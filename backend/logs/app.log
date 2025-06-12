@@ -596,3 +596,473 @@
   "userId": null
 }
 2025-06-09 21:57:43 [INFO]: [0mGET /api/v1/players/32746 [32m200[0m 513.322 ms - 216[0m
+2025-06-09 22:32:38 [INFO]: ✅ Configuration validée
+2025-06-09 22:32:40 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-09 22:32:40 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-09 22:32:40 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-09 22:32:40 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-09 22:32:40 [INFO]: 🌍 Environment: development
+2025-06-09 22:32:40 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-09 22:32:40 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-09 22:33:23 [INFO]: [0mGET /player-stats/32746 [32m200[0m 14.354 ms - -[0m
+2025-06-09 22:33:23 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 4.474 ms - -[0m
+2025-06-09 22:33:24 [INFO]: 📡 GET /32746
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32746",
+  "userId": null
+}
+2025-06-09 22:33:24 [INFO]: [0mGET /api/v1/players/32746 [32m200[0m 740.734 ms - 289[0m
+2025-06-09 22:34:07 [INFO]: [0mGET /player-stats/32000 [32m200[0m 3.430 ms - -[0m
+2025-06-09 22:34:08 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.165 ms - -[0m
+2025-06-09 22:34:08 [INFO]: 📡 GET /32000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32000",
+  "userId": null
+}
+2025-06-09 22:34:08 [INFO]: [0mGET /api/v1/players/32000 [32m200[0m 385.334 ms - 254[0m
+2025-06-09 22:34:14 [INFO]: [0mGET /player-stats/32500 [32m200[0m 3.867 ms - -[0m
+2025-06-09 22:34:14 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.728 ms - -[0m
+2025-06-09 22:34:14 [INFO]: 📡 GET /32500
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32500",
+  "userId": null
+}
+2025-06-09 22:34:14 [INFO]: [0mGET /api/v1/players/32500 [32m200[0m 260.710 ms - 254[0m
+2025-06-09 22:34:20 [INFO]: [0mGET /player-stats/32600 [32m200[0m 1.860 ms - -[0m
+2025-06-09 22:34:20 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.120 ms - -[0m
+2025-06-09 22:34:20 [INFO]: 📡 GET /32600
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32600",
+  "userId": null
+}
+2025-06-09 22:34:20 [INFO]: [0mGET /api/v1/players/32600 [32m200[0m 253.263 ms - 260[0m
+2025-06-09 22:34:26 [INFO]: [0mGET /player-stats/32601 [32m200[0m 1.956 ms - -[0m
+2025-06-09 22:34:26 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.599 ms - -[0m
+2025-06-09 22:34:26 [INFO]: 📡 GET /32601
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32601",
+  "userId": null
+}
+2025-06-09 22:34:26 [INFO]: [0mGET /api/v1/players/32601 [32m200[0m 215.125 ms - 244[0m
+2025-06-09 22:34:34 [INFO]: [0mGET /player-stats/40000 [32m200[0m 3.067 ms - -[0m
+2025-06-09 22:34:34 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.224 ms - -[0m
+2025-06-09 22:34:34 [INFO]: 📡 GET /40000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/40000",
+  "userId": null
+}
+2025-06-09 22:34:34 [INFO]: [0mGET /api/v1/players/40000 [32m200[0m 251.617 ms - 248[0m
+2025-06-09 22:34:39 [INFO]: [0mGET /player-stats/20000 [32m200[0m 1.932 ms - -[0m
+2025-06-09 22:34:39 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.608 ms - -[0m
+2025-06-09 22:34:39 [INFO]: 📡 GET /20000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/20000",
+  "userId": null
+}
+2025-06-09 22:34:39 [INFO]: [0mGET /api/v1/players/20000 [32m200[0m 282.295 ms - 244[0m
+2025-06-09 22:34:44 [INFO]: [0mGET /player-stats/10000 [32m200[0m 1.806 ms - -[0m
+2025-06-09 22:34:44 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.659 ms - -[0m
+2025-06-09 22:34:45 [INFO]: 📡 GET /10000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/10000",
+  "userId": null
+}
+2025-06-09 22:34:45 [INFO]: [0mGET /api/v1/players/10000 [32m200[0m 212.102 ms - 244[0m
+2025-06-09 22:34:49 [INFO]: [0mGET /player-stats/25000 [32m200[0m 1.788 ms - -[0m
+2025-06-09 22:34:49 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.678 ms - -[0m
+2025-06-09 22:34:49 [INFO]: 📡 GET /25000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25000",
+  "userId": null
+}
+2025-06-09 22:34:49 [INFO]: [0mGET /api/v1/players/25000 [32m200[0m 210.964 ms - 248[0m
+2025-06-09 22:34:55 [INFO]: [0mGET /player-stats/25001 [32m200[0m 2.429 ms - -[0m
+2025-06-09 22:34:55 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.525 ms - -[0m
+2025-06-09 22:34:55 [INFO]: 📡 GET /25001
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25001",
+  "userId": null
+}
+2025-06-09 22:34:55 [INFO]: [0mGET /api/v1/players/25001 [32m200[0m 232.681 ms - 249[0m
+2025-06-09 22:59:56 [INFO]: [0mGET /player-stats/557 [32m200[0m 3.881 ms - -[0m
+2025-06-09 22:59:56 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.445 ms - -[0m
+2025-06-09 22:59:56 [INFO]: 📡 GET /557
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/557",
+  "userId": null
+}
+2025-06-09 22:59:56 [INFO]: [0mGET /api/v1/players/557 [32m200[0m 618.542 ms - 248[0m
+2025-06-09 23:03:28 [INFO]: [0mGET /player-stats/1814 [32m200[0m 1.990 ms - -[0m
+2025-06-09 23:03:28 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.488 ms - -[0m
+2025-06-09 23:03:29 [INFO]: 📡 GET /1814
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/1814",
+  "userId": null
+}
+2025-06-09 23:03:29 [INFO]: [0mGET /api/v1/players/1814 [32m200[0m 479.928 ms - 308[0m
+2025-06-09 23:30:56 [INFO]: [0mGET /player-stats/2214 [32m200[0m 10.437 ms - -[0m
+2025-06-09 23:30:56 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.950 ms - -[0m
+2025-06-09 23:30:56 [INFO]: [0mGET /favicon.ico [33m404[0m 5.843 ms - 120[0m
+2025-06-09 23:30:57 [INFO]: 📡 GET /2214
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/2214",
+  "userId": null
+}
+2025-06-09 23:30:57 [INFO]: [0mGET /api/v1/players/2214 [32m200[0m 581.490 ms - 250[0m
+2025-06-10 21:03:56 [INFO]: [0mGET /player-stats/29985 [32m200[0m 39.447 ms - -[0m
+2025-06-10 21:03:57 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.656 ms - -[0m
+2025-06-10 21:03:57 [INFO]: [0mGET /favicon.ico [33m404[0m 20.757 ms - 120[0m
+2025-06-10 21:03:58 [INFO]: 📡 GET /29985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985",
+  "userId": null
+}
+2025-06-10 21:03:58 [INFO]: [0mGET /api/v1/players/29985 [32m200[0m 1164.936 ms - 293[0m
+2025-06-10 22:22:07 [INFO]: ✅ Configuration validée
+2025-06-10 22:22:11 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-10 22:22:12 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-10 22:22:12 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-10 22:22:12 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-10 22:22:12 [INFO]: 🌍 Environment: development
+2025-06-10 22:22:12 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-10 22:22:12 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-10 22:24:17 [INFO]: ✅ Configuration validée
+2025-06-10 22:24:17 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-10 22:24:18 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-10 22:24:18 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-10 22:24:18 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-10 22:24:18 [INFO]: 🌍 Environment: development
+2025-06-10 22:24:18 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-10 22:24:18 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-10 22:24:34 [INFO]: [0mGET /player-stats/29985 [32m200[0m 14.354 ms - -[0m
+2025-06-10 22:24:35 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 1.545 ms - -[0m
+2025-06-10 22:24:35 [INFO]: [0mGET /favicon.ico [33m404[0m 2.938 ms - 120[0m
+2025-06-10 22:24:36 [INFO]: 📡 GET /29985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985",
+  "userId": null
+}
+2025-06-10 22:24:36 [INFO]: [0mGET /api/v1/players/29985 [36m304[0m 675.471 ms - -[0m
+2025-06-10 22:24:36 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-10 22:24:36 [INFO]: [0mGET /api/v1/players/29985/matches?limit=50&offset=0 [32m200[0m 118.232 ms - -[0m
+2025-06-10 22:26:04 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-10 22:26:04 [INFO]: [0mGET /api/v1/players/29985/matches?limit=50&offset=0&year=2025 [32m200[0m 104.512 ms - 162[0m
+2025-06-10 22:26:11 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-10 22:26:11 [INFO]: [0mGET /api/v1/players/29985/matches?limit=50&offset=0&year=2024 [32m200[0m 16.782 ms - 161[0m
+2025-06-10 22:26:14 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-10 22:26:14 [INFO]: [0mGET /api/v1/players/29985/matches?limit=50&offset=0&year=2024 [36m304[0m 15.163 ms - -[0m
+2025-06-10 22:26:46 [INFO]: [0mGET /player-stats/29985 [36m304[0m 3.896 ms - -[0m
+2025-06-10 22:26:46 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.999 ms - -[0m
+2025-06-10 22:26:47 [INFO]: 📡 GET /29985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985",
+  "userId": null
+}
+2025-06-10 22:26:47 [INFO]: [0mGET /api/v1/players/29985 [36m304[0m 328.225 ms - -[0m
+2025-06-10 22:26:47 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-10 22:26:47 [INFO]: [0mGET /api/v1/players/29985/matches?limit=50&offset=0 [36m304[0m 48.423 ms - -[0m
+2025-06-10 22:54:52 [INFO]: [0mGET /player-stats/29985 [36m304[0m 2.836 ms - -[0m
+2025-06-10 22:54:52 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.170 ms - -[0m
+2025-06-10 22:54:53 [INFO]: 📡 GET /29985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985",
+  "userId": null
+}
+2025-06-10 22:54:53 [INFO]: [0mGET /api/v1/players/29985 [36m304[0m 711.495 ms - -[0m
+2025-06-10 22:54:53 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-10 22:54:53 [INFO]: [0mGET /api/v1/players/29985/matches?limit=50&offset=0 [36m304[0m 44.039 ms - -[0m
+2025-06-10 22:55:01 [INFO]: [0mGET /player-stats/24990 [32m200[0m 2.397 ms - -[0m
+2025-06-10 22:55:01 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.845 ms - -[0m
+2025-06-10 22:55:01 [INFO]: 📡 GET /24990
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/24990",
+  "userId": null
+}
+2025-06-10 22:55:01 [INFO]: [0mGET /api/v1/players/24990 [32m200[0m 336.869 ms - 293[0m
+2025-06-10 22:55:01 [INFO]: 📡 GET /24990/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/24990/matches",
+  "userId": null
+}
+2025-06-10 22:55:01 [INFO]: [0mGET /api/v1/players/24990/matches?limit=50&offset=0 [32m200[0m 48.910 ms - -[0m
+2025-06-10 22:55:07 [INFO]: [0mGET /player-stats/16018 [32m200[0m 2.007 ms - -[0m
+2025-06-10 22:55:07 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 2.471 ms - -[0m
+2025-06-10 22:55:08 [INFO]: 📡 GET /16018
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/16018",
+  "userId": null
+}
+2025-06-10 22:55:08 [INFO]: [0mGET /api/v1/players/16018 [32m200[0m 809.647 ms - 298[0m
+2025-06-10 22:55:08 [INFO]: 📡 GET /16018/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/16018/matches",
+  "userId": null
+}
+2025-06-10 22:55:08 [INFO]: [0mGET /api/v1/players/16018/matches?limit=50&offset=0 [32m200[0m 61.987 ms - -[0m
+2025-06-10 22:55:16 [INFO]: [0mGET /player-stats/10190 [32m200[0m 1.731 ms - -[0m
+2025-06-10 22:55:17 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.803 ms - -[0m
+2025-06-10 22:55:17 [INFO]: 📡 GET /10190
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/10190",
+  "userId": null
+}
+2025-06-10 22:55:17 [INFO]: [0mGET /api/v1/players/10190 [32m200[0m 397.540 ms - 299[0m
+2025-06-10 22:55:17 [INFO]: 📡 GET /10190/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/10190/matches",
+  "userId": null
+}
+2025-06-10 22:55:17 [INFO]: [0mGET /api/v1/players/10190/matches?limit=50&offset=0 [32m200[0m 96.032 ms - -[0m
+2025-06-10 22:55:22 [INFO]: [0mGET /player-stats/12652 [32m200[0m 2.828 ms - -[0m
+2025-06-10 22:55:22 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.696 ms - -[0m
+2025-06-10 22:55:22 [INFO]: 📡 GET /12652
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/12652",
+  "userId": null
+}
+2025-06-10 22:55:22 [INFO]: [0mGET /api/v1/players/12652 [32m200[0m 335.414 ms - 312[0m
+2025-06-10 22:55:22 [INFO]: 📡 GET /12652/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/12652/matches",
+  "userId": null
+}
+2025-06-10 22:55:22 [INFO]: [0mGET /api/v1/players/12652/matches?limit=50&offset=0 [32m200[0m 59.312 ms - -[0m
+2025-06-10 22:57:24 [INFO]: [0mGET /player-stats/25279 [32m200[0m 2.113 ms - -[0m
+2025-06-10 22:57:24 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 9.973 ms - -[0m
+2025-06-10 22:57:24 [INFO]: 📡 GET /25279
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25279",
+  "userId": null
+}
+2025-06-10 22:57:24 [INFO]: [0mGET /api/v1/players/25279 [32m200[0m 425.149 ms - 297[0m
+2025-06-10 22:57:24 [INFO]: 📡 GET /25279/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25279/matches",
+  "userId": null
+}
+2025-06-10 22:57:24 [INFO]: [0mGET /api/v1/players/25279/matches?limit=50&offset=0 [32m200[0m 50.709 ms - -[0m
+2025-06-10 23:32:35 [INFO]: [0mGET /player-stats/12652 [36m304[0m 1.530 ms - -[0m
+2025-06-10 23:32:35 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.877 ms - -[0m
+2025-06-10 23:32:36 [INFO]: 📡 GET /12652
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/12652",
+  "userId": null
+}
+2025-06-10 23:32:36 [INFO]: [0mGET /api/v1/players/12652 [36m304[0m 675.990 ms - -[0m
+2025-06-10 23:32:36 [INFO]: 📡 GET /12652/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/12652/matches",
+  "userId": null
+}
+2025-06-10 23:32:36 [INFO]: [0mGET /api/v1/players/12652/matches?limit=50&offset=0 [32m200[0m 63.283 ms - -[0m
+2025-06-10 23:43:53 [INFO]: ✅ Configuration validée
+2025-06-10 23:43:53 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-10 23:43:54 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-10 23:43:54 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-10 23:43:54 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-10 23:43:54 [INFO]: 🌍 Environment: development
+2025-06-10 23:43:54 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-10 23:43:54 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-10 23:47:41 [INFO]: [0mGET /player-stats/12652 [32m200[0m 8.101 ms - -[0m
+2025-06-10 23:47:41 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 8.245 ms - -[0m
+2025-06-10 23:47:42 [INFO]: 📡 GET /12652
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/12652",
+  "userId": null
+}
+2025-06-10 23:47:42 [INFO]: [0mGET /api/v1/players/12652 [36m304[0m 715.134 ms - -[0m
+2025-06-10 23:47:42 [INFO]: 📡 GET /12652/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/12652/matches",
+  "userId": null
+}
+2025-06-10 23:47:42 [INFO]: [0mGET /api/v1/players/12652/matches?limit=100&offset=0 [32m200[0m 210.427 ms - -[0m
+2025-06-10 23:48:23 [INFO]: [0mGET /player-stats/16985 [32m200[0m 3.172 ms - -[0m
+2025-06-10 23:48:23 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.069 ms - -[0m
+2025-06-10 23:48:24 [INFO]: 📡 GET /16985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/16985",
+  "userId": null
+}
+2025-06-10 23:48:24 [INFO]: [0mGET /api/v1/players/16985 [32m200[0m 406.112 ms - 289[0m
+2025-06-10 23:48:24 [INFO]: 📡 GET /16985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/16985/matches",
+  "userId": null
+}
+2025-06-10 23:48:24 [INFO]: [0mGET /api/v1/players/16985/matches?limit=100&offset=0 [32m200[0m 46.362 ms - -[0m
+2025-06-10 23:48:29 [INFO]: [0mGET /player-stats/19761 [32m200[0m 2.191 ms - -[0m
+2025-06-10 23:48:29 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.053 ms - -[0m
+2025-06-10 23:48:30 [INFO]: 📡 GET /19761
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/19761",
+  "userId": null
+}
+2025-06-10 23:48:30 [INFO]: [0mGET /api/v1/players/19761 [32m200[0m 330.317 ms - 295[0m
+2025-06-10 23:48:30 [INFO]: 📡 GET /19761/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/19761/matches",
+  "userId": null
+}
+2025-06-10 23:48:30 [INFO]: [0mGET /api/v1/players/19761/matches?limit=100&offset=0 [32m200[0m 37.020 ms - -[0m
+2025-06-10 23:48:33 [INFO]: [0mGET /player-stats/15969 [32m200[0m 2.707 ms - -[0m
+2025-06-10 23:48:33 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.099 ms - -[0m
+2025-06-10 23:48:33 [INFO]: 📡 GET /15969
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15969",
+  "userId": null
+}
+2025-06-10 23:48:33 [INFO]: [0mGET /api/v1/players/15969 [32m200[0m 339.300 ms - 287[0m
+2025-06-10 23:48:34 [INFO]: 📡 GET /15969/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15969/matches",
+  "userId": null
+}
+2025-06-10 23:48:34 [INFO]: [0mGET /api/v1/players/15969/matches?limit=100&offset=0 [32m200[0m 36.470 ms - -[0m
+2025-06-10 23:49:17 [INFO]: [0mGET /player-stats/29985 [32m200[0m 1.853 ms - -[0m
+2025-06-10 23:49:18 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.961 ms - -[0m
+2025-06-10 23:49:18 [INFO]: 📡 GET /29985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985",
+  "userId": null
+}
+2025-06-10 23:49:18 [INFO]: [0mGET /api/v1/players/29985 [36m304[0m 326.179 ms - -[0m
+2025-06-10 23:49:18 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-10 23:49:18 [INFO]: [0mGET /api/v1/players/29985/matches?limit=100&offset=0 [32m200[0m 48.482 ms - -[0m
+2025-06-11 21:07:58 [INFO]: [0mGET /player-stats/7372 [32m200[0m 59.085 ms - -[0m
+2025-06-11 21:07:58 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 4.926 ms - -[0m
+2025-06-11 21:07:58 [INFO]: [0mGET /favicon.ico [33m404[0m 32.989 ms - 120[0m
+2025-06-11 21:07:59 [INFO]: 📡 GET /7372
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/7372",
+  "userId": null
+}
+2025-06-11 21:07:59 [INFO]: [0mGET /api/v1/players/7372 [32m200[0m 1065.846 ms - 290[0m
+2025-06-11 21:08:00 [INFO]: 📡 GET /7372/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/7372/matches",
+  "userId": null
+}
+2025-06-11 21:08:00 [INFO]: [0mGET /api/v1/players/7372/matches?limit=100&offset=0 [32m200[0m 149.584 ms - -[0m
