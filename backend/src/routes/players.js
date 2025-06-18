@@ -214,7 +214,7 @@ router.get('/:id', async (req, res) => {
  *         description: Filtrer par année
  *     responses:
  *       200:
- *         description: Liste des matchs du joueur
+ *         description: Liste des matchs du joueurplayers.js et
  */
 // Remplacer la route /:id/matches dans backend/src/routes/players.js par celle-ci :
 
