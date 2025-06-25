@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats de Tournoi - Tennis Pronostics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--suppress CssUnusedSymbol -->
+    <style>
+        /* Animation pour le loading */
+        .loading-spinner {
+            border: 3px solid #f3f4f6;
+            border-top: 3px solid #3b82f6;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Styles pour les badges de résultat */
+        .badge-won {
+            @apply bg-green-100 text-green-800 border border-green-200;
+        }
+
+        .badge-lost {
+            @apply bg-red-100 text-red-800 border border-red-200;
+        }
+
+        /* Style pour les surfaces */
+        .surface-clay { @apply bg-orange-100 text-orange-800; }
+        .surface-hard { @apply bg-blue-100 text-blue-800; }
+        .surface-grass { @apply bg-green-100 text-green-800; }
+        .surface-carpet { @apply bg-purple-100 text-purple-800; }
+        .surface-indoor { @apply bg-gray-100 text-gray-800; }
+
+        /* Style pour les tours */
+        .round-final { @apply bg-yellow-100 text-yellow-800; }
+        .round-sf { @apply bg-orange-100 text-orange-800; }
+        .round-qf { @apply bg-blue-100 text-blue-800; }
+        .round-qualifying { @apply bg-gray-100 text-gray-600; }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<!-- Header avec navigation -->
+<header class="bg-white shadow-sm border-b">
+    <div class="container mx-auto px-4 py-4">
+        <nav class="flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <a href="/rankings" class="text-blue-600 hover:text-blue-800 font-medium">
+                    ← Retour aux classements
+                </a>
+                <span class="text-gray-300">|</span>
+                <a href="/player-stats" class="text-blue-600 hover:text-blue-800 font-medium">
+                    Stats joueurs
+                </a>
+                <span class="text-gray-300">|</span>
+                <h1 class="text-xl font-bold text-gray-900">🎾 Tennis Pronostics</h1>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div class="container mx-auto px-4 py-8">
+    <!-- Sélecteur de tournoi -->
+    <div class="bg-white rounded-lg shadow-sm border p-6 mb-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Résultats de Tournoi</h2>
+        
+        <!-- Recherche de tournoi -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+            <div>
+                <label for="tournament-name" class="block text-sm font-medium text-gray-700 mb-2">Nom du tournoi</label>
+                <input type="text" id="tournament-name" placeholder="Ex: Roland Garros, Wimbledon..." 
+                       class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            <div>
+                <label for="tournament-year" class="block text-sm font-medium text-gray-700 mb-2">Année</label>
+                <input type="number" id="tournament-year" placeholder="2024" min="2000" max="2030"
+                       class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            <div>
+                <label for="tournament-tour" class="block text-sm font-medium text-gray-700 mb-2">Circuit</label>
+                <select id="tournament-tour" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">Tous les circuits</option>
+                    <option value="ATP">ATP</option>
+                    <option value="WTA">WTA</option>
+                </select>
+            </div>
+            <div class="flex items-end">
+                <button id="search-tournaments" class="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500">
+                    Rechercher
+                </button>
+            </div>
+        </div>
+
+        <!-- Résultats de recherche -->
+        <div id="tournament-search-results" class="hidden">
+            <h3 class="text-lg font-medium text-gray-900 mb-3">Tournois trouvés</h3>
+            <div id="tournaments-list" class="space-y-2 max-h-60 overflow-y-auto border rounded-md p-3 bg-gray-50">
+                <!-- Les tournois seront insérés ici -->
+            </div>
+        </div>
+
+        <!-- Loading de recherche -->
+        <div id="search-loading" class="hidden text-center py-4">
+            <div class="loading-spinner mx-auto mb-2"></div>
+            <p class="text-gray-600 text-sm">Recherche en cours...</p>
+        </div>
+    </div>
+
+    <!-- Informations du tournoi sélectionné -->
+    <div id="tournament-info" class="hidden bg-white rounded-lg shadow-sm border p-6 mb-6">
+        <div class="flex items-center justify-between flex-wrap gap-4 mb-4">
+            <div>
+                <h2 id="selected-tournament-name" class="text-2xl font-bold text-gray-900">
+                    <!-- Le nom sera inséré ici -->
+                </h2>
+                <div id="selected-tournament-details" class="text-lg text-gray-600 mt-2">
+                    <!-- Détails du tournoi -->
+                </div>
+            </div>
+            <div id="tournament-badge" class="text-right">
+                <!-- Badge du tournoi -->
+            </div>
+        </div>
+
+        <!-- Statistiques rapides du tournoi -->
+        <div id="tournament-stats" class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 border-t">
+            <!-- Les stats seront insérées ici -->
+        </div>
+    </div>
+
+    <!-- Filtres des matchs -->
+    <div id="match-filters" class="hidden bg-white rounded-lg shadow-sm border p-4 mb-6">
+        <h3 class="text-md font-medium text-gray-700 mb-3">Filtres des matchs</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div>
+                <label for="filter-round" class="block text-xs font-medium text-gray-700 mb-1">Tour</label>
+                <input type="text" id="filter-round" placeholder="Ex: Final, SF, QF..." 
+                       class="w-full px-2 py-1 text-xs border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            <div>
+                <label for="filter-player" class="block text-xs font-medium text-gray-700 mb-1">Joueur</label>
+                <input type="text" id="filter-player" placeholder="Nom du joueur..." 
+                       class="w-full px-2 py-1 text-xs border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            <div class="flex items-end">
+                <button id="clear-match-filters" class="px-3 py-1 text-xs bg-gray-500 text-white rounded-md hover:bg-gray-600">
+                    Effacer les filtres
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Liste des matchs -->
+    <div id="matches-section" class="hidden bg-white rounded-lg shadow-sm border overflow-hidden">
+        <div class="p-4 border-b bg-gray-50">
+            <h2 class="text-lg font-semibold text-gray-900">Matchs du tournoi</h2>
+            <p id="matches-count" class="text-sm text-gray-600 mt-1">
+                <!-- Nombre de matchs sera inséré ici -->
+            </p>
+        </div>
+
+        <!-- Loading des matchs -->
+        <div id="matches-loading" class="text-center py-8">
+            <div class="loading-spinner mx-auto mb-4"></div>
+            <p class="text-gray-600">Chargement des matchs...</p>
+        </div>
+
+        <!-- Table des matchs -->
+        <div id="matches-container" class="hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-xs">
+                    <thead class="bg-gray-50 border-b">
+                    <tr>
+                        <th class="px-2 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                        <th class="px-2 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tournoi</th>
+                        <th class="px-2 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Type</th>
+                        <th class="px-2 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Surface</th>
+                        <th class="px-2 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tour</th>
+                        <th class="px-2 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Vainqueur</th>
+                        <th class="px-2 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Classement Vainqueur</th>
+                        <th class="px-2 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Perdant</th>
+                        <th class="px-2 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Classement Perdant</th>
+                        <th class="px-2 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Score</th>
+                        <th class="px-2 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Cote Vainqueur</th>
+                        <th class="px-2 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Cote Perdant</th>
+                    </tr>
+                    </thead>
+                    <tbody id="matches-tbody" class="bg-white divide-y divide-gray-200">
+                    <!-- Les matchs seront insérés ici -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Message si aucun match -->
+        <div id="no-matches" class="hidden text-center py-8">
+            <p class="text-gray-500">Aucun match trouvé pour ce tournoi.</p>
+        </div>
+
+        <!-- Pagination -->
+        <div id="pagination" class="hidden px-4 py-3 border-t bg-gray-50 flex items-center justify-between">
+            <div class="text-sm text-gray-700">
+                <span id="pagination-info"></span>
+            </div>
+            <div class="flex space-x-2">
+                <button id="prev-page" class="px-3 py-1 text-sm bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed">
+                    Précédent
+                </button>
+                <button id="next-page" class="px-3 py-1 text-sm bg-white border border-gray-300 rounded-md hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed">
+                    Suivant
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message d'instruction initial -->
+    <div id="initial-message" class="text-center py-12">
+        <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 max-w-md mx-auto">
+            <h3 class="text-lg font-medium text-blue-800 mb-2">🔍 Rechercher un tournoi</h3>
+            <p class="text-blue-700">Utilisez le formulaire ci-dessus pour rechercher un tournoi par nom et année, puis sélectionnez-le pour voir tous ses matchs.</p>
+        </div>
+    </div>
+
+    <!-- Error State -->
+    <div id="error" class="hidden text-center py-12">
+        <div class="bg-red-50 border border-red-200 rounded-lg p-6 max-w-md mx-auto">
+            <h3 class="text-lg font-medium text-red-800 mb-2">Erreur</h3>
+            <p id="error-message" class="text-red-700">Une erreur est survenue.</p>
+            <button id="retry-button" class="mt-4 px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700">
+                Réessayer
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="tournament-results.js"></script>
+</body>
+</html>

@@ -1,0 +1,3651 @@
+2025-06-05 19:39:14 [INFO]: ✅ Configuration validée
+2025-06-05 19:39:15 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-05 19:39:15 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-05 19:39:15 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-05 19:39:15 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-05 19:39:15 [INFO]: 🌍 Environment: development
+2025-06-05 19:39:15 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-05 19:39:15 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-05 19:39:49 [INFO]: 🛑 Signal SIGINT reçu. Arrêt du serveur...
+2025-06-05 20:57:26 [INFO]: ✅ Configuration validée
+2025-06-05 20:57:27 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-05 20:57:27 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-05 20:57:27 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-05 20:57:27 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-05 20:57:27 [INFO]: 🌍 Environment: development
+2025-06-05 20:57:27 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-05 20:57:27 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-05 20:57:30 [INFO]: 🛑 Signal SIGINT reçu. Arrêt du serveur...
+2025-06-05 20:57:30 [INFO]: 📡 Serveur HTTP fermé
+2025-06-05 20:57:30 [INFO]: 🔌 Connexion PostgreSQL fermée
+2025-06-07 15:53:11 [INFO]: ✅ Configuration validée
+2025-06-07 15:53:12 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 15:53:12 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 15:53:12 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 15:53:12 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 15:53:12 [INFO]: 🌍 Environment: development
+2025-06-07 15:53:12 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 15:53:12 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 15:54:10 [ERROR]: ❌ API Error GET /current
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/current",
+  "error": "il n'y a pas de paramètre $1",
+  "userId": null
+}
+2025-06-07 15:54:10 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP [31m500[0m 135.026 ms - 78[0m
+2025-06-07 15:54:11 [INFO]: [0mGET /favicon.ico [33m404[0m 1.127 ms - 120[0m
+2025-06-07 15:54:47 [INFO]: [0mGET /rankings [36m301[0m 2.254 ms - 158[0m
+2025-06-07 15:54:47 [INFO]: [0mGET /rankings/ [32m200[0m 8.667 ms - -[0m
+2025-06-07 16:02:24 [INFO]: ✅ Configuration validée
+2025-06-07 16:02:25 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 16:02:25 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 16:02:25 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 16:02:25 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 16:02:25 [INFO]: 🌍 Environment: development
+2025-06-07 16:02:25 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 16:02:25 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 16:04:20 [INFO]: ✅ Configuration validée
+2025-06-07 16:04:21 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 16:04:21 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 16:04:21 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 16:04:21 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 16:04:21 [INFO]: 🌍 Environment: development
+2025-06-07 16:04:21 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 16:04:21 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 16:09:35 [INFO]: ✅ Configuration validée
+2025-06-07 16:09:36 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 16:09:37 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 16:09:37 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 16:09:37 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 16:09:37 [INFO]: 🌍 Environment: development
+2025-06-07 16:09:37 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 16:09:37 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 16:09:58 [INFO]: [0mGET /api/v1/rankings/test [32m200[0m 108.545 ms - 186[0m
+2025-06-07 16:10:24 [INFO]: [0mGET /api/v1/rankings/tables [32m200[0m 151.116 ms - 547[0m
+2025-06-07 16:10:42 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP [31m500[0m 558.739 ms - 665[0m
+2025-06-07 16:13:57 [INFO]: ✅ Configuration validée
+2025-06-07 16:13:58 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 16:13:58 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 16:13:58 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 16:13:58 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 16:13:58 [INFO]: 🌍 Environment: development
+2025-06-07 16:13:58 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 16:13:58 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 16:14:13 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP [32m200[0m 949.250 ms - 826[0m
+2025-06-07 16:17:34 [INFO]: ✅ Configuration validée
+2025-06-07 16:17:35 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 16:17:35 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 16:17:35 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 16:17:35 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 16:17:35 [INFO]: 🌍 Environment: development
+2025-06-07 16:17:35 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 16:17:35 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 16:18:04 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-07 16:18:04 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=20 [32m200[0m 642.556 ms - -[0m
+2025-06-07 16:39:09 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [32m200[0m 1065.791 ms - -[0m
+2025-06-07 16:39:32 [INFO]: [0mGET /api/v1/rankings/by-date?tour=ATP&date=2024-06-03 [33m404[0m 129.511 ms - 99[0m
+2025-06-07 16:39:39 [INFO]: [0mGET /api/v1/rankings/by-date?tour=ATP&date=2024-06-02 [33m404[0m 73.928 ms - 99[0m
+2025-06-07 16:40:38 [INFO]: [0mGET /api/v1/rankings/test [32m200[0m 100.212 ms - 239[0m
+2025-06-07 16:40:59 [INFO]: [0mGET /rankings [36m301[0m 26.518 ms - 158[0m
+2025-06-07 16:40:59 [INFO]: [0mGET /rankings/ [36m304[0m 3.466 ms - -[0m
+2025-06-07 16:46:18 [INFO]: [0mGET /rankings [36m301[0m 3.701 ms - 158[0m
+2025-06-07 16:46:18 [INFO]: [0mGET /rankings/ [36m304[0m 3.644 ms - -[0m
+2025-06-07 16:47:25 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-07 16:47:25 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=10 [32m200[0m 1317.801 ms - -[0m
+2025-06-07 16:48:38 [INFO]: [0mGET /rankings/ [32m200[0m 54.164 ms - -[0m
+2025-06-07 16:53:15 [INFO]: [0mGET /rankings/ [32m200[0m 49.926 ms - -[0m
+2025-06-07 16:53:16 [INFO]: [0mGET /rankings/rankings.js [33m404[0m 83.782 ms - 129[0m
+2025-06-07 16:53:52 [INFO]: 🛑 Signal SIGINT reçu. Arrêt du serveur...
+2025-06-07 16:53:57 [INFO]: ✅ Configuration validée
+2025-06-07 16:53:58 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 16:53:58 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 16:53:58 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 16:53:58 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 16:53:58 [INFO]: 🌍 Environment: development
+2025-06-07 16:53:58 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 16:53:58 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 16:54:06 [INFO]: [0mGET /rankings/ [36m304[0m 6.082 ms - -[0m
+2025-06-07 16:54:06 [INFO]: [0mGET /rankings/rankings.js [33m404[0m 3.587 ms - 129[0m
+2025-06-07 16:55:50 [INFO]: ✅ Configuration validée
+2025-06-07 16:55:53 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 16:55:53 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 16:55:53 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 16:55:53 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 16:55:53 [INFO]: 🌍 Environment: development
+2025-06-07 16:55:53 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 16:55:53 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 16:55:58 [INFO]: [0mGET /rankings/ [36m304[0m 4.254 ms - -[0m
+2025-06-07 16:55:58 [INFO]: [0mGET /rankings/rankings.js [33m404[0m 6.577 ms - 129[0m
+2025-06-07 16:56:06 [INFO]: 🛑 Signal SIGINT reçu. Arrêt du serveur...
+2025-06-07 16:56:09 [INFO]: ✅ Configuration validée
+2025-06-07 16:56:10 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 16:56:10 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 16:56:10 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 16:56:10 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 16:56:10 [INFO]: 🌍 Environment: development
+2025-06-07 16:56:10 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 16:56:10 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 16:56:20 [INFO]: [0mGET /rankings/ [36m304[0m 5.958 ms - -[0m
+2025-06-07 16:56:20 [INFO]: [0mGET /rankings/rankings.js [33m404[0m 4.122 ms - 129[0m
+2025-06-07 17:06:29 [INFO]: ✅ Configuration validée
+2025-06-07 17:06:31 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 17:06:31 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 17:06:31 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 17:06:31 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 17:06:31 [INFO]: 🌍 Environment: development
+2025-06-07 17:06:31 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 17:06:31 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 17:07:46 [INFO]: [0mGET /rankings/ [32m200[0m 15.737 ms - -[0m
+2025-06-07 17:07:47 [INFO]: [0mGET /rankings/rankings.js [33m404[0m 8.133 ms - 129[0m
+2025-06-07 17:08:43 [INFO]: [0mGET /rankings/ [36m304[0m 1.857 ms - -[0m
+2025-06-07 17:08:43 [INFO]: [0mGET /rankings/rankings.js [33m404[0m 1.439 ms - 129[0m
+2025-06-07 17:10:33 [INFO]: ✅ Configuration validée
+2025-06-07 17:10:34 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 17:10:34 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 17:10:34 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 17:10:34 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 17:10:34 [INFO]: 🌍 Environment: development
+2025-06-07 17:10:34 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 17:10:34 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 17:10:47 [INFO]: [0mGET /rankings/ [36m304[0m 4.961 ms - -[0m
+2025-06-07 17:10:48 [INFO]: [0mGET /rankings/rankings.js [33m404[0m 3.889 ms - 129[0m
+2025-06-07 17:18:15 [INFO]: 🛑 Signal SIGINT reçu. Arrêt du serveur...
+2025-06-07 17:18:18 [INFO]: ✅ Configuration validée
+2025-06-07 17:18:19 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 17:18:19 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 17:18:19 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 17:18:19 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 17:18:19 [INFO]: 🌍 Environment: development
+2025-06-07 17:18:19 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 17:18:19 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 17:18:31 [INFO]: [0mGET /rankings/ [32m200[0m 6.549 ms - -[0m
+2025-06-07 17:18:31 [INFO]: [0mGET /rankings/installHook.js.map [33m404[0m 4.296 ms - 136[0m
+2025-06-07 17:18:41 [INFO]: [0mGET /api/v1/rankings/test [32m200[0m 69.645 ms - 239[0m
+2025-06-07 17:18:46 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-07 17:18:46 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=3 [32m200[0m 1059.373 ms - 955[0m
+2025-06-07 17:21:29 [INFO]: [0mGET /rankings/ [32m200[0m 21.518 ms - -[0m
+2025-06-07 17:21:29 [INFO]: [0mGET /rankings/installHook.js.map [33m404[0m 12.909 ms - 136[0m
+2025-06-07 17:21:30 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [36m304[0m 804.991 ms - -[0m
+2025-06-07 17:21:31 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-07 17:21:31 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=100 [32m200[0m 1084.485 ms - -[0m
+2025-06-07 17:25:51 [INFO]: 🛑 Signal SIGINT reçu. Arrêt du serveur...
+2025-06-07 17:27:44 [INFO]: ✅ Configuration validée
+2025-06-07 17:27:44 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 17:27:45 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 17:27:45 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 17:27:45 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 17:27:45 [INFO]: 🌍 Environment: development
+2025-06-07 17:27:45 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 17:27:45 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 17:30:39 [INFO]: [0mGET /rankings/ [32m200[0m 8.446 ms - -[0m
+2025-06-07 17:30:39 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 1.831 ms - -[0m
+2025-06-07 17:30:39 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 1.325 ms - -[0m
+2025-06-07 17:30:40 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [36m304[0m 718.961 ms - -[0m
+2025-06-07 17:30:43 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-07 17:30:43 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=100 [36m304[0m 2687.886 ms - -[0m
+2025-06-07 17:31:48 [INFO]: 🛑 Signal SIGINT reçu. Arrêt du serveur...
+2025-06-07 18:11:31 [INFO]: ✅ Configuration validée
+2025-06-07 18:11:32 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 18:11:33 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 18:11:33 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 18:11:33 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 18:11:33 [INFO]: 🌍 Environment: development
+2025-06-07 18:11:33 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 18:11:33 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 18:11:44 [INFO]: [0mGET /rankings/ [36m304[0m 7.050 ms - -[0m
+2025-06-07 18:11:45 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 1.288 ms - -[0m
+2025-06-07 18:11:45 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 0.839 ms - -[0m
+2025-06-07 18:11:46 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [36m304[0m 1649.408 ms - -[0m
+2025-06-07 18:11:49 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-07 18:11:49 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=100 [36m304[0m 2247.544 ms - -[0m
+2025-06-07 18:20:34 [INFO]: [0mGET /rankings/ [36m304[0m 24.383 ms - -[0m
+2025-06-07 18:20:34 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 1.045 ms - -[0m
+2025-06-07 18:20:34 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 35.039 ms - -[0m
+2025-06-07 18:20:35 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [36m304[0m 637.530 ms - -[0m
+2025-06-07 18:20:36 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-07 18:20:36 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=100 [36m304[0m 1243.635 ms - -[0m
+2025-06-07 18:23:55 [INFO]: [0mGET /rankings/ [36m304[0m 16.160 ms - -[0m
+2025-06-07 18:23:55 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 6.926 ms - -[0m
+2025-06-07 18:23:55 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 2.442 ms - -[0m
+2025-06-07 18:23:56 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [36m304[0m 532.534 ms - -[0m
+2025-06-07 18:23:57 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-07 18:23:57 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=100 [32m200[0m 1099.689 ms - -[0m
+2025-06-07 18:38:01 [INFO]: [0mGET /rankings/ [36m304[0m 31.243 ms - -[0m
+2025-06-07 18:38:01 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 2.605 ms - -[0m
+2025-06-07 18:38:01 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 1.500 ms - -[0m
+2025-06-07 18:38:02 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [36m304[0m 628.615 ms - -[0m
+2025-06-07 18:38:03 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-07 18:38:03 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=100 [36m304[0m 1081.935 ms - -[0m
+2025-06-07 18:38:10 [INFO]: [0mGET /rankings/installHook.js.map [33m404[0m 38.905 ms - 136[0m
+2025-06-07 18:55:36 [INFO]: 🛑 Signal SIGINT reçu. Arrêt du serveur...
+2025-06-07 18:55:42 [INFO]: ✅ Configuration validée
+2025-06-07 18:55:44 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 18:55:44 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 18:55:44 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 18:55:44 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 18:55:44 [INFO]: 🌍 Environment: development
+2025-06-07 18:55:44 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 18:55:44 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 18:56:37 [INFO]: [0mGET /rankings/ [36m304[0m 5.983 ms - -[0m
+2025-06-07 18:56:37 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 2.591 ms - -[0m
+2025-06-07 18:56:37 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 1.990 ms - -[0m
+2025-06-07 18:56:47 [INFO]: [0mGET /rankings/ [32m200[0m 4.137 ms - -[0m
+2025-06-07 18:56:47 [INFO]: [0mGET /rankings/installHook.js.map [33m404[0m 3.296 ms - 136[0m
+2025-06-07 19:02:02 [INFO]: 🛑 Signal SIGINT reçu. Arrêt du serveur...
+2025-06-07 19:02:06 [INFO]: ✅ Configuration validée
+2025-06-07 19:02:06 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 19:02:06 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 19:02:06 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 19:02:06 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 19:02:06 [INFO]: 🌍 Environment: development
+2025-06-07 19:02:06 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 19:02:06 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 19:02:21 [INFO]: [0mGET /rankings/ [32m200[0m 10.870 ms - -[0m
+2025-06-07 19:02:21 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 2.377 ms - -[0m
+2025-06-07 19:02:21 [INFO]: [0mGET /rankings/installHook.js.map [33m404[0m 9.230 ms - 136[0m
+2025-06-07 19:02:21 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 1.204 ms - -[0m
+2025-06-07 19:02:30 [INFO]: [0mGET /rankings/ [32m200[0m 1.341 ms - -[0m
+2025-06-07 19:02:30 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 1.056 ms - -[0m
+2025-06-07 19:02:30 [INFO]: [0mGET /rankings/installHook.js.map [33m404[0m 0.820 ms - 136[0m
+2025-06-07 19:02:31 [INFO]: [0mGET /favicon.ico [33m404[0m 0.543 ms - 120[0m
+2025-06-07 19:02:31 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 1.090 ms - -[0m
+2025-06-07 19:04:08 [INFO]: [0mGET /rankings/ [36m304[0m 1.302 ms - -[0m
+2025-06-07 19:04:08 [INFO]: [0mGET /rankings/installHook.js.map [33m404[0m 0.963 ms - 136[0m
+2025-06-07 19:04:08 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 1.779 ms - -[0m
+2025-06-07 19:04:08 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 0.648 ms - -[0m
+2025-06-07 19:04:15 [INFO]: [0mGET /rankings/ [36m304[0m 0.882 ms - -[0m
+2025-06-07 19:04:15 [INFO]: [0mGET /rankings/installHook.js.map [33m404[0m 0.915 ms - 136[0m
+2025-06-07 19:04:15 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 1.271 ms - -[0m
+2025-06-07 19:04:15 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 0.814 ms - -[0m
+2025-06-07 19:04:42 [INFO]: [0mGET /rankings/ [36m304[0m 0.633 ms - -[0m
+2025-06-07 19:04:42 [INFO]: [0mGET /rankings/installHook.js.map [33m404[0m 1.460 ms - 136[0m
+2025-06-07 19:04:42 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 0.551 ms - -[0m
+2025-06-07 19:04:42 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 0.583 ms - -[0m
+2025-06-07 19:04:52 [INFO]: [0mGET /rankings/ [36m304[0m 0.830 ms - -[0m
+2025-06-07 19:04:52 [INFO]: [0mGET /rankings/installHook.js.map [33m404[0m 2.651 ms - 136[0m
+2025-06-07 19:04:52 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 0.568 ms - -[0m
+2025-06-07 19:04:52 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 0.594 ms - -[0m
+2025-06-07 19:07:14 [INFO]: [0mGET /rankings/ [36m304[0m 1.439 ms - -[0m
+2025-06-07 19:07:14 [INFO]: [0mGET /rankings/installHook.js.map [33m404[0m 0.700 ms - 136[0m
+2025-06-07 19:07:14 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 4.090 ms - -[0m
+2025-06-07 19:07:14 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 2.380 ms - -[0m
+2025-06-07 19:17:03 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [36m304[0m 466.594 ms - -[0m
+2025-06-07 19:17:22 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-07 19:17:22 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=100 [36m304[0m 1127.220 ms - -[0m
+2025-06-07 19:26:12 [INFO]: [0mGET /rankings/ [32m200[0m 27.452 ms - -[0m
+2025-06-07 19:26:13 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 5.117 ms - -[0m
+2025-06-07 19:26:13 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 2.243 ms - -[0m
+2025-06-07 19:26:14 [INFO]: [0mGET /rankings/installHook.js.map [33m404[0m 7.865 ms - 136[0m
+2025-06-07 19:26:53 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [36m304[0m 1697.364 ms - -[0m
+2025-06-07 19:29:01 [INFO]: 🛑 Signal SIGINT reçu. Arrêt du serveur...
+2025-06-07 19:29:07 [INFO]: ✅ Configuration validée
+2025-06-07 19:29:09 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 19:29:09 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 19:29:09 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 19:29:09 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 19:29:09 [INFO]: 🌍 Environment: development
+2025-06-07 19:29:09 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 19:29:09 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 19:30:01 [INFO]: [0mGET /rankings/ [36m304[0m 6.949 ms - -[0m
+2025-06-07 19:30:02 [INFO]: [0mGET /rankings/installHook.js.map [33m404[0m 5.351 ms - 136[0m
+2025-06-07 19:30:02 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 4.223 ms - -[0m
+2025-06-07 19:30:02 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 1.741 ms - -[0m
+2025-06-07 19:30:15 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [36m304[0m 283.122 ms - -[0m
+2025-06-07 19:37:18 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-07 19:37:18 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=100 [36m304[0m 828.148 ms - -[0m
+2025-06-07 20:06:00 [INFO]: 🛑 Signal SIGINT reçu. Arrêt du serveur...
+2025-06-07 20:06:03 [INFO]: ✅ Configuration validée
+2025-06-07 20:06:03 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-07 20:06:04 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-07 20:06:04 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-07 20:06:04 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-07 20:06:04 [INFO]: 🌍 Environment: development
+2025-06-07 20:06:04 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-07 20:06:04 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-07 20:06:12 [INFO]: [0mGET /rankings/ [32m200[0m 6.936 ms - -[0m
+2025-06-07 20:06:12 [INFO]: [0mGET /rankings/installHook.js.map [33m404[0m 8.085 ms - 136[0m
+2025-06-07 20:06:12 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 1.403 ms - -[0m
+2025-06-07 20:06:12 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 3.790 ms - -[0m
+2025-06-07 20:06:12 [INFO]: [0mGET /favicon.ico [33m404[0m 0.676 ms - 120[0m
+2025-06-07 20:06:19 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [32m200[0m 222.765 ms - -[0m
+2025-06-07 20:06:20 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-07 20:06:20 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=100 [36m304[0m 534.536 ms - -[0m
+2025-06-07 20:07:14 [INFO]: [0mGET /api/v1/rankings/by-date?tour=ATP&date=2023-01-30&limit=200 [32m200[0m 64.219 ms - -[0m
+2025-06-09 16:31:46 [INFO]: ✅ Configuration validée
+2025-06-09 16:31:48 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-09 16:31:48 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-09 16:31:48 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-09 16:31:48 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-09 16:31:48 [INFO]: 🌍 Environment: development
+2025-06-09 16:31:48 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-09 16:31:48 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-09 16:35:22 [INFO]: ✅ Configuration validée
+2025-06-09 16:35:22 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-09 16:35:23 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-09 16:35:23 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-09 16:35:23 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-09 16:35:23 [INFO]: 🌍 Environment: development
+2025-06-09 16:35:23 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-09 16:35:23 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-09 16:35:37 [INFO]: [0mGET /player-stats/667 [33m404[0m 11.293 ms - 125[0m
+2025-06-09 16:36:28 [INFO]: [0mGET /players/667 [33m404[0m 0.824 ms - 120[0m
+2025-06-09 16:37:29 [INFO]: [0mGET /api/v1/players/667 [33m404[0m 0.492 ms - 127[0m
+2025-06-09 16:38:04 [INFO]: [0mGET /player-stats/ [33m404[0m 0.323 ms - 122[0m
+2025-06-09 16:38:09 [INFO]: [0mGET /player-stats/1000 [33m404[0m 0.527 ms - 126[0m
+2025-06-09 16:38:39 [INFO]: [0mGET /player-stats/1000 [33m404[0m 0.672 ms - 126[0m
+2025-06-09 16:38:48 [INFO]: [0mGET /player-stats/1000 [33m404[0m 1.244 ms - 126[0m
+2025-06-09 20:37:15 [INFO]: ✅ Configuration validée
+2025-06-09 20:37:16 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-09 20:37:16 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-09 20:37:16 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-09 20:37:16 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-09 20:37:16 [INFO]: 🌍 Environment: development
+2025-06-09 20:37:16 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-09 20:37:16 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-09 20:37:31 [INFO]: [0mGET /player-stats/1000 [32m200[0m 16.864 ms - -[0m
+2025-06-09 20:37:31 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 1.775 ms - -[0m
+2025-06-09 20:37:32 [INFO]: 📡 GET /1000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/1000",
+  "userId": null
+}
+2025-06-09 20:37:32 [INFO]: [0mGET /api/v1/players/1000 [32m200[0m 135.168 ms - 96[0m
+2025-06-09 20:37:39 [INFO]: [0mGET /player-stats/667 [32m200[0m 1.743 ms - -[0m
+2025-06-09 20:37:39 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 241.213 ms - -[0m
+2025-06-09 20:37:40 [INFO]: 📡 GET /667
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/667",
+  "userId": null
+}
+2025-06-09 20:37:40 [INFO]: [0mGET /api/v1/players/667 [32m200[0m 85.106 ms - 97[0m
+2025-06-09 21:16:03 [INFO]: ✅ Configuration validée
+2025-06-09 21:16:04 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-09 21:16:05 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-09 21:16:05 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-09 21:16:05 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-09 21:16:05 [INFO]: 🌍 Environment: development
+2025-06-09 21:16:05 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-09 21:16:05 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-09 21:16:50 [INFO]: [0mGET /player-stats/667 [32m200[0m 23.865 ms - -[0m
+2025-06-09 21:16:50 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 5.574 ms - -[0m
+2025-06-09 21:16:50 [INFO]: [0mGET /favicon.ico [33m404[0m 4.773 ms - 120[0m
+2025-06-09 21:16:50 [INFO]: 📡 GET /667
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/667",
+  "userId": null
+}
+2025-06-09 21:16:50 [INFO]: [0mGET /api/v1/players/667 [32m200[0m 127.208 ms - 185[0m
+2025-06-09 21:16:56 [INFO]: [0mGET /player-stats/668 [32m200[0m 3.497 ms - -[0m
+2025-06-09 21:16:56 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.952 ms - -[0m
+2025-06-09 21:16:56 [INFO]: 📡 GET /668
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/668",
+  "userId": null
+}
+2025-06-09 21:16:56 [INFO]: [0mGET /api/v1/players/668 [32m200[0m 5.624 ms - 169[0m
+2025-06-09 21:17:02 [INFO]: [0mGET /player-stats/669 [32m200[0m 2.820 ms - -[0m
+2025-06-09 21:17:03 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 2.685 ms - -[0m
+2025-06-09 21:17:03 [INFO]: 📡 GET /669
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/669",
+  "userId": null
+}
+2025-06-09 21:17:03 [INFO]: [0mGET /api/v1/players/669 [32m200[0m 6.356 ms - 167[0m
+2025-06-09 21:17:20 [INFO]: [0mGET /player-stats/8888 [32m200[0m 3.564 ms - -[0m
+2025-06-09 21:17:21 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.323 ms - -[0m
+2025-06-09 21:17:21 [INFO]: 📡 GET /8888
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/8888",
+  "userId": null
+}
+2025-06-09 21:17:21 [INFO]: [0mGET /api/v1/players/8888 [32m200[0m 87.317 ms - 128[0m
+2025-06-09 21:17:26 [INFO]: [0mGET /player-stats/9874 [32m200[0m 2.185 ms - -[0m
+2025-06-09 21:17:26 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.618 ms - -[0m
+2025-06-09 21:17:26 [INFO]: 📡 GET /9874
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/9874",
+  "userId": null
+}
+2025-06-09 21:17:26 [INFO]: [0mGET /api/v1/players/9874 [32m200[0m 5.749 ms - 132[0m
+2025-06-09 21:17:32 [INFO]: [0mGET /player-stats/5666 [32m200[0m 2.863 ms - -[0m
+2025-06-09 21:17:32 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.705 ms - -[0m
+2025-06-09 21:17:33 [INFO]: 📡 GET /5666
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/5666",
+  "userId": null
+}
+2025-06-09 21:17:33 [INFO]: [0mGET /api/v1/players/5666 [32m200[0m 10.576 ms - 172[0m
+2025-06-09 21:55:37 [INFO]: ✅ Configuration validée
+2025-06-09 21:55:38 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-09 21:55:38 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-09 21:55:38 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-09 21:55:38 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-09 21:55:38 [INFO]: 🌍 Environment: development
+2025-06-09 21:55:38 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-09 21:55:38 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-09 21:55:39 [INFO]: [0mGET /player-stats/5666 [36m304[0m 11.518 ms - -[0m
+2025-06-09 21:55:39 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.130 ms - -[0m
+2025-06-09 21:55:40 [INFO]: 📡 GET /5666
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/5666",
+  "userId": null
+}
+2025-06-09 21:55:40 [INFO]: [0mGET /api/v1/players/5666 [32m200[0m 618.827 ms - 176[0m
+2025-06-09 21:55:50 [INFO]: [0mGET /player-stats/10000 [32m200[0m 3.795 ms - -[0m
+2025-06-09 21:55:50 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.928 ms - -[0m
+2025-06-09 21:55:50 [INFO]: 📡 GET /10000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/10000",
+  "userId": null
+}
+2025-06-09 21:55:50 [INFO]: [0mGET /api/v1/players/10000 [32m200[0m 288.050 ms - 177[0m
+2025-06-09 21:56:00 [INFO]: [0mGET /player-stats/20000 [32m200[0m 4.708 ms - -[0m
+2025-06-09 21:56:00 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.797 ms - -[0m
+2025-06-09 21:56:00 [INFO]: 📡 GET /20000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/20000",
+  "userId": null
+}
+2025-06-09 21:56:00 [INFO]: [0mGET /api/v1/players/20000 [32m200[0m 233.226 ms - 177[0m
+2025-06-09 21:56:04 [INFO]: [0mGET /player-stats/30000 [32m200[0m 2.299 ms - -[0m
+2025-06-09 21:56:04 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.040 ms - -[0m
+2025-06-09 21:56:05 [INFO]: 📡 GET /30000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/30000",
+  "userId": null
+}
+2025-06-09 21:56:05 [INFO]: [0mGET /api/v1/players/30000 [32m200[0m 235.224 ms - 177[0m
+2025-06-09 21:56:09 [INFO]: [0mGET /player-stats/40000 [32m200[0m 2.230 ms - -[0m
+2025-06-09 21:56:10 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.599 ms - -[0m
+2025-06-09 21:56:10 [INFO]: 📡 GET /40000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/40000",
+  "userId": null
+}
+2025-06-09 21:56:10 [INFO]: [0mGET /api/v1/players/40000 [32m200[0m 203.507 ms - 181[0m
+2025-06-09 21:56:14 [INFO]: [0mGET /player-stats/50000 [32m200[0m 1.761 ms - -[0m
+2025-06-09 21:56:14 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.746 ms - -[0m
+2025-06-09 21:56:14 [INFO]: 📡 GET /50000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/50000",
+  "userId": null
+}
+2025-06-09 21:56:14 [INFO]: [0mGET /api/v1/players/50000 [32m200[0m 200.052 ms - 173[0m
+2025-06-09 21:56:18 [INFO]: [0mGET /player-stats/60000 [32m200[0m 1.627 ms - -[0m
+2025-06-09 21:56:18 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.771 ms - -[0m
+2025-06-09 21:56:18 [INFO]: 📡 GET /60000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/60000",
+  "userId": null
+}
+2025-06-09 21:56:18 [INFO]: [0mGET /api/v1/players/60000 [32m200[0m 216.875 ms - 169[0m
+2025-06-09 21:56:22 [INFO]: [0mGET /player-stats/70000 [32m200[0m 2.051 ms - -[0m
+2025-06-09 21:56:22 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.549 ms - -[0m
+2025-06-09 21:56:23 [INFO]: [0mGET /api/v1/players/70000 [33m404[0m 1.977 ms - 79[0m
+2025-06-09 21:57:42 [INFO]: [0mGET /player-stats/32746 [32m200[0m 1.856 ms - -[0m
+2025-06-09 21:57:42 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.788 ms - -[0m
+2025-06-09 21:57:43 [INFO]: 📡 GET /32746
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32746",
+  "userId": null
+}
+2025-06-09 21:57:43 [INFO]: [0mGET /api/v1/players/32746 [32m200[0m 513.322 ms - 216[0m
+2025-06-09 22:32:38 [INFO]: ✅ Configuration validée
+2025-06-09 22:32:40 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-09 22:32:40 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-09 22:32:40 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-09 22:32:40 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-09 22:32:40 [INFO]: 🌍 Environment: development
+2025-06-09 22:32:40 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-09 22:32:40 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-09 22:33:23 [INFO]: [0mGET /player-stats/32746 [32m200[0m 14.354 ms - -[0m
+2025-06-09 22:33:23 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 4.474 ms - -[0m
+2025-06-09 22:33:24 [INFO]: 📡 GET /32746
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32746",
+  "userId": null
+}
+2025-06-09 22:33:24 [INFO]: [0mGET /api/v1/players/32746 [32m200[0m 740.734 ms - 289[0m
+2025-06-09 22:34:07 [INFO]: [0mGET /player-stats/32000 [32m200[0m 3.430 ms - -[0m
+2025-06-09 22:34:08 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.165 ms - -[0m
+2025-06-09 22:34:08 [INFO]: 📡 GET /32000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32000",
+  "userId": null
+}
+2025-06-09 22:34:08 [INFO]: [0mGET /api/v1/players/32000 [32m200[0m 385.334 ms - 254[0m
+2025-06-09 22:34:14 [INFO]: [0mGET /player-stats/32500 [32m200[0m 3.867 ms - -[0m
+2025-06-09 22:34:14 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.728 ms - -[0m
+2025-06-09 22:34:14 [INFO]: 📡 GET /32500
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32500",
+  "userId": null
+}
+2025-06-09 22:34:14 [INFO]: [0mGET /api/v1/players/32500 [32m200[0m 260.710 ms - 254[0m
+2025-06-09 22:34:20 [INFO]: [0mGET /player-stats/32600 [32m200[0m 1.860 ms - -[0m
+2025-06-09 22:34:20 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.120 ms - -[0m
+2025-06-09 22:34:20 [INFO]: 📡 GET /32600
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32600",
+  "userId": null
+}
+2025-06-09 22:34:20 [INFO]: [0mGET /api/v1/players/32600 [32m200[0m 253.263 ms - 260[0m
+2025-06-09 22:34:26 [INFO]: [0mGET /player-stats/32601 [32m200[0m 1.956 ms - -[0m
+2025-06-09 22:34:26 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.599 ms - -[0m
+2025-06-09 22:34:26 [INFO]: 📡 GET /32601
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32601",
+  "userId": null
+}
+2025-06-09 22:34:26 [INFO]: [0mGET /api/v1/players/32601 [32m200[0m 215.125 ms - 244[0m
+2025-06-09 22:34:34 [INFO]: [0mGET /player-stats/40000 [32m200[0m 3.067 ms - -[0m
+2025-06-09 22:34:34 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.224 ms - -[0m
+2025-06-09 22:34:34 [INFO]: 📡 GET /40000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/40000",
+  "userId": null
+}
+2025-06-09 22:34:34 [INFO]: [0mGET /api/v1/players/40000 [32m200[0m 251.617 ms - 248[0m
+2025-06-09 22:34:39 [INFO]: [0mGET /player-stats/20000 [32m200[0m 1.932 ms - -[0m
+2025-06-09 22:34:39 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.608 ms - -[0m
+2025-06-09 22:34:39 [INFO]: 📡 GET /20000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/20000",
+  "userId": null
+}
+2025-06-09 22:34:39 [INFO]: [0mGET /api/v1/players/20000 [32m200[0m 282.295 ms - 244[0m
+2025-06-09 22:34:44 [INFO]: [0mGET /player-stats/10000 [32m200[0m 1.806 ms - -[0m
+2025-06-09 22:34:44 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.659 ms - -[0m
+2025-06-09 22:34:45 [INFO]: 📡 GET /10000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/10000",
+  "userId": null
+}
+2025-06-09 22:34:45 [INFO]: [0mGET /api/v1/players/10000 [32m200[0m 212.102 ms - 244[0m
+2025-06-09 22:34:49 [INFO]: [0mGET /player-stats/25000 [32m200[0m 1.788 ms - -[0m
+2025-06-09 22:34:49 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.678 ms - -[0m
+2025-06-09 22:34:49 [INFO]: 📡 GET /25000
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25000",
+  "userId": null
+}
+2025-06-09 22:34:49 [INFO]: [0mGET /api/v1/players/25000 [32m200[0m 210.964 ms - 248[0m
+2025-06-09 22:34:55 [INFO]: [0mGET /player-stats/25001 [32m200[0m 2.429 ms - -[0m
+2025-06-09 22:34:55 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.525 ms - -[0m
+2025-06-09 22:34:55 [INFO]: 📡 GET /25001
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25001",
+  "userId": null
+}
+2025-06-09 22:34:55 [INFO]: [0mGET /api/v1/players/25001 [32m200[0m 232.681 ms - 249[0m
+2025-06-09 22:59:56 [INFO]: [0mGET /player-stats/557 [32m200[0m 3.881 ms - -[0m
+2025-06-09 22:59:56 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.445 ms - -[0m
+2025-06-09 22:59:56 [INFO]: 📡 GET /557
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/557",
+  "userId": null
+}
+2025-06-09 22:59:56 [INFO]: [0mGET /api/v1/players/557 [32m200[0m 618.542 ms - 248[0m
+2025-06-09 23:03:28 [INFO]: [0mGET /player-stats/1814 [32m200[0m 1.990 ms - -[0m
+2025-06-09 23:03:28 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.488 ms - -[0m
+2025-06-09 23:03:29 [INFO]: 📡 GET /1814
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/1814",
+  "userId": null
+}
+2025-06-09 23:03:29 [INFO]: [0mGET /api/v1/players/1814 [32m200[0m 479.928 ms - 308[0m
+2025-06-09 23:30:56 [INFO]: [0mGET /player-stats/2214 [32m200[0m 10.437 ms - -[0m
+2025-06-09 23:30:56 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.950 ms - -[0m
+2025-06-09 23:30:56 [INFO]: [0mGET /favicon.ico [33m404[0m 5.843 ms - 120[0m
+2025-06-09 23:30:57 [INFO]: 📡 GET /2214
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/2214",
+  "userId": null
+}
+2025-06-09 23:30:57 [INFO]: [0mGET /api/v1/players/2214 [32m200[0m 581.490 ms - 250[0m
+2025-06-10 21:03:56 [INFO]: [0mGET /player-stats/29985 [32m200[0m 39.447 ms - -[0m
+2025-06-10 21:03:57 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.656 ms - -[0m
+2025-06-10 21:03:57 [INFO]: [0mGET /favicon.ico [33m404[0m 20.757 ms - 120[0m
+2025-06-10 21:03:58 [INFO]: 📡 GET /29985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985",
+  "userId": null
+}
+2025-06-10 21:03:58 [INFO]: [0mGET /api/v1/players/29985 [32m200[0m 1164.936 ms - 293[0m
+2025-06-10 22:22:07 [INFO]: ✅ Configuration validée
+2025-06-10 22:22:11 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-10 22:22:12 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-10 22:22:12 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-10 22:22:12 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-10 22:22:12 [INFO]: 🌍 Environment: development
+2025-06-10 22:22:12 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-10 22:22:12 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-10 22:24:17 [INFO]: ✅ Configuration validée
+2025-06-10 22:24:17 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-10 22:24:18 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-10 22:24:18 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-10 22:24:18 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-10 22:24:18 [INFO]: 🌍 Environment: development
+2025-06-10 22:24:18 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-10 22:24:18 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-10 22:24:34 [INFO]: [0mGET /player-stats/29985 [32m200[0m 14.354 ms - -[0m
+2025-06-10 22:24:35 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 1.545 ms - -[0m
+2025-06-10 22:24:35 [INFO]: [0mGET /favicon.ico [33m404[0m 2.938 ms - 120[0m
+2025-06-10 22:24:36 [INFO]: 📡 GET /29985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985",
+  "userId": null
+}
+2025-06-10 22:24:36 [INFO]: [0mGET /api/v1/players/29985 [36m304[0m 675.471 ms - -[0m
+2025-06-10 22:24:36 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-10 22:24:36 [INFO]: [0mGET /api/v1/players/29985/matches?limit=50&offset=0 [32m200[0m 118.232 ms - -[0m
+2025-06-10 22:26:04 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-10 22:26:04 [INFO]: [0mGET /api/v1/players/29985/matches?limit=50&offset=0&year=2025 [32m200[0m 104.512 ms - 162[0m
+2025-06-10 22:26:11 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-10 22:26:11 [INFO]: [0mGET /api/v1/players/29985/matches?limit=50&offset=0&year=2024 [32m200[0m 16.782 ms - 161[0m
+2025-06-10 22:26:14 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-10 22:26:14 [INFO]: [0mGET /api/v1/players/29985/matches?limit=50&offset=0&year=2024 [36m304[0m 15.163 ms - -[0m
+2025-06-10 22:26:46 [INFO]: [0mGET /player-stats/29985 [36m304[0m 3.896 ms - -[0m
+2025-06-10 22:26:46 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.999 ms - -[0m
+2025-06-10 22:26:47 [INFO]: 📡 GET /29985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985",
+  "userId": null
+}
+2025-06-10 22:26:47 [INFO]: [0mGET /api/v1/players/29985 [36m304[0m 328.225 ms - -[0m
+2025-06-10 22:26:47 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-10 22:26:47 [INFO]: [0mGET /api/v1/players/29985/matches?limit=50&offset=0 [36m304[0m 48.423 ms - -[0m
+2025-06-10 22:54:52 [INFO]: [0mGET /player-stats/29985 [36m304[0m 2.836 ms - -[0m
+2025-06-10 22:54:52 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.170 ms - -[0m
+2025-06-10 22:54:53 [INFO]: 📡 GET /29985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985",
+  "userId": null
+}
+2025-06-10 22:54:53 [INFO]: [0mGET /api/v1/players/29985 [36m304[0m 711.495 ms - -[0m
+2025-06-10 22:54:53 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-10 22:54:53 [INFO]: [0mGET /api/v1/players/29985/matches?limit=50&offset=0 [36m304[0m 44.039 ms - -[0m
+2025-06-10 22:55:01 [INFO]: [0mGET /player-stats/24990 [32m200[0m 2.397 ms - -[0m
+2025-06-10 22:55:01 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.845 ms - -[0m
+2025-06-10 22:55:01 [INFO]: 📡 GET /24990
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/24990",
+  "userId": null
+}
+2025-06-10 22:55:01 [INFO]: [0mGET /api/v1/players/24990 [32m200[0m 336.869 ms - 293[0m
+2025-06-10 22:55:01 [INFO]: 📡 GET /24990/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/24990/matches",
+  "userId": null
+}
+2025-06-10 22:55:01 [INFO]: [0mGET /api/v1/players/24990/matches?limit=50&offset=0 [32m200[0m 48.910 ms - -[0m
+2025-06-10 22:55:07 [INFO]: [0mGET /player-stats/16018 [32m200[0m 2.007 ms - -[0m
+2025-06-10 22:55:07 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 2.471 ms - -[0m
+2025-06-10 22:55:08 [INFO]: 📡 GET /16018
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/16018",
+  "userId": null
+}
+2025-06-10 22:55:08 [INFO]: [0mGET /api/v1/players/16018 [32m200[0m 809.647 ms - 298[0m
+2025-06-10 22:55:08 [INFO]: 📡 GET /16018/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/16018/matches",
+  "userId": null
+}
+2025-06-10 22:55:08 [INFO]: [0mGET /api/v1/players/16018/matches?limit=50&offset=0 [32m200[0m 61.987 ms - -[0m
+2025-06-10 22:55:16 [INFO]: [0mGET /player-stats/10190 [32m200[0m 1.731 ms - -[0m
+2025-06-10 22:55:17 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.803 ms - -[0m
+2025-06-10 22:55:17 [INFO]: 📡 GET /10190
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/10190",
+  "userId": null
+}
+2025-06-10 22:55:17 [INFO]: [0mGET /api/v1/players/10190 [32m200[0m 397.540 ms - 299[0m
+2025-06-10 22:55:17 [INFO]: 📡 GET /10190/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/10190/matches",
+  "userId": null
+}
+2025-06-10 22:55:17 [INFO]: [0mGET /api/v1/players/10190/matches?limit=50&offset=0 [32m200[0m 96.032 ms - -[0m
+2025-06-10 22:55:22 [INFO]: [0mGET /player-stats/12652 [32m200[0m 2.828 ms - -[0m
+2025-06-10 22:55:22 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.696 ms - -[0m
+2025-06-10 22:55:22 [INFO]: 📡 GET /12652
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/12652",
+  "userId": null
+}
+2025-06-10 22:55:22 [INFO]: [0mGET /api/v1/players/12652 [32m200[0m 335.414 ms - 312[0m
+2025-06-10 22:55:22 [INFO]: 📡 GET /12652/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/12652/matches",
+  "userId": null
+}
+2025-06-10 22:55:22 [INFO]: [0mGET /api/v1/players/12652/matches?limit=50&offset=0 [32m200[0m 59.312 ms - -[0m
+2025-06-10 22:57:24 [INFO]: [0mGET /player-stats/25279 [32m200[0m 2.113 ms - -[0m
+2025-06-10 22:57:24 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 9.973 ms - -[0m
+2025-06-10 22:57:24 [INFO]: 📡 GET /25279
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25279",
+  "userId": null
+}
+2025-06-10 22:57:24 [INFO]: [0mGET /api/v1/players/25279 [32m200[0m 425.149 ms - 297[0m
+2025-06-10 22:57:24 [INFO]: 📡 GET /25279/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25279/matches",
+  "userId": null
+}
+2025-06-10 22:57:24 [INFO]: [0mGET /api/v1/players/25279/matches?limit=50&offset=0 [32m200[0m 50.709 ms - -[0m
+2025-06-10 23:32:35 [INFO]: [0mGET /player-stats/12652 [36m304[0m 1.530 ms - -[0m
+2025-06-10 23:32:35 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.877 ms - -[0m
+2025-06-10 23:32:36 [INFO]: 📡 GET /12652
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/12652",
+  "userId": null
+}
+2025-06-10 23:32:36 [INFO]: [0mGET /api/v1/players/12652 [36m304[0m 675.990 ms - -[0m
+2025-06-10 23:32:36 [INFO]: 📡 GET /12652/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/12652/matches",
+  "userId": null
+}
+2025-06-10 23:32:36 [INFO]: [0mGET /api/v1/players/12652/matches?limit=50&offset=0 [32m200[0m 63.283 ms - -[0m
+2025-06-10 23:43:53 [INFO]: ✅ Configuration validée
+2025-06-10 23:43:53 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-10 23:43:54 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-10 23:43:54 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-10 23:43:54 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-10 23:43:54 [INFO]: 🌍 Environment: development
+2025-06-10 23:43:54 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-10 23:43:54 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-10 23:47:41 [INFO]: [0mGET /player-stats/12652 [32m200[0m 8.101 ms - -[0m
+2025-06-10 23:47:41 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 8.245 ms - -[0m
+2025-06-10 23:47:42 [INFO]: 📡 GET /12652
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/12652",
+  "userId": null
+}
+2025-06-10 23:47:42 [INFO]: [0mGET /api/v1/players/12652 [36m304[0m 715.134 ms - -[0m
+2025-06-10 23:47:42 [INFO]: 📡 GET /12652/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/12652/matches",
+  "userId": null
+}
+2025-06-10 23:47:42 [INFO]: [0mGET /api/v1/players/12652/matches?limit=100&offset=0 [32m200[0m 210.427 ms - -[0m
+2025-06-10 23:48:23 [INFO]: [0mGET /player-stats/16985 [32m200[0m 3.172 ms - -[0m
+2025-06-10 23:48:23 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.069 ms - -[0m
+2025-06-10 23:48:24 [INFO]: 📡 GET /16985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/16985",
+  "userId": null
+}
+2025-06-10 23:48:24 [INFO]: [0mGET /api/v1/players/16985 [32m200[0m 406.112 ms - 289[0m
+2025-06-10 23:48:24 [INFO]: 📡 GET /16985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/16985/matches",
+  "userId": null
+}
+2025-06-10 23:48:24 [INFO]: [0mGET /api/v1/players/16985/matches?limit=100&offset=0 [32m200[0m 46.362 ms - -[0m
+2025-06-10 23:48:29 [INFO]: [0mGET /player-stats/19761 [32m200[0m 2.191 ms - -[0m
+2025-06-10 23:48:29 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.053 ms - -[0m
+2025-06-10 23:48:30 [INFO]: 📡 GET /19761
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/19761",
+  "userId": null
+}
+2025-06-10 23:48:30 [INFO]: [0mGET /api/v1/players/19761 [32m200[0m 330.317 ms - 295[0m
+2025-06-10 23:48:30 [INFO]: 📡 GET /19761/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/19761/matches",
+  "userId": null
+}
+2025-06-10 23:48:30 [INFO]: [0mGET /api/v1/players/19761/matches?limit=100&offset=0 [32m200[0m 37.020 ms - -[0m
+2025-06-10 23:48:33 [INFO]: [0mGET /player-stats/15969 [32m200[0m 2.707 ms - -[0m
+2025-06-10 23:48:33 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.099 ms - -[0m
+2025-06-10 23:48:33 [INFO]: 📡 GET /15969
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15969",
+  "userId": null
+}
+2025-06-10 23:48:33 [INFO]: [0mGET /api/v1/players/15969 [32m200[0m 339.300 ms - 287[0m
+2025-06-10 23:48:34 [INFO]: 📡 GET /15969/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15969/matches",
+  "userId": null
+}
+2025-06-10 23:48:34 [INFO]: [0mGET /api/v1/players/15969/matches?limit=100&offset=0 [32m200[0m 36.470 ms - -[0m
+2025-06-10 23:49:17 [INFO]: [0mGET /player-stats/29985 [32m200[0m 1.853 ms - -[0m
+2025-06-10 23:49:18 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.961 ms - -[0m
+2025-06-10 23:49:18 [INFO]: 📡 GET /29985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985",
+  "userId": null
+}
+2025-06-10 23:49:18 [INFO]: [0mGET /api/v1/players/29985 [36m304[0m 326.179 ms - -[0m
+2025-06-10 23:49:18 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-10 23:49:18 [INFO]: [0mGET /api/v1/players/29985/matches?limit=100&offset=0 [32m200[0m 48.482 ms - -[0m
+2025-06-11 21:07:58 [INFO]: [0mGET /player-stats/7372 [32m200[0m 59.085 ms - -[0m
+2025-06-11 21:07:58 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 4.926 ms - -[0m
+2025-06-11 21:07:58 [INFO]: [0mGET /favicon.ico [33m404[0m 32.989 ms - 120[0m
+2025-06-11 21:07:59 [INFO]: 📡 GET /7372
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/7372",
+  "userId": null
+}
+2025-06-11 21:07:59 [INFO]: [0mGET /api/v1/players/7372 [32m200[0m 1065.846 ms - 290[0m
+2025-06-11 21:08:00 [INFO]: 📡 GET /7372/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/7372/matches",
+  "userId": null
+}
+2025-06-11 21:08:00 [INFO]: [0mGET /api/v1/players/7372/matches?limit=100&offset=0 [32m200[0m 149.584 ms - -[0m
+2025-06-22 19:09:32 [INFO]: ✅ Configuration validée
+2025-06-22 19:09:34 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-22 19:09:34 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-22 19:09:34 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-22 19:09:34 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-22 19:09:34 [INFO]: 🌍 Environment: development
+2025-06-22 19:09:34 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-22 19:09:34 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-22 19:15:07 [INFO]: [0mGET /player-stats/667 [32m200[0m 11.040 ms - -[0m
+2025-06-22 19:15:08 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 43.350 ms - -[0m
+2025-06-22 19:15:08 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 1.617 ms - -[0m
+2025-06-22 19:15:09 [INFO]: [0mGET /favicon.ico [33m404[0m 2.650 ms - 120[0m
+2025-06-22 19:15:11 [INFO]: 📡 GET /667
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/667",
+  "userId": null
+}
+2025-06-22 19:15:11 [INFO]: [0mGET /api/v1/players/667 [32m200[0m 1571.713 ms - 262[0m
+2025-06-22 19:15:11 [INFO]: 📡 GET /667/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/667/matches",
+  "userId": null
+}
+2025-06-22 19:15:11 [INFO]: [0mGET /api/v1/players/667/matches?limit=100&offset=0 [32m200[0m 194.462 ms - -[0m
+2025-06-22 19:15:47 [INFO]: [0mGET /player-stats/28514 [32m200[0m 1.767 ms - -[0m
+2025-06-22 19:15:48 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.405 ms - -[0m
+2025-06-22 19:15:48 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.267 ms - -[0m
+2025-06-22 19:15:49 [INFO]: 📡 GET /28514
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/28514",
+  "userId": null
+}
+2025-06-22 19:15:49 [INFO]: [0mGET /api/v1/players/28514 [32m200[0m 586.112 ms - 291[0m
+2025-06-22 19:15:49 [INFO]: 📡 GET /28514/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/28514/matches",
+  "userId": null
+}
+2025-06-22 19:15:49 [INFO]: [0mGET /api/v1/players/28514/matches?limit=100&offset=0 [32m200[0m 61.441 ms - -[0m
+2025-06-22 19:51:21 [INFO]: [0mGET /player-stats/28514 [32m200[0m 63.468 ms - -[0m
+2025-06-22 19:51:22 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 9.542 ms - -[0m
+2025-06-22 19:51:22 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 9.196 ms - -[0m
+2025-06-22 19:51:24 [INFO]: 📡 GET /28514
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/28514",
+  "userId": null
+}
+2025-06-22 19:51:24 [INFO]: [0mGET /api/v1/players/28514 [36m304[0m 1436.099 ms - -[0m
+2025-06-22 19:51:25 [INFO]: 📡 GET /28514/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/28514/matches",
+  "userId": null
+}
+2025-06-22 19:51:25 [INFO]: [0mGET /api/v1/players/28514/matches?limit=100&offset=0 [32m200[0m 78.437 ms - -[0m
+2025-06-22 19:51:42 [INFO]: 📡 GET /28514/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/28514/matches",
+  "userId": null
+}
+2025-06-22 19:51:42 [INFO]: [0mGET /api/v1/players/28514/matches?limit=100&offset=0&surface=Clay [32m200[0m 111.008 ms - -[0m
+2025-06-22 20:10:38 [INFO]: ✅ Configuration validée
+2025-06-22 20:10:40 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-22 20:10:40 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-22 20:10:40 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-22 20:10:40 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-22 20:10:40 [INFO]: 🌍 Environment: development
+2025-06-22 20:10:40 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-22 20:10:40 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-22 20:11:06 [INFO]: ✅ Configuration validée
+2025-06-22 20:11:07 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-22 20:11:07 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-22 20:11:07 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-22 20:11:07 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-22 20:11:07 [INFO]: 🌍 Environment: development
+2025-06-22 20:11:07 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-22 20:11:07 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-22 20:11:22 [INFO]: ✅ Configuration validée
+2025-06-22 20:11:23 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-22 20:11:23 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-22 20:11:23 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-22 20:11:23 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-22 20:11:23 [INFO]: 🌍 Environment: development
+2025-06-22 20:11:23 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-22 20:11:23 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-22 20:11:34 [INFO]: ✅ Configuration validée
+2025-06-22 20:11:35 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-22 20:11:35 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-22 20:11:35 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-22 20:11:35 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-22 20:11:35 [INFO]: 🌍 Environment: development
+2025-06-22 20:11:35 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-22 20:11:35 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-22 20:12:13 [INFO]: ✅ Configuration validée
+2025-06-22 20:12:14 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-22 20:12:14 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-22 20:12:14 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-22 20:12:14 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-22 20:12:14 [INFO]: 🌍 Environment: development
+2025-06-22 20:12:14 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-22 20:12:14 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-22 20:12:25 [INFO]: ✅ Configuration validée
+2025-06-22 20:12:25 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-22 20:12:26 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-22 20:12:26 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-22 20:12:26 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-22 20:12:26 [INFO]: 🌍 Environment: development
+2025-06-22 20:12:26 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-22 20:12:26 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-22 20:55:29 [INFO]: ✅ Configuration validée
+2025-06-22 20:56:27 [INFO]: [0mGET /player-stats/15189 [32m200[0m 160.153 ms - -[0m
+2025-06-22 20:56:27 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 9.341 ms - -[0m
+2025-06-22 20:56:27 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 4.764 ms - -[0m
+2025-06-22 20:56:28 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-22 20:56:28 [INFO]: [0mGET /api/v1/players/tournament-types [32m200[0m 289.900 ms - 89[0m
+2025-06-22 20:56:29 [INFO]: 📡 GET /15189
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189",
+  "userId": null
+}
+2025-06-22 20:56:29 [INFO]: [0mGET /api/v1/players/15189 [32m200[0m 1401.400 ms - 299[0m
+2025-06-22 20:56:31 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:56:31 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0 [32m200[0m 141.202 ms - -[0m
+2025-06-22 20:56:48 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:56:48 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&type=Challenger [32m200[0m 4158.210 ms - -[0m
+2025-06-22 20:56:59 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:56:59 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&type=Challenger&surface=Clay [32m200[0m 784.914 ms - -[0m
+2025-06-22 20:57:09 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:57:09 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&type=Challenger&surface=Clay&round=D [32m200[0m 123.114 ms - -[0m
+2025-06-22 20:57:10 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:57:10 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&type=Challenger&surface=Clay [36m304[0m 120.259 ms - -[0m
+2025-06-22 20:57:11 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:57:11 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&type=Challenger&surface=Clay&round=F [32m200[0m 140.908 ms - -[0m
+2025-06-22 20:57:12 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:57:12 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&type=Challenger&surface=Clay&round=Fi [32m200[0m 119.504 ms - -[0m
+2025-06-22 20:57:12 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:57:12 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&type=Challenger&surface=Clay&round=Fin [32m200[0m 37.219 ms - -[0m
+2025-06-22 20:57:12 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:57:12 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&type=Challenger&surface=Clay&round=Fina [32m200[0m 25.335 ms - -[0m
+2025-06-22 20:57:12 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:57:12 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&type=Challenger&surface=Clay&round=Final [32m200[0m 21.057 ms - -[0m
+2025-06-22 20:57:23 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:57:23 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0 [36m304[0m 97.261 ms - -[0m
+2025-06-22 20:57:30 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:57:30 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&opponent=H [32m200[0m 37.294 ms - -[0m
+2025-06-22 20:57:31 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:57:31 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&opponent=Hu [32m200[0m 37.972 ms - -[0m
+2025-06-22 20:57:31 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:57:31 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&opponent=Hum [32m200[0m 33.642 ms - -[0m
+2025-06-22 20:57:31 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:57:31 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&opponent=Humb [32m200[0m 33.057 ms - -[0m
+2025-06-22 20:57:32 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:57:32 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&opponent=Humbe [32m200[0m 28.905 ms - -[0m
+2025-06-22 20:57:33 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:57:33 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&opponent=Humber [32m200[0m 29.052 ms - -[0m
+2025-06-22 20:57:34 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:57:34 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0&opponent=Humbert [32m200[0m 30.834 ms - -[0m
+2025-06-22 20:58:50 [INFO]: 📡 GET /15189/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15189/matches",
+  "userId": null
+}
+2025-06-22 20:58:50 [INFO]: [0mGET /api/v1/players/15189/matches?limit=100&offset=0 [36m304[0m 140.360 ms - -[0m
+2025-06-22 20:58:57 [INFO]: [0mGET /player-stats/13642 [32m200[0m 2.403 ms - -[0m
+2025-06-22 20:58:57 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.872 ms - -[0m
+2025-06-22 20:58:57 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.922 ms - -[0m
+2025-06-22 20:58:58 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-22 20:58:58 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 245.425 ms - -[0m
+2025-06-22 20:58:59 [INFO]: 📡 GET /13642
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/13642",
+  "userId": null
+}
+2025-06-22 20:58:59 [INFO]: [0mGET /api/v1/players/13642 [32m200[0m 1008.443 ms - 298[0m
+2025-06-22 20:58:59 [INFO]: 📡 GET /13642/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/13642/matches",
+  "userId": null
+}
+2025-06-22 20:58:59 [INFO]: [0mGET /api/v1/players/13642/matches?limit=100&offset=0 [32m200[0m 168.972 ms - -[0m
+2025-06-22 20:59:10 [INFO]: [0mGET /player-stats/29985 [32m200[0m 2.077 ms - -[0m
+2025-06-22 20:59:10 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 3.855 ms - -[0m
+2025-06-22 20:59:10 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 5.861 ms - -[0m
+2025-06-22 20:59:11 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-22 20:59:11 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 108.520 ms - -[0m
+2025-06-22 20:59:11 [INFO]: 📡 GET /29985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985",
+  "userId": null
+}
+2025-06-22 20:59:11 [INFO]: [0mGET /api/v1/players/29985 [32m200[0m 378.627 ms - 293[0m
+2025-06-22 20:59:12 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-22 20:59:12 [INFO]: [0mGET /api/v1/players/29985/matches?limit=100&offset=0 [32m200[0m 45.255 ms - -[0m
+2025-06-22 22:28:35 [INFO]: ✅ Configuration validée
+2025-06-22 22:28:38 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-22 22:28:38 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-22 22:28:38 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-22 22:28:38 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-22 22:28:38 [INFO]: 🌍 Environment: development
+2025-06-22 22:28:38 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-22 22:28:38 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-22 22:31:54 [INFO]: [0mGET /player-stats/29985 [32m200[0m 59.072 ms - -[0m
+2025-06-22 22:31:54 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 3.496 ms - -[0m
+2025-06-22 22:31:54 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 1.712 ms - -[0m
+2025-06-22 22:31:57 [INFO]: [0mGET /favicon.ico [33m404[0m 588.520 ms - 120[0m
+2025-06-22 22:31:57 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-22 22:31:57 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 1118.679 ms - -[0m
+2025-06-22 22:31:58 [INFO]: 📡 GET /29985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985",
+  "userId": null
+}
+2025-06-22 22:31:58 [INFO]: [0mGET /api/v1/players/29985 [36m304[0m 2106.987 ms - -[0m
+2025-06-22 22:32:00 [INFO]: 📡 GET /29985/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/stats",
+  "userId": null
+}
+2025-06-22 22:32:00 [INFO]: [0mGET /api/v1/players/29985/stats [32m200[0m 77.453 ms - -[0m
+2025-06-22 22:32:00 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-22 22:32:00 [INFO]: [0mGET /api/v1/players/29985/matches?limit=100&offset=0 [32m200[0m 182.241 ms - -[0m
+2025-06-22 22:32:59 [INFO]: [0mGET /player-stats/15969 [32m200[0m 2.876 ms - -[0m
+2025-06-22 22:32:59 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.590 ms - -[0m
+2025-06-22 22:32:59 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 4.608 ms - -[0m
+2025-06-22 22:33:00 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-22 22:33:00 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 106.652 ms - -[0m
+2025-06-22 22:33:01 [INFO]: 📡 GET /15969
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15969",
+  "userId": null
+}
+2025-06-22 22:33:01 [INFO]: [0mGET /api/v1/players/15969 [32m200[0m 574.648 ms - 287[0m
+2025-06-22 22:33:01 [INFO]: 📡 GET /15969/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15969/stats",
+  "userId": null
+}
+2025-06-22 22:33:01 [INFO]: [0mGET /api/v1/players/15969/stats [32m200[0m 35.746 ms - -[0m
+2025-06-22 22:33:01 [INFO]: 📡 GET /15969/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15969/matches",
+  "userId": null
+}
+2025-06-22 22:33:01 [INFO]: [0mGET /api/v1/players/15969/matches?limit=100&offset=0 [32m200[0m 101.203 ms - -[0m
+2025-06-22 22:33:24 [INFO]: [0mGET /player-stats/32440 [32m200[0m 1.977 ms - -[0m
+2025-06-22 22:33:25 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 2.740 ms - -[0m
+2025-06-22 22:33:25 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.448 ms - -[0m
+2025-06-22 22:33:26 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-22 22:33:26 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 130.667 ms - -[0m
+2025-06-22 22:33:28 [INFO]: 📡 GET /32440
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32440",
+  "userId": null
+}
+2025-06-22 22:33:28 [INFO]: [0mGET /api/v1/players/32440 [32m200[0m 2298.379 ms - 290[0m
+2025-06-22 22:33:28 [INFO]: 📡 GET /32440/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32440/stats",
+  "userId": null
+}
+2025-06-22 22:33:28 [INFO]: [0mGET /api/v1/players/32440/stats [32m200[0m 25.617 ms - -[0m
+2025-06-22 22:33:28 [INFO]: 📡 GET /32440/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32440/matches",
+  "userId": null
+}
+2025-06-22 22:33:28 [INFO]: [0mGET /api/v1/players/32440/matches?limit=100&offset=0 [32m200[0m 106.347 ms - -[0m
+2025-06-22 22:34:00 [INFO]: [0mGET /player-stats/32931 [32m200[0m 2.179 ms - -[0m
+2025-06-22 22:34:00 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.666 ms - -[0m
+2025-06-22 22:34:00 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.485 ms - -[0m
+2025-06-22 22:34:01 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-22 22:34:01 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 114.881 ms - -[0m
+2025-06-22 22:34:01 [INFO]: 📡 GET /32931
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32931",
+  "userId": null
+}
+2025-06-22 22:34:01 [INFO]: [0mGET /api/v1/players/32931 [32m200[0m 591.762 ms - 292[0m
+2025-06-22 22:34:01 [INFO]: 📡 GET /32931/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32931/stats",
+  "userId": null
+}
+2025-06-22 22:34:02 [INFO]: [0mGET /api/v1/players/32931/stats [32m200[0m 30.797 ms - -[0m
+2025-06-22 22:34:02 [INFO]: 📡 GET /32931/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/32931/matches",
+  "userId": null
+}
+2025-06-22 22:34:02 [INFO]: [0mGET /api/v1/players/32931/matches?limit=100&offset=0 [32m200[0m 89.495 ms - -[0m
+2025-06-22 23:03:50 [INFO]: [0mGET /player-stats/27303 [32m200[0m 38.604 ms - -[0m
+2025-06-22 23:03:50 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.571 ms - -[0m
+2025-06-22 23:03:50 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.623 ms - -[0m
+2025-06-22 23:03:51 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-22 23:03:51 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 133.637 ms - -[0m
+2025-06-22 23:03:52 [INFO]: 📡 GET /27303
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/27303",
+  "userId": null
+}
+2025-06-22 23:03:52 [INFO]: [0mGET /api/v1/players/27303 [32m200[0m 1139.181 ms - 297[0m
+2025-06-22 23:03:52 [INFO]: 📡 GET /27303/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/27303/stats",
+  "userId": null
+}
+2025-06-22 23:03:52 [INFO]: [0mGET /api/v1/players/27303/stats [32m200[0m 27.952 ms - -[0m
+2025-06-22 23:03:52 [INFO]: 📡 GET /27303/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/27303/matches",
+  "userId": null
+}
+2025-06-22 23:03:52 [INFO]: [0mGET /api/v1/players/27303/matches?limit=100&offset=0 [32m200[0m 71.007 ms - -[0m
+2025-06-22 23:10:51 [INFO]: ✅ Configuration validée
+2025-06-22 23:10:53 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-22 23:10:53 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-22 23:10:53 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-22 23:10:53 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-22 23:10:53 [INFO]: 🌍 Environment: development
+2025-06-22 23:10:53 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-22 23:10:53 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-22 23:11:00 [INFO]: ✅ Configuration validée
+2025-06-22 23:11:01 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-22 23:11:01 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-22 23:11:01 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-22 23:11:01 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-22 23:11:01 [INFO]: 🌍 Environment: development
+2025-06-22 23:11:01 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-22 23:11:01 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-22 23:13:30 [INFO]: [0mGET /player-stats/27303 [32m200[0m 14.820 ms - -[0m
+2025-06-22 23:13:30 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 2.071 ms - -[0m
+2025-06-22 23:13:30 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 3.168 ms - -[0m
+2025-06-22 23:13:32 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-22 23:13:32 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 147.507 ms - -[0m
+2025-06-22 23:13:32 [INFO]: 📡 GET /27303
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/27303",
+  "userId": null
+}
+2025-06-22 23:13:32 [INFO]: [0mGET /api/v1/players/27303 [36m304[0m 871.815 ms - -[0m
+2025-06-22 23:13:33 [INFO]: 📡 GET /27303/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/27303/matches",
+  "userId": null
+}
+2025-06-22 23:13:33 [INFO]: [0mGET /api/v1/players/27303/matches?limit=100&offset=0 [36m304[0m 59.442 ms - -[0m
+2025-06-22 23:13:33 [INFO]: 📡 GET /27303/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/27303/stats",
+  "userId": null
+}
+2025-06-22 23:13:33 [INFO]: [0mGET /api/v1/players/27303/stats [32m200[0m 80.280 ms - -[0m
+2025-06-22 23:14:05 [INFO]: [0mGET /player-stats/26974 [32m200[0m 2.133 ms - -[0m
+2025-06-22 23:14:06 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 4.099 ms - -[0m
+2025-06-22 23:14:06 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.887 ms - -[0m
+2025-06-22 23:14:06 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-22 23:14:06 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 111.521 ms - -[0m
+2025-06-22 23:14:06 [INFO]: 📡 GET /26974
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/26974",
+  "userId": null
+}
+2025-06-22 23:14:06 [INFO]: [0mGET /api/v1/players/26974 [32m200[0m 563.516 ms - 295[0m
+2025-06-22 23:14:06 [INFO]: 📡 GET /26974/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/26974/matches",
+  "userId": null
+}
+2025-06-22 23:14:06 [INFO]: [0mGET /api/v1/players/26974/matches?limit=100&offset=0 [32m200[0m 52.163 ms - -[0m
+2025-06-22 23:14:06 [INFO]: 📡 GET /26974/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/26974/stats",
+  "userId": null
+}
+2025-06-22 23:14:06 [INFO]: [0mGET /api/v1/players/26974/stats [32m200[0m 70.025 ms - -[0m
+2025-06-22 23:14:25 [INFO]: [0mGET /player-stats/9147 [32m200[0m 2.555 ms - -[0m
+2025-06-22 23:14:25 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.174 ms - -[0m
+2025-06-22 23:14:25 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-22 23:14:25 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 129.640 ms - -[0m
+2025-06-22 23:14:26 [INFO]: 📡 GET /9147
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/9147",
+  "userId": null
+}
+2025-06-22 23:14:26 [INFO]: [0mGET /api/v1/players/9147 [32m200[0m 789.469 ms - 289[0m
+2025-06-22 23:14:26 [INFO]: 📡 GET /9147/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/9147/stats",
+  "userId": null
+}
+2025-06-22 23:14:26 [INFO]: [0mGET /api/v1/players/9147/stats [32m200[0m 204.353 ms - -[0m
+2025-06-22 23:14:26 [INFO]: 📡 GET /9147/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/9147/matches",
+  "userId": null
+}
+2025-06-22 23:14:26 [INFO]: [0mGET /api/v1/players/9147/matches?limit=100&offset=0 [32m200[0m 254.216 ms - -[0m
+2025-06-22 23:14:58 [INFO]: [0mGET /player-stats/28129 [32m200[0m 2.087 ms - -[0m
+2025-06-22 23:14:58 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.180 ms - -[0m
+2025-06-22 23:14:58 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-22 23:14:58 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 109.787 ms - -[0m
+2025-06-22 23:14:58 [INFO]: 📡 GET /28129
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/28129",
+  "userId": null
+}
+2025-06-22 23:14:58 [INFO]: [0mGET /api/v1/players/28129 [32m200[0m 381.825 ms - 291[0m
+2025-06-22 23:14:58 [INFO]: 📡 GET /28129/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/28129/matches",
+  "userId": null
+}
+2025-06-22 23:14:58 [INFO]: [0mGET /api/v1/players/28129/matches?limit=100&offset=0 [32m200[0m 78.090 ms - -[0m
+2025-06-22 23:14:58 [INFO]: 📡 GET /28129/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/28129/stats",
+  "userId": null
+}
+2025-06-22 23:14:58 [INFO]: [0mGET /api/v1/players/28129/stats [32m200[0m 97.247 ms - -[0m
+2025-06-22 23:15:37 [INFO]: [0mGET /player-stats/13973 [32m200[0m 2.414 ms - -[0m
+2025-06-22 23:15:37 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.090 ms - -[0m
+2025-06-22 23:15:38 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-22 23:15:38 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 124.148 ms - -[0m
+2025-06-22 23:15:38 [INFO]: 📡 GET /13973
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/13973",
+  "userId": null
+}
+2025-06-22 23:15:38 [INFO]: [0mGET /api/v1/players/13973 [32m200[0m 566.747 ms - 295[0m
+2025-06-22 23:15:38 [INFO]: 📡 GET /13973/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/13973/stats",
+  "userId": null
+}
+2025-06-22 23:15:38 [INFO]: [0mGET /api/v1/players/13973/stats [32m200[0m 71.885 ms - -[0m
+2025-06-22 23:15:38 [INFO]: 📡 GET /13973/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/13973/matches",
+  "userId": null
+}
+2025-06-22 23:15:38 [INFO]: [0mGET /api/v1/players/13973/matches?limit=100&offset=0 [32m200[0m 79.842 ms - -[0m
+2025-06-22 23:16:10 [INFO]: [0mGET /player-stats/19178 [32m200[0m 3.342 ms - -[0m
+2025-06-22 23:16:10 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.753 ms - -[0m
+2025-06-22 23:16:10 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-22 23:16:10 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 116.525 ms - -[0m
+2025-06-22 23:16:10 [INFO]: 📡 GET /19178
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/19178",
+  "userId": null
+}
+2025-06-22 23:16:10 [INFO]: [0mGET /api/v1/players/19178 [32m200[0m 501.192 ms - 288[0m
+2025-06-22 23:16:10 [INFO]: 📡 GET /19178/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/19178/matches",
+  "userId": null
+}
+2025-06-22 23:16:10 [INFO]: 📡 GET /19178/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/19178/stats",
+  "userId": null
+}
+2025-06-22 23:16:10 [INFO]: [0mGET /api/v1/players/19178/stats [32m200[0m 60.844 ms - -[0m
+2025-06-22 23:16:10 [INFO]: [0mGET /api/v1/players/19178/matches?limit=100&offset=0 [32m200[0m 57.370 ms - -[0m
+2025-06-22 23:16:46 [INFO]: [0mGET /player-stats/16985 [32m200[0m 1.952 ms - -[0m
+2025-06-22 23:16:46 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.532 ms - -[0m
+2025-06-22 23:16:47 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-22 23:16:47 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 114.651 ms - -[0m
+2025-06-22 23:16:47 [INFO]: 📡 GET /16985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/16985",
+  "userId": null
+}
+2025-06-22 23:16:47 [INFO]: [0mGET /api/v1/players/16985 [32m200[0m 405.714 ms - 289[0m
+2025-06-22 23:16:47 [INFO]: 📡 GET /16985/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/16985/stats",
+  "userId": null
+}
+2025-06-22 23:16:47 [INFO]: [0mGET /api/v1/players/16985/stats [32m200[0m 70.151 ms - -[0m
+2025-06-22 23:16:47 [INFO]: 📡 GET /16985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/16985/matches",
+  "userId": null
+}
+2025-06-22 23:16:47 [INFO]: [0mGET /api/v1/players/16985/matches?limit=100&offset=0 [32m200[0m 78.451 ms - -[0m
+2025-06-23 10:05:08 [INFO]: [0mGET /rankings [36m301[0m 78.779 ms - 158[0m
+2025-06-23 10:05:09 [INFO]: [0mGET /rankings/ [32m200[0m 18.357 ms - -[0m
+2025-06-23 10:05:09 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 3.801 ms - -[0m
+2025-06-23 10:05:09 [INFO]: [0mGET /favicon.ico [33m404[0m 9.240 ms - 120[0m
+2025-06-23 10:05:10 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [32m200[0m 1363.552 ms - -[0m
+2025-06-23 10:05:12 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-23 10:05:12 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=100 [32m200[0m 874.403 ms - -[0m
+2025-06-23 10:05:19 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-23 10:05:19 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=100 [36m304[0m 483.902 ms - -[0m
+2025-06-23 11:41:54 [INFO]: [0mGET /rankings/ [32m200[0m 78.591 ms - -[0m
+2025-06-23 11:41:54 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 2.174 ms - -[0m
+2025-06-23 11:41:55 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [36m304[0m 656.140 ms - -[0m
+2025-06-23 11:41:56 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-23 11:41:56 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=100 [36m304[0m 954.388 ms - -[0m
+2025-06-23 11:42:10 [INFO]: [0mGET /player-stats/22096 [32m200[0m 13.981 ms - -[0m
+2025-06-23 11:42:10 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 4.624 ms - -[0m
+2025-06-23 11:42:11 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 11:42:11 [INFO]: [0mGET /api/v1/players/tournament-types [32m200[0m 191.017 ms - 89[0m
+2025-06-23 11:42:11 [INFO]: 📡 GET /22096
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096",
+  "userId": null
+}
+2025-06-23 11:42:11 [INFO]: [0mGET /api/v1/players/22096 [32m200[0m 889.231 ms - 289[0m
+2025-06-23 11:42:12 [INFO]: 📡 GET /22096/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096/matches",
+  "userId": null
+}
+2025-06-23 11:42:12 [INFO]: [0mGET /api/v1/players/22096/matches?limit=100&offset=0 [32m200[0m 137.002 ms - -[0m
+2025-06-23 11:42:12 [INFO]: 📡 GET /22096/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096/stats",
+  "userId": null
+}
+2025-06-23 11:42:12 [INFO]: [0mGET /api/v1/players/22096/stats [32m200[0m 237.817 ms - -[0m
+2025-06-23 11:42:18 [INFO]: [0mGET /player-stats/34496 [32m200[0m 6.821 ms - -[0m
+2025-06-23 11:42:18 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.248 ms - -[0m
+2025-06-23 11:42:18 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 11:42:18 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 18.916 ms - -[0m
+2025-06-23 11:42:19 [INFO]: 📡 GET /34496
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496",
+  "userId": null
+}
+2025-06-23 11:42:19 [INFO]: [0mGET /api/v1/players/34496 [32m200[0m 327.596 ms - 288[0m
+2025-06-23 11:42:19 [INFO]: 📡 GET /34496/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496/matches",
+  "userId": null
+}
+2025-06-23 11:42:19 [INFO]: 📡 GET /34496/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496/stats",
+  "userId": null
+}
+2025-06-23 11:42:19 [INFO]: [0mGET /api/v1/players/34496/matches?limit=100&offset=0 [32m200[0m 33.844 ms - -[0m
+2025-06-23 11:42:19 [INFO]: [0mGET /api/v1/players/34496/stats [32m200[0m 37.292 ms - -[0m
+2025-06-23 11:47:08 [INFO]: ✅ Configuration validée
+2025-06-23 11:47:09 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 11:47:09 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 11:47:09 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 11:47:09 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 11:47:09 [INFO]: 🌍 Environment: development
+2025-06-23 11:47:09 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 11:47:09 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 11:47:16 [INFO]: ✅ Configuration validée
+2025-06-23 11:47:17 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 11:47:17 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 11:47:17 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 11:47:17 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 11:47:17 [INFO]: 🌍 Environment: development
+2025-06-23 11:47:17 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 11:47:17 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 11:48:45 [INFO]: [0mGET /player-stats/34496 [32m200[0m 24.988 ms - -[0m
+2025-06-23 11:48:45 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 2.268 ms - -[0m
+2025-06-23 11:48:45 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 11:48:45 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 167.660 ms - -[0m
+2025-06-23 11:48:47 [INFO]: 📡 GET /34496
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496",
+  "userId": null
+}
+2025-06-23 11:48:47 [INFO]: [0mGET /api/v1/players/34496 [36m304[0m 2256.157 ms - -[0m
+2025-06-23 11:48:49 [INFO]: 📡 GET /34496/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496/matches",
+  "userId": null
+}
+2025-06-23 11:48:49 [INFO]: 📡 GET /34496/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496/stats",
+  "userId": null
+}
+2025-06-23 11:48:49 [INFO]: [0mGET /api/v1/players/34496/stats [36m304[0m 72.639 ms - -[0m
+2025-06-23 11:48:49 [INFO]: [0mGET /api/v1/players/34496/matches?limit=100&offset=0 [32m200[0m 65.765 ms - -[0m
+2025-06-23 11:53:23 [INFO]: ✅ Configuration validée
+2025-06-23 11:53:23 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 11:53:24 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 11:53:24 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 11:53:24 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 11:53:24 [INFO]: 🌍 Environment: development
+2025-06-23 11:53:24 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 11:53:24 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 11:53:33 [INFO]: ✅ Configuration validée
+2025-06-23 11:53:34 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 11:53:34 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 11:53:34 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 11:53:34 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 11:53:34 [INFO]: 🌍 Environment: development
+2025-06-23 11:53:34 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 11:53:34 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 11:54:43 [INFO]: [0mGET /player-stats/34496 [36m304[0m 10.947 ms - -[0m
+2025-06-23 11:54:44 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 2.608 ms - -[0m
+2025-06-23 11:54:44 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 11:54:44 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 120.241 ms - -[0m
+2025-06-23 11:54:44 [INFO]: 📡 GET /34496
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496",
+  "userId": null
+}
+2025-06-23 11:54:44 [INFO]: [0mGET /api/v1/players/34496 [36m304[0m 448.661 ms - -[0m
+2025-06-23 11:54:44 [ERROR]: ❌ API Error GET /34496/stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/34496/stats",
+  "error": "Positional replacement (?) 10 has no entry in the replacement map (replacements[10] is undefined).",
+  "userId": null
+}
+2025-06-23 11:54:44 [INFO]: [0mGET /api/v1/players/34496/stats [31m500[0m 9.455 ms - 91[0m
+2025-06-23 11:54:45 [INFO]: 📡 GET /34496/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496/matches",
+  "userId": null
+}
+2025-06-23 11:54:45 [INFO]: [0mGET /api/v1/players/34496/matches?limit=100&offset=0 [36m304[0m 81.841 ms - -[0m
+2025-06-23 11:54:55 [INFO]: [0mGET /player-stats/34496 [32m200[0m 3.159 ms - -[0m
+2025-06-23 11:55:16 [INFO]: [0mGET /player-stats/34496 [32m200[0m 5.356 ms - -[0m
+2025-06-23 11:55:16 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 4.751 ms - -[0m
+2025-06-23 11:55:16 [INFO]: [0mGET /favicon.ico [33m404[0m 1.416 ms - 120[0m
+2025-06-23 11:55:16 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 11:55:16 [INFO]: [0mGET /api/v1/players/tournament-types [32m200[0m 123.479 ms - 89[0m
+2025-06-23 11:55:17 [INFO]: 📡 GET /34496
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496",
+  "userId": null
+}
+2025-06-23 11:55:17 [INFO]: [0mGET /api/v1/players/34496 [32m200[0m 395.091 ms - 288[0m
+2025-06-23 11:55:17 [ERROR]: ❌ API Error GET /34496/stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/34496/stats",
+  "error": "Positional replacement (?) 10 has no entry in the replacement map (replacements[10] is undefined).",
+  "userId": null
+}
+2025-06-23 11:55:17 [INFO]: [0mGET /api/v1/players/34496/stats [31m500[0m 3.907 ms - 91[0m
+2025-06-23 11:55:17 [INFO]: 📡 GET /34496/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496/matches",
+  "userId": null
+}
+2025-06-23 11:55:17 [INFO]: [0mGET /api/v1/players/34496/matches?limit=100&offset=0 [36m304[0m 55.560 ms - -[0m
+2025-06-23 11:55:29 [INFO]: [0mGET /player-stats/installHook.js.map [32m200[0m 2.425 ms - -[0m
+2025-06-23 11:55:47 [INFO]: [0mGET /player-stats/28538 [32m200[0m 4.125 ms - -[0m
+2025-06-23 11:55:47 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.824 ms - -[0m
+2025-06-23 11:55:48 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 11:55:48 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 122.804 ms - -[0m
+2025-06-23 11:55:48 [INFO]: 📡 GET /28538
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/28538",
+  "userId": null
+}
+2025-06-23 11:55:48 [INFO]: [0mGET /api/v1/players/28538 [32m200[0m 625.649 ms - 302[0m
+2025-06-23 11:55:48 [ERROR]: ❌ API Error GET /28538/stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/28538/stats",
+  "error": "Positional replacement (?) 10 has no entry in the replacement map (replacements[10] is undefined).",
+  "userId": null
+}
+2025-06-23 11:55:48 [INFO]: [0mGET /api/v1/players/28538/stats [31m500[0m 3.267 ms - 91[0m
+2025-06-23 11:55:48 [INFO]: 📡 GET /28538/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/28538/matches",
+  "userId": null
+}
+2025-06-23 11:55:48 [INFO]: [0mGET /api/v1/players/28538/matches?limit=100&offset=0 [32m200[0m 61.222 ms - -[0m
+2025-06-23 11:55:54 [INFO]: [0mGET /player-stats/installHook.js.map [36m304[0m 1.897 ms - -[0m
+2025-06-23 11:57:09 [INFO]: ✅ Configuration validée
+2025-06-23 11:57:11 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 11:57:11 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 11:57:11 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 11:57:11 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 11:57:11 [INFO]: 🌍 Environment: development
+2025-06-23 11:57:11 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 11:57:11 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 11:58:17 [INFO]: [0mGET /player-stats/28538 [36m304[0m 10.223 ms - -[0m
+2025-06-23 11:58:17 [INFO]: [0mGET /player-stats/installHook.js.map [36m304[0m 1.681 ms - -[0m
+2025-06-23 11:58:17 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 4.679 ms - -[0m
+2025-06-23 11:58:18 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 11:58:18 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 217.131 ms - -[0m
+2025-06-23 11:58:18 [INFO]: 📡 GET /28538
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/28538",
+  "userId": null
+}
+2025-06-23 11:58:18 [INFO]: [0mGET /api/v1/players/28538 [36m304[0m 661.611 ms - -[0m
+2025-06-23 11:58:18 [INFO]: 📡 GET /28538/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/28538/matches",
+  "userId": null
+}
+2025-06-23 11:58:18 [INFO]: [0mGET /api/v1/players/28538/matches?limit=100&offset=0 [36m304[0m 79.097 ms - -[0m
+2025-06-23 11:58:19 [INFO]: 📡 GET /28538/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/28538/stats",
+  "userId": null
+}
+2025-06-23 11:58:19 [INFO]: [0mGET /api/v1/players/28538/stats [32m200[0m 357.867 ms - -[0m
+2025-06-23 11:58:45 [INFO]: [0mGET /player-stats/22096 [32m200[0m 5.646 ms - -[0m
+2025-06-23 11:58:45 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.202 ms - -[0m
+2025-06-23 11:58:46 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 11:58:46 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 131.103 ms - -[0m
+2025-06-23 11:58:46 [INFO]: 📡 GET /22096
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096",
+  "userId": null
+}
+2025-06-23 11:58:46 [INFO]: [0mGET /api/v1/players/22096 [36m304[0m 447.266 ms - -[0m
+2025-06-23 11:58:46 [INFO]: 📡 GET /22096/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096/matches",
+  "userId": null
+}
+2025-06-23 11:58:46 [INFO]: [0mGET /api/v1/players/22096/matches?limit=100&offset=0 [32m200[0m 138.397 ms - -[0m
+2025-06-23 11:58:46 [INFO]: 📡 GET /22096/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096/stats",
+  "userId": null
+}
+2025-06-23 11:58:46 [INFO]: [0mGET /api/v1/players/22096/stats [32m200[0m 227.647 ms - -[0m
+2025-06-23 11:59:12 [INFO]: [0mGET /player-stats/34496 [36m304[0m 1.606 ms - -[0m
+2025-06-23 11:59:12 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 2.442 ms - -[0m
+2025-06-23 11:59:12 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 11:59:12 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 122.809 ms - -[0m
+2025-06-23 11:59:12 [INFO]: 📡 GET /34496
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496",
+  "userId": null
+}
+2025-06-23 11:59:12 [INFO]: [0mGET /api/v1/players/34496 [36m304[0m 338.231 ms - -[0m
+2025-06-23 11:59:12 [INFO]: 📡 GET /34496/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496/stats",
+  "userId": null
+}
+2025-06-23 11:59:12 [INFO]: [0mGET /api/v1/players/34496/stats [32m200[0m 37.201 ms - -[0m
+2025-06-23 11:59:12 [INFO]: 📡 GET /34496/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496/matches",
+  "userId": null
+}
+2025-06-23 11:59:12 [INFO]: [0mGET /api/v1/players/34496/matches?limit=100&offset=0 [36m304[0m 57.261 ms - -[0m
+2025-06-23 12:01:58 [INFO]: 📡 GET /34496/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496/matches",
+  "userId": null
+}
+2025-06-23 12:01:58 [INFO]: [0mGET /api/v1/players/34496/matches?limit=100&offset=0&type=ATP [32m200[0m 2635.188 ms - -[0m
+2025-06-23 12:49:15 [INFO]: ✅ Configuration validée
+2025-06-23 12:49:17 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 12:49:17 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 12:49:17 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 12:49:17 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 12:49:17 [INFO]: 🌍 Environment: development
+2025-06-23 12:49:17 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 12:49:17 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 12:49:40 [INFO]: ✅ Configuration validée
+2025-06-23 12:49:41 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 12:49:41 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 12:49:41 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 12:49:41 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 12:49:41 [INFO]: 🌍 Environment: development
+2025-06-23 12:49:41 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 12:49:41 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 12:49:57 [INFO]: ✅ Configuration validée
+2025-06-23 12:49:58 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 12:49:58 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 12:49:58 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 12:49:58 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 12:49:58 [INFO]: 🌍 Environment: development
+2025-06-23 12:49:58 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 12:49:58 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 12:50:10 [INFO]: ✅ Configuration validée
+2025-06-23 12:50:11 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 12:50:11 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 12:50:11 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 12:50:11 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 12:50:11 [INFO]: 🌍 Environment: development
+2025-06-23 12:50:11 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 12:50:11 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 12:50:22 [INFO]: ✅ Configuration validée
+2025-06-23 12:50:23 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 12:50:23 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 12:50:23 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 12:50:23 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 12:50:23 [INFO]: 🌍 Environment: development
+2025-06-23 12:50:23 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 12:50:23 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 12:50:33 [INFO]: ✅ Configuration validée
+2025-06-23 12:50:34 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 12:50:34 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 12:50:34 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 12:50:34 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 12:50:34 [INFO]: 🌍 Environment: development
+2025-06-23 12:50:34 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 12:50:34 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 12:59:10 [INFO]: [0mGET /player-stats/22096 [32m200[0m 19.775 ms - -[0m
+2025-06-23 12:59:10 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 4.732 ms - -[0m
+2025-06-23 12:59:11 [INFO]: [0mGET /favicon.ico [33m404[0m 5.603 ms - 120[0m
+2025-06-23 12:59:11 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 12:59:11 [INFO]: [0mGET /api/v1/players/tournament-types [32m200[0m 199.388 ms - 89[0m
+2025-06-23 12:59:13 [INFO]: 📡 GET /22096
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096",
+  "userId": null
+}
+2025-06-23 12:59:13 [INFO]: [0mGET /api/v1/players/22096 [32m200[0m 1808.941 ms - 289[0m
+2025-06-23 12:59:14 [INFO]: 📡 GET /22096/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096/matches",
+  "userId": null
+}
+2025-06-23 12:59:14 [INFO]: [0mGET /api/v1/players/22096/matches?limit=100&offset=0 [32m200[0m 176.227 ms - -[0m
+2025-06-23 12:59:14 [INFO]: 📡 GET /22096/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096/stats",
+  "userId": null
+}
+2025-06-23 12:59:14 [INFO]: [0mGET /api/v1/players/22096/stats [32m200[0m 266.770 ms - -[0m
+2025-06-23 13:00:22 [INFO]: [0mGET /player-stats/34496 [32m200[0m 1.941 ms - -[0m
+2025-06-23 13:00:22 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.716 ms - -[0m
+2025-06-23 13:00:22 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 13:00:22 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 136.976 ms - -[0m
+2025-06-23 13:00:22 [INFO]: 📡 GET /34496
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496",
+  "userId": null
+}
+2025-06-23 13:00:22 [INFO]: [0mGET /api/v1/players/34496 [32m200[0m 456.655 ms - 288[0m
+2025-06-23 13:00:23 [INFO]: 📡 GET /34496/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496/stats",
+  "userId": null
+}
+2025-06-23 13:00:23 [INFO]: [0mGET /api/v1/players/34496/stats [32m200[0m 40.484 ms - -[0m
+2025-06-23 13:00:23 [INFO]: 📡 GET /34496/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34496/matches",
+  "userId": null
+}
+2025-06-23 13:00:23 [INFO]: [0mGET /api/v1/players/34496/matches?limit=100&offset=0 [32m200[0m 52.588 ms - -[0m
+2025-06-23 13:24:36 [INFO]: [0mGET /player-stats/15471 [32m200[0m 14.667 ms - -[0m
+2025-06-23 13:24:36 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 2.130 ms - -[0m
+2025-06-23 13:24:37 [INFO]: [0mGET /favicon.ico [33m404[0m 2.567 ms - 120[0m
+2025-06-23 13:24:37 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 13:24:37 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 145.224 ms - -[0m
+2025-06-23 13:24:38 [INFO]: 📡 GET /15471
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471",
+  "userId": null
+}
+2025-06-23 13:24:38 [INFO]: [0mGET /api/v1/players/15471 [32m200[0m 928.093 ms - 294[0m
+2025-06-23 13:24:38 [INFO]: 📡 GET /15471/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/matches",
+  "userId": null
+}
+2025-06-23 13:24:38 [INFO]: [0mGET /api/v1/players/15471/matches?limit=100&offset=0 [32m200[0m 140.968 ms - -[0m
+2025-06-23 13:24:38 [INFO]: 📡 GET /15471/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/stats",
+  "userId": null
+}
+2025-06-23 13:24:38 [INFO]: [0mGET /api/v1/players/15471/stats [32m200[0m 162.521 ms - -[0m
+2025-06-23 13:31:26 [INFO]: ✅ Configuration validée
+2025-06-23 13:31:27 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 13:31:27 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 13:31:27 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 13:31:27 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 13:31:27 [INFO]: 🌍 Environment: development
+2025-06-23 13:31:27 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 13:31:27 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 13:31:45 [INFO]: ✅ Configuration validée
+2025-06-23 13:31:46 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 13:31:46 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 13:31:46 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 13:31:46 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 13:31:46 [INFO]: 🌍 Environment: development
+2025-06-23 13:31:46 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 13:31:46 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 13:33:42 [INFO]: [0mGET /player-stats/15471 [32m200[0m 26.721 ms - -[0m
+2025-06-23 13:33:42 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 7.523 ms - -[0m
+2025-06-23 13:33:43 [INFO]: [0mGET /favicon.ico [33m404[0m 4.855 ms - 120[0m
+2025-06-23 13:33:43 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 13:33:43 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 125.986 ms - -[0m
+2025-06-23 13:33:43 [INFO]: 📡 GET /15471
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471",
+  "userId": null
+}
+2025-06-23 13:33:43 [INFO]: [0mGET /api/v1/players/15471 [36m304[0m 782.946 ms - -[0m
+2025-06-23 13:33:43 [INFO]: 📡 GET /15471/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/matches",
+  "userId": null
+}
+2025-06-23 13:33:43 [INFO]: [0mGET /api/v1/players/15471/matches?limit=100&offset=0 [36m304[0m 99.524 ms - -[0m
+2025-06-23 13:33:44 [INFO]: 📡 GET /15471/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/stats",
+  "userId": null
+}
+2025-06-23 13:33:44 [INFO]: [0mGET /api/v1/players/15471/stats [32m200[0m 329.654 ms - -[0m
+2025-06-23 13:37:57 [INFO]: [0mGET /player-stats/22096 [32m200[0m 7.676 ms - -[0m
+2025-06-23 13:37:57 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 3.459 ms - -[0m
+2025-06-23 13:37:58 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 13:37:58 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 169.992 ms - -[0m
+2025-06-23 13:37:58 [INFO]: 📡 GET /22096
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096",
+  "userId": null
+}
+2025-06-23 13:37:58 [INFO]: [0mGET /api/v1/players/22096 [32m200[0m 761.196 ms - 289[0m
+2025-06-23 13:37:59 [INFO]: 📡 GET /22096/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096/matches",
+  "userId": null
+}
+2025-06-23 13:37:59 [INFO]: [0mGET /api/v1/players/22096/matches?limit=100&offset=0 [32m200[0m 186.749 ms - -[0m
+2025-06-23 13:37:59 [INFO]: 📡 GET /22096/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096/stats",
+  "userId": null
+}
+2025-06-23 13:37:59 [INFO]: [0mGET /api/v1/players/22096/stats [32m200[0m 654.089 ms - -[0m
+2025-06-23 14:15:58 [INFO]: ✅ Configuration validée
+2025-06-23 14:15:59 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 14:16:00 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 14:16:00 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 14:16:00 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 14:16:00 [INFO]: 🌍 Environment: development
+2025-06-23 14:16:00 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 14:16:00 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 14:17:30 [INFO]: ✅ Configuration validée
+2025-06-23 14:17:31 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 14:17:31 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 14:17:31 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 14:17:31 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 14:17:31 [INFO]: 🌍 Environment: development
+2025-06-23 14:17:31 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 14:17:31 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 14:17:48 [INFO]: ✅ Configuration validée
+2025-06-23 14:17:49 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 14:17:49 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 14:17:49 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 14:17:49 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 14:17:49 [INFO]: 🌍 Environment: development
+2025-06-23 14:17:49 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 14:17:49 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 14:26:06 [INFO]: ✅ Configuration validée
+2025-06-23 14:26:07 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 14:26:07 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 14:26:07 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 14:26:07 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 14:26:07 [INFO]: 🌍 Environment: development
+2025-06-23 14:26:07 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 14:26:07 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 14:26:14 [INFO]: ✅ Configuration validée
+2025-06-23 14:26:15 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 14:26:15 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 14:26:15 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 14:26:15 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 14:26:15 [INFO]: 🌍 Environment: development
+2025-06-23 14:26:15 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 14:26:15 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 14:26:20 [INFO]: ✅ Configuration validée
+2025-06-23 14:26:21 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 14:26:21 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 14:26:21 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 14:26:21 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 14:26:21 [INFO]: 🌍 Environment: development
+2025-06-23 14:26:21 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 14:26:21 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 14:26:47 [INFO]: ✅ Configuration validée
+2025-06-23 14:26:48 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 14:26:48 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 14:26:48 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 14:26:48 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 14:26:48 [INFO]: 🌍 Environment: development
+2025-06-23 14:26:48 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 14:26:48 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 14:42:28 [INFO]: ✅ Configuration validée
+2025-06-23 14:42:29 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 14:42:29 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 14:42:29 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 14:42:29 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 14:42:29 [INFO]: 🌍 Environment: development
+2025-06-23 14:42:29 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 14:42:29 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 14:42:36 [INFO]: ✅ Configuration validée
+2025-06-23 14:42:36 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 14:42:37 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 14:42:37 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 14:42:37 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 14:42:37 [INFO]: 🌍 Environment: development
+2025-06-23 14:42:37 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 14:42:37 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 14:46:43 [INFO]: [0mGET /player-stats/15471 [36m304[0m 47.950 ms - -[0m
+2025-06-23 14:46:44 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.704 ms - -[0m
+2025-06-23 14:46:44 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 14:46:44 [INFO]: [0mGET /api/v1/players/tournament-types [32m200[0m 207.434 ms - 89[0m
+2025-06-23 14:46:45 [INFO]: 📡 GET /15471
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471",
+  "userId": null
+}
+2025-06-23 14:46:45 [INFO]: [0mGET /api/v1/players/15471 [32m200[0m 872.101 ms - 294[0m
+2025-06-23 14:46:46 [INFO]: 📡 GET /15471/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/matches",
+  "userId": null
+}
+2025-06-23 14:46:46 [INFO]: [0mGET /api/v1/players/15471/matches?limit=100&offset=0 [32m200[0m 113.779 ms - -[0m
+2025-06-23 14:46:46 [INFO]: 📡 GET /15471/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/stats",
+  "userId": null
+}
+2025-06-23 14:46:46 [INFO]: [0mGET /api/v1/players/15471/stats [32m200[0m 289.028 ms - -[0m
+2025-06-23 15:22:09 [INFO]: ✅ Configuration validée
+2025-06-23 15:22:10 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 15:22:10 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 15:22:10 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 15:22:10 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 15:22:10 [INFO]: 🌍 Environment: development
+2025-06-23 15:22:10 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 15:22:10 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 15:22:26 [INFO]: ✅ Configuration validée
+2025-06-23 15:22:27 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 15:22:27 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 15:22:27 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 15:22:27 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 15:22:27 [INFO]: 🌍 Environment: development
+2025-06-23 15:22:27 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 15:22:27 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 15:27:54 [INFO]: [0mGET /player-stats/15471 [36m304[0m 10.987 ms - -[0m
+2025-06-23 15:27:54 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.426 ms - -[0m
+2025-06-23 15:27:55 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 15:27:55 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 273.293 ms - -[0m
+2025-06-23 15:27:56 [INFO]: 📡 GET /15471
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471",
+  "userId": null
+}
+2025-06-23 15:27:56 [INFO]: [0mGET /api/v1/players/15471 [36m304[0m 931.747 ms - -[0m
+2025-06-23 15:27:56 [INFO]: 📡 GET /15471/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/matches",
+  "userId": null
+}
+2025-06-23 15:27:56 [INFO]: [0mGET /api/v1/players/15471/matches?limit=100&offset=0 [36m304[0m 133.977 ms - -[0m
+2025-06-23 15:27:56 [INFO]: 📡 GET /15471/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/stats",
+  "userId": null
+}
+2025-06-23 15:27:56 [INFO]: [0mGET /api/v1/players/15471/stats [36m304[0m 354.234 ms - -[0m
+2025-06-23 17:50:51 [INFO]: [0mGET /player-stats/15471 [32m200[0m 66.518 ms - -[0m
+2025-06-23 17:50:52 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 5.437 ms - -[0m
+2025-06-23 17:50:52 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 17:50:52 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 218.435 ms - -[0m
+2025-06-23 17:50:53 [INFO]: 📡 GET /15471
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471",
+  "userId": null
+}
+2025-06-23 17:50:53 [INFO]: [0mGET /api/v1/players/15471 [32m200[0m 712.857 ms - 294[0m
+2025-06-23 17:50:53 [INFO]: 📡 GET /15471/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/matches",
+  "userId": null
+}
+2025-06-23 17:50:53 [INFO]: [0mGET /api/v1/players/15471/matches?limit=100&offset=0 [32m200[0m 69.880 ms - -[0m
+2025-06-23 17:50:53 [INFO]: 📡 GET /15471/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/stats",
+  "userId": null
+}
+2025-06-23 17:50:53 [INFO]: [0mGET /api/v1/players/15471/stats [32m200[0m 233.361 ms - -[0m
+2025-06-23 19:56:07 [INFO]: ✅ Configuration validée
+2025-06-23 19:56:09 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 19:56:09 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 19:56:09 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 19:56:09 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 19:56:09 [INFO]: 🌍 Environment: development
+2025-06-23 19:56:09 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 19:56:09 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 19:56:22 [INFO]: ✅ Configuration validée
+2025-06-23 19:56:23 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 19:56:23 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 19:56:23 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 19:56:23 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 19:56:23 [INFO]: 🌍 Environment: development
+2025-06-23 19:56:23 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 19:56:23 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 19:58:54 [INFO]: ✅ Configuration validée
+2025-06-23 19:58:55 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-23 19:58:55 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-23 19:58:55 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-23 19:58:55 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-23 19:58:55 [INFO]: 🌍 Environment: development
+2025-06-23 19:58:55 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-23 19:58:55 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-23 20:10:27 [INFO]: [0mGET //tournament-results [33m404[0m 38.917 ms - 128[0m
+2025-06-23 20:10:33 [INFO]: [0mGET /tournament-results [36m301[0m 7.507 ms - 168[0m
+2025-06-23 20:10:33 [INFO]: [0mGET /tournament-results/ [32m200[0m 9.613 ms - -[0m
+2025-06-23 20:10:34 [INFO]: [0mGET /tournament-results/tournament-results.js [32m200[0m 3.607 ms - -[0m
+2025-06-23 20:10:34 [INFO]: [0mGET /favicon.ico [33m404[0m 1.148 ms - 120[0m
+2025-06-23 20:10:49 [INFO]: 📡 GET /search
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/search",
+  "userId": null
+}
+2025-06-23 20:10:49 [INFO]: [0mGET /api/v1/tournaments/search?name=Mallorca&year=2025&tour=ATP [32m200[0m 221.941 ms - 204[0m
+2025-06-23 20:10:51 [INFO]: 📡 GET /20094
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/20094",
+  "userId": null
+}
+2025-06-23 20:10:51 [INFO]: [0mGET /api/v1/tournaments/20094 [32m200[0m 6.771 ms - 269[0m
+2025-06-23 20:10:51 [INFO]: 📡 GET /20094/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/20094/matches",
+  "userId": null
+}
+2025-06-23 20:10:51 [INFO]: [0mGET /api/v1/tournaments/20094/matches?limit=100&offset=0 [32m200[0m 53.161 ms - -[0m
+2025-06-23 20:11:26 [INFO]: 📡 GET /search
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/search",
+  "userId": null
+}
+2025-06-23 20:11:26 [INFO]: [0mGET /api/v1/tournaments/search?name=Mallorca&year=2024&tour=ATP [32m200[0m 88.903 ms - 204[0m
+2025-06-23 20:11:35 [INFO]: 📡 GET /search
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/search",
+  "userId": null
+}
+2025-06-23 20:11:35 [INFO]: [0mGET /api/v1/tournaments/search?name=Mallorca&year=2024&tour=ATP [36m304[0m 26.948 ms - -[0m
+2025-06-23 20:11:47 [INFO]: 📡 GET /20094/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/20094/matches",
+  "userId": null
+}
+2025-06-23 20:11:47 [INFO]: [0mGET /api/v1/tournaments/20094/matches?limit=100&offset=0 [36m304[0m 112.517 ms - -[0m
+2025-06-23 20:11:55 [INFO]: 📡 GET /search
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/search",
+  "userId": null
+}
+2025-06-23 20:11:55 [INFO]: [0mGET /api/v1/tournaments/search?name=Mallorca&year=2023&tour=ATP [32m200[0m 28.280 ms - 367[0m
+2025-06-23 20:12:19 [INFO]: [0mGET /player-stats/22096 [32m200[0m 6.385 ms - -[0m
+2025-06-23 20:12:20 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 2.345 ms - -[0m
+2025-06-23 20:12:20 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 20:12:20 [INFO]: [0mGET /api/v1/players/tournament-types [32m200[0m 160.901 ms - 89[0m
+2025-06-23 20:12:21 [INFO]: 📡 GET /22096
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096",
+  "userId": null
+}
+2025-06-23 20:12:21 [INFO]: [0mGET /api/v1/players/22096 [32m200[0m 1043.427 ms - 289[0m
+2025-06-23 20:12:22 [INFO]: 📡 GET /22096/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096/matches",
+  "userId": null
+}
+2025-06-23 20:12:22 [INFO]: [0mGET /api/v1/players/22096/matches?limit=100&offset=0 [32m200[0m 130.409 ms - -[0m
+2025-06-23 20:12:22 [INFO]: 📡 GET /22096/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096/stats",
+  "userId": null
+}
+2025-06-23 20:12:22 [INFO]: [0mGET /api/v1/players/22096/stats [32m200[0m 414.762 ms - -[0m
+2025-06-23 20:12:30 [INFO]: [0mGET /tournament-results?search=Open%2013%20Provence%20-%20Marseille&year=2025 [36m301[0m 1.107 ms - 226[0m
+2025-06-23 20:12:30 [INFO]: [0mGET /tournament-results/?search=Open%2013%20Provence%20-%20Marseille&year=2025 [32m200[0m 1.581 ms - -[0m
+2025-06-23 20:12:30 [INFO]: [0mGET /tournament-results/tournament-results.js [36m304[0m 1.417 ms - -[0m
+2025-06-23 20:12:31 [INFO]: 📡 GET /search
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/search",
+  "userId": null
+}
+2025-06-23 20:12:31 [INFO]: [0mGET /api/v1/tournaments/search?name=Open%2013%20Provence%20-%20Marseille&year=2025 [32m200[0m 27.393 ms - 200[0m
+2025-06-23 20:12:35 [INFO]: 📡 GET /search
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/search",
+  "userId": null
+}
+2025-06-23 20:12:35 [INFO]: [0mGET /api/v1/tournaments/search?name=Open%2013%20Provence%20-%20Marseille&year=2025 [36m304[0m 29.861 ms - -[0m
+2025-06-23 20:12:48 [INFO]: 📡 GET /search
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/search",
+  "userId": null
+}
+2025-06-23 20:12:48 [INFO]: [0mGET /api/v1/tournaments/search?name=Open%2013%20Provence%20-%20Marseille&year=2025&tour=ATP [32m200[0m 85.315 ms - 200[0m
+2025-06-23 20:12:51 [INFO]: 📡 GET /19754
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/19754",
+  "userId": null
+}
+2025-06-23 20:12:51 [INFO]: [0mGET /api/v1/tournaments/19754 [32m200[0m 4.133 ms - 265[0m
+2025-06-23 20:12:51 [INFO]: 📡 GET /19754/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/19754/matches",
+  "userId": null
+}
+2025-06-23 20:12:51 [INFO]: [0mGET /api/v1/tournaments/19754/matches?limit=100&offset=0 [32m200[0m 22.504 ms - -[0m
+2025-06-23 20:13:04 [INFO]: 📡 GET /search
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/search",
+  "userId": null
+}
+2025-06-23 20:13:04 [INFO]: [0mGET /api/v1/tournaments/search?name=Open%2013%20Provence%20-%20Marseille&year=2023&tour=ATP [32m200[0m 87.098 ms - 200[0m
+2025-06-23 20:13:06 [INFO]: 📡 GET /17928
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/17928",
+  "userId": null
+}
+2025-06-23 20:13:06 [INFO]: [0mGET /api/v1/tournaments/17928 [32m200[0m 6.428 ms - 265[0m
+2025-06-23 20:13:07 [INFO]: 📡 GET /17928/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/17928/matches",
+  "userId": null
+}
+2025-06-23 20:13:07 [INFO]: [0mGET /api/v1/tournaments/17928/matches?limit=100&offset=0 [32m200[0m 18.219 ms - -[0m
+2025-06-23 20:35:47 [INFO]: [0mGET /player-stats/22096 [36m304[0m 88.526 ms - -[0m
+2025-06-23 20:35:47 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.433 ms - -[0m
+2025-06-23 20:35:47 [INFO]: [0mGET /favicon.ico [33m404[0m 6.930 ms - 120[0m
+2025-06-23 20:35:47 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 20:35:47 [INFO]: [0mGET /api/v1/players/tournament-types [32m200[0m 209.475 ms - 89[0m
+2025-06-23 20:35:48 [INFO]: 📡 GET /22096
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096",
+  "userId": null
+}
+2025-06-23 20:35:48 [INFO]: [0mGET /api/v1/players/22096 [32m200[0m 853.270 ms - 289[0m
+2025-06-23 20:35:48 [INFO]: 📡 GET /22096/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096/matches",
+  "userId": null
+}
+2025-06-23 20:35:48 [INFO]: [0mGET /api/v1/players/22096/matches?limit=100&offset=0 [32m200[0m 256.183 ms - -[0m
+2025-06-23 20:35:49 [INFO]: 📡 GET /22096/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22096/stats",
+  "userId": null
+}
+2025-06-23 20:35:49 [INFO]: [0mGET /api/v1/players/22096/stats [32m200[0m 683.801 ms - -[0m
+2025-06-23 20:37:41 [INFO]: [0mGET /tournament-results?search=Rothesay%20International%20-%20Eastbourne&year=2025 [36m301[0m 3.732 ms - 231[0m
+2025-06-23 20:37:41 [INFO]: [0mGET /tournament-results/?search=Rothesay%20International%20-%20Eastbourne&year=2025 [32m200[0m 18.133 ms - -[0m
+2025-06-23 20:37:41 [INFO]: [0mGET /tournament-results/tournament-results.js [36m304[0m 0.877 ms - -[0m
+2025-06-23 20:37:41 [INFO]: 📡 GET /search
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/search",
+  "userId": null
+}
+2025-06-23 20:37:41 [INFO]: [0mGET /api/v1/tournaments/search?name=Rothesay%20International%20-%20Eastbourne&year=2025 [32m200[0m 100.176 ms - 379[0m
+2025-06-23 20:37:45 [INFO]: 📡 GET /20108
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/20108",
+  "userId": null
+}
+2025-06-23 20:37:45 [INFO]: [0mGET /api/v1/tournaments/20108 [32m200[0m 4.032 ms - 271[0m
+2025-06-23 20:37:45 [INFO]: 📡 GET /20108/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/20108/matches",
+  "userId": null
+}
+2025-06-23 20:37:45 [INFO]: [0mGET /api/v1/tournaments/20108/matches?limit=100&offset=0 [32m200[0m 17.579 ms - -[0m
+2025-06-23 21:01:12 [INFO]: [0mGET /tournament-results/?search=Rothesay%20International%20-%20Eastbourne&year=2025 [36m304[0m 15.602 ms - -[0m
+2025-06-23 21:01:13 [INFO]: [0mGET /tournament-results/tournament-results.js [36m304[0m 5.911 ms - -[0m
+2025-06-23 21:01:14 [INFO]: 📡 GET /search
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/search",
+  "userId": null
+}
+2025-06-23 21:01:14 [INFO]: [0mGET /api/v1/tournaments/search?name=Rothesay%20International%20-%20Eastbourne&year=2025 [36m304[0m 286.379 ms - -[0m
+2025-06-23 21:01:16 [INFO]: 📡 GET /20108
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/20108",
+  "userId": null
+}
+2025-06-23 21:01:16 [INFO]: [0mGET /api/v1/tournaments/20108 [36m304[0m 6.229 ms - -[0m
+2025-06-23 21:01:16 [INFO]: 📡 GET /20108/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/20108/matches",
+  "userId": null
+}
+2025-06-23 21:01:16 [INFO]: [0mGET /api/v1/tournaments/20108/matches?limit=100&offset=0 [32m200[0m 64.527 ms - -[0m
+2025-06-23 21:51:46 [INFO]: [0mGET /player-stats/34676 [32m200[0m 112.745 ms - -[0m
+2025-06-23 21:51:46 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 2.038 ms - -[0m
+2025-06-23 21:51:48 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 21:51:48 [INFO]: [0mGET /api/v1/players/tournament-types [32m200[0m 482.674 ms - 89[0m
+2025-06-23 21:51:49 [INFO]: 📡 GET /34676
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34676",
+  "userId": null
+}
+2025-06-23 21:51:49 [INFO]: [0mGET /api/v1/players/34676 [32m200[0m 1761.796 ms - 302[0m
+2025-06-23 21:51:52 [INFO]: 📡 GET /34676/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34676/matches",
+  "userId": null
+}
+2025-06-23 21:51:52 [INFO]: [0mGET /api/v1/players/34676/matches?limit=100&offset=0 [32m200[0m 175.034 ms - -[0m
+2025-06-23 21:51:52 [INFO]: 📡 GET /34676/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/34676/stats",
+  "userId": null
+}
+2025-06-23 21:51:52 [INFO]: [0mGET /api/v1/players/34676/stats [32m200[0m 483.221 ms - -[0m
+2025-06-23 21:53:00 [INFO]: [0mGET /player-stats/1079 [32m200[0m 2.012 ms - -[0m
+2025-06-23 21:53:00 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.747 ms - -[0m
+2025-06-23 21:53:00 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 21:53:00 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 151.183 ms - -[0m
+2025-06-23 21:53:01 [INFO]: 📡 GET /1079
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/1079",
+  "userId": null
+}
+2025-06-23 21:53:01 [INFO]: [0mGET /api/v1/players/1079 [32m200[0m 735.203 ms - 293[0m
+2025-06-23 21:53:01 [INFO]: 📡 GET /1079/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/1079/matches",
+  "userId": null
+}
+2025-06-23 21:53:01 [INFO]: [0mGET /api/v1/players/1079/matches?limit=100&offset=0 [32m200[0m 154.316 ms - -[0m
+2025-06-23 21:53:02 [INFO]: 📡 GET /1079/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/1079/stats",
+  "userId": null
+}
+2025-06-23 21:53:02 [INFO]: [0mGET /api/v1/players/1079/stats [32m200[0m 1065.767 ms - -[0m
+2025-06-23 21:55:35 [INFO]: [0mGET /tournament-results?search=Mallorca%20Championships%20-%20Mallorca&year=2025 [36m301[0m 9.507 ms - 229[0m
+2025-06-23 21:55:35 [INFO]: [0mGET /tournament-results/?search=Mallorca%20Championships%20-%20Mallorca&year=2025 [32m200[0m 6.746 ms - -[0m
+2025-06-23 21:55:35 [INFO]: [0mGET /tournament-results/tournament-results.js [36m304[0m 1.363 ms - -[0m
+2025-06-23 21:55:36 [INFO]: 📡 GET /search
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/search",
+  "userId": null
+}
+2025-06-23 21:55:36 [INFO]: [0mGET /api/v1/tournaments/search?name=Mallorca%20Championships%20-%20Mallorca&year=2025 [32m200[0m 246.713 ms - 204[0m
+2025-06-23 21:55:51 [INFO]: 📡 GET /20094
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/20094",
+  "userId": null
+}
+2025-06-23 21:55:51 [INFO]: [0mGET /api/v1/tournaments/20094 [32m200[0m 54.302 ms - 269[0m
+2025-06-23 21:55:51 [INFO]: 📡 GET /20094/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/20094/matches",
+  "userId": null
+}
+2025-06-23 21:55:51 [INFO]: [0mGET /api/v1/tournaments/20094/matches?limit=100&offset=0 [32m200[0m 17.143 ms - -[0m
+2025-06-23 21:56:51 [INFO]: [0mGET /player-stats [36m301[0m 4.007 ms - 162[0m
+2025-06-23 21:56:51 [INFO]: [0mGET /player-stats/ [32m200[0m 3.507 ms - -[0m
+2025-06-23 21:56:51 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.625 ms - -[0m
+2025-06-23 21:56:52 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 21:56:52 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 114.225 ms - -[0m
+2025-06-23 21:56:55 [INFO]: [0mGET /rankings [36m301[0m 1.951 ms - 158[0m
+2025-06-23 21:56:55 [INFO]: [0mGET /rankings/ [32m200[0m 3.597 ms - -[0m
+2025-06-23 21:56:55 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 5.562 ms - -[0m
+2025-06-23 21:56:57 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [32m200[0m 1372.768 ms - -[0m
+2025-06-23 21:56:58 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-23 21:56:58 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=100 [32m200[0m 893.104 ms - -[0m
+2025-06-23 21:57:11 [INFO]: [0mGET /player-stats/15471 [32m200[0m 2.815 ms - -[0m
+2025-06-23 21:57:12 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.523 ms - -[0m
+2025-06-23 21:57:12 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 21:57:12 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 116.269 ms - -[0m
+2025-06-23 21:57:13 [INFO]: 📡 GET /15471
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471",
+  "userId": null
+}
+2025-06-23 21:57:13 [INFO]: [0mGET /api/v1/players/15471 [32m200[0m 694.387 ms - 294[0m
+2025-06-23 21:57:13 [INFO]: 📡 GET /15471/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/matches",
+  "userId": null
+}
+2025-06-23 21:57:13 [INFO]: [0mGET /api/v1/players/15471/matches?limit=100&offset=0 [32m200[0m 94.691 ms - -[0m
+2025-06-23 21:57:13 [INFO]: 📡 GET /15471/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/stats",
+  "userId": null
+}
+2025-06-23 21:57:13 [INFO]: [0mGET /api/v1/players/15471/stats [32m200[0m 242.634 ms - -[0m
+2025-06-23 21:57:29 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-23 21:57:29 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=200 [32m200[0m 512.535 ms - -[0m
+2025-06-23 21:57:30 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-23 21:57:30 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=200 [36m304[0m 493.719 ms - -[0m
+2025-06-23 21:57:44 [INFO]: [0mGET /player-stats/25105 [32m200[0m 1.962 ms - -[0m
+2025-06-23 21:57:44 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.952 ms - -[0m
+2025-06-23 21:57:45 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-23 21:57:45 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 143.928 ms - -[0m
+2025-06-23 21:57:45 [INFO]: 📡 GET /25105
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105",
+  "userId": null
+}
+2025-06-23 21:57:45 [INFO]: [0mGET /api/v1/players/25105 [32m200[0m 542.936 ms - 291[0m
+2025-06-23 21:57:45 [INFO]: 📡 GET /25105/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/matches",
+  "userId": null
+}
+2025-06-23 21:57:45 [INFO]: [0mGET /api/v1/players/25105/matches?limit=100&offset=0 [32m200[0m 66.500 ms - -[0m
+2025-06-23 21:57:45 [INFO]: 📡 GET /25105/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/stats",
+  "userId": null
+}
+2025-06-23 21:57:45 [INFO]: [0mGET /api/v1/players/25105/stats [32m200[0m 284.214 ms - -[0m
+2025-06-24 19:40:36 [INFO]: [0mGET /player-stats/15471 [32m200[0m 205.992 ms - -[0m
+2025-06-24 19:40:42 [INFO]: [0mGET /api/v1/players/tournament-types [0m-[0m - ms - -[0m
+2025-06-24 19:40:44 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-24 19:40:47 [INFO]: 📡 GET /15471
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471",
+  "userId": null
+}
+2025-06-24 19:40:47 [INFO]: [0mGET /api/v1/players/15471 [32m200[0m 4621.848 ms - 294[0m
+2025-06-24 19:40:50 [INFO]: 📡 GET /15471/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/matches",
+  "userId": null
+}
+2025-06-24 19:40:50 [INFO]: [0mGET /api/v1/players/15471/matches?limit=100&offset=0 [32m200[0m 290.597 ms - -[0m
+2025-06-24 19:40:50 [INFO]: 📡 GET /15471/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/stats",
+  "userId": null
+}
+2025-06-24 19:40:50 [INFO]: [0mGET /api/v1/players/15471/stats [32m200[0m 619.761 ms - -[0m
+2025-06-24 19:43:29 [INFO]: [0mGET /player-stats/15471 [32m200[0m 15.378 ms - -[0m
+2025-06-24 19:43:29 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 16.185 ms - -[0m
+2025-06-24 19:43:30 [INFO]: [0mGET /favicon.ico [33m404[0m 44.079 ms - 120[0m
+2025-06-24 19:43:31 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-24 19:43:31 [INFO]: [0mGET /api/v1/players/tournament-types [32m200[0m 422.367 ms - 89[0m
+2025-06-24 19:43:33 [INFO]: 📡 GET /15471
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471",
+  "userId": null
+}
+2025-06-24 19:43:33 [INFO]: [0mGET /api/v1/players/15471 [32m200[0m 2487.763 ms - 294[0m
+2025-06-24 19:43:37 [INFO]: 📡 GET /15471/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/matches",
+  "userId": null
+}
+2025-06-24 19:43:37 [INFO]: [0mGET /api/v1/players/15471/matches?limit=100&offset=0 [32m200[0m 249.568 ms - -[0m
+2025-06-24 19:43:37 [INFO]: 📡 GET /15471/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/15471/stats",
+  "userId": null
+}
+2025-06-24 19:43:37 [INFO]: [0mGET /api/v1/players/15471/stats [32m200[0m 545.846 ms - -[0m
+2025-06-24 19:43:55 [INFO]: [0mGET /player-stats/25105 [32m200[0m 59.412 ms - -[0m
+2025-06-24 19:43:55 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.075 ms - -[0m
+2025-06-24 19:43:56 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-24 19:43:56 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 147.382 ms - -[0m
+2025-06-24 19:43:56 [INFO]: 📡 GET /25105
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105",
+  "userId": null
+}
+2025-06-24 19:43:56 [INFO]: [0mGET /api/v1/players/25105 [32m200[0m 882.331 ms - 291[0m
+2025-06-24 19:43:56 [INFO]: 📡 GET /25105/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/matches",
+  "userId": null
+}
+2025-06-24 19:43:56 [INFO]: [0mGET /api/v1/players/25105/matches?limit=100&offset=0 [32m200[0m 66.694 ms - -[0m
+2025-06-24 19:43:56 [INFO]: 📡 GET /25105/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/stats",
+  "userId": null
+}
+2025-06-24 19:43:56 [INFO]: [0mGET /api/v1/players/25105/stats [32m200[0m 203.569 ms - -[0m
+2025-06-24 20:29:52 [INFO]: ✅ Configuration validée
+2025-06-24 20:29:55 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-24 20:29:55 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-24 20:29:55 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-24 20:29:55 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-24 20:29:55 [INFO]: 🌍 Environment: development
+2025-06-24 20:29:55 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-24 20:29:55 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-24 20:36:57 [INFO]: [0mGET /player-stats/25105 [32m200[0m 59.035 ms - -[0m
+2025-06-24 20:36:57 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 4.744 ms - -[0m
+2025-06-24 20:36:57 [INFO]: [0mGET /favicon.ico [33m404[0m 18.053 ms - 120[0m
+2025-06-24 20:36:58 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-24 20:36:58 [INFO]: [0mGET /api/v1/players/tournament-types [32m200[0m 278.453 ms - 89[0m
+2025-06-24 20:36:59 [INFO]: 📡 GET /25105
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105",
+  "userId": null
+}
+2025-06-24 20:36:59 [INFO]: [0mGET /api/v1/players/25105 [32m200[0m 1398.203 ms - 291[0m
+2025-06-24 20:37:00 [INFO]: 📡 GET /25105/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/matches",
+  "userId": null
+}
+2025-06-24 20:37:00 [INFO]: [0mGET /api/v1/players/25105/matches?limit=100&offset=0 [32m200[0m 75.312 ms - -[0m
+2025-06-24 20:37:00 [INFO]: 📡 GET /25105/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/stats",
+  "userId": null
+}
+2025-06-24 20:37:00 [INFO]: [0mGET /api/v1/players/25105/stats [36m304[0m 187.624 ms - -[0m
+2025-06-24 21:55:37 [INFO]: [0mGET /player-stats/25105 [32m200[0m 73.229 ms - -[0m
+2025-06-24 21:55:37 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 14.319 ms - -[0m
+2025-06-24 21:55:37 [INFO]: [0mGET /favicon.ico [33m404[0m 9.491 ms - 120[0m
+2025-06-24 21:55:38 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-24 21:55:38 [INFO]: [0mGET /api/v1/players/tournament-types [32m200[0m 246.602 ms - 89[0m
+2025-06-24 21:55:39 [INFO]: 📡 GET /25105
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105",
+  "userId": null
+}
+2025-06-24 21:55:39 [INFO]: [0mGET /api/v1/players/25105 [32m200[0m 1265.688 ms - 291[0m
+2025-06-24 21:55:40 [INFO]: 📡 GET /25105/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/matches",
+  "userId": null
+}
+2025-06-24 21:55:40 [INFO]: [0mGET /api/v1/players/25105/matches?limit=100&offset=0 [32m200[0m 61.736 ms - -[0m
+2025-06-24 21:55:40 [INFO]: 📡 GET /25105/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/stats",
+  "userId": null
+}
+2025-06-24 21:55:40 [INFO]: [0mGET /api/v1/players/25105/stats [32m200[0m 159.423 ms - -[0m
+2025-06-24 23:06:35 [INFO]: 📡 GET /25105/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/matches",
+  "userId": null
+}
+2025-06-24 23:06:35 [INFO]: [0mGET /api/v1/players/25105/matches?limit=100&offset=0&surface=Clay [32m200[0m 574.095 ms - -[0m
+2025-06-24 23:22:12 [INFO]: 📡 GET /25105/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/matches",
+  "userId": null
+}
+2025-06-24 23:22:12 [INFO]: [0mGET /api/v1/players/25105/matches?limit=100&offset=0 [32m200[0m 512.903 ms - -[0m
+2025-06-24 23:23:08 [INFO]: 📡 GET /25105/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/matches",
+  "userId": null
+}
+2025-06-24 23:23:08 [INFO]: [0mGET /api/v1/players/25105/matches?limit=100&offset=100 [32m200[0m 129.915 ms - -[0m
+2025-06-24 23:23:38 [INFO]: 📡 GET /25105/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/matches",
+  "userId": null
+}
+2025-06-24 23:23:38 [INFO]: [0mGET /api/v1/players/25105/matches?limit=100&offset=200 [32m200[0m 112.928 ms - -[0m
+2025-06-24 23:24:01 [INFO]: 📡 GET /25105/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/matches",
+  "userId": null
+}
+2025-06-24 23:24:01 [INFO]: [0mGET /api/v1/players/25105/matches?limit=100&offset=300 [32m200[0m 200.720 ms - -[0m
+2025-06-24 23:31:39 [INFO]: [0mGET /tournament-results?search=Mallorca%20Championships%20-%20Mallorca&year=2025 [36m301[0m 68.553 ms - 229[0m
+2025-06-24 23:31:40 [INFO]: [0mGET /tournament-results/?search=Mallorca%20Championships%20-%20Mallorca&year=2025 [32m200[0m 12.383 ms - -[0m
+2025-06-24 23:31:40 [INFO]: [0mGET /tournament-results/tournament-results.js [36m304[0m 5.744 ms - -[0m
+2025-06-24 23:31:40 [INFO]: [0mGET /favicon.ico [33m404[0m 3.314 ms - 120[0m
+2025-06-24 23:31:41 [INFO]: 📡 GET /search
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/search",
+  "userId": null
+}
+2025-06-24 23:31:41 [INFO]: [0mGET /api/v1/tournaments/search?name=Mallorca%20Championships%20-%20Mallorca&year=2025 [32m200[0m 566.116 ms - 204[0m
+2025-06-24 23:56:54 [INFO]: [0mGET /player-stats/25105 [32m200[0m 20.623 ms - -[0m
+2025-06-24 23:56:54 [INFO]: [0mGET /player-stats/player-stats.js [32m200[0m 5.141 ms - -[0m
+2025-06-24 23:56:54 [INFO]: [0mGET /favicon.ico [33m404[0m 1.357 ms - 120[0m
+2025-06-24 23:56:55 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-24 23:56:55 [INFO]: [0mGET /api/v1/players/tournament-types [32m200[0m 198.758 ms - 89[0m
+2025-06-24 23:56:56 [INFO]: 📡 GET /25105
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105",
+  "userId": null
+}
+2025-06-24 23:56:56 [INFO]: [0mGET /api/v1/players/25105 [32m200[0m 1338.937 ms - 291[0m
+2025-06-24 23:56:57 [INFO]: 📡 GET /25105/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/matches",
+  "userId": null
+}
+2025-06-24 23:56:57 [INFO]: [0mGET /api/v1/players/25105/matches?limit=100&offset=0 [32m200[0m 97.767 ms - -[0m
+2025-06-24 23:56:57 [INFO]: 📡 GET /25105/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/stats",
+  "userId": null
+}
+2025-06-24 23:56:57 [INFO]: [0mGET /api/v1/players/25105/stats [32m200[0m 280.033 ms - -[0m
+2025-06-25 10:43:13 [INFO]: [0mGET /player-stats/25105 [36m304[0m 14.270 ms - -[0m
+2025-06-25 10:43:13 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 4.894 ms - -[0m
+2025-06-25 10:43:14 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-25 10:43:14 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 279.810 ms - -[0m
+2025-06-25 10:43:14 [INFO]: 📡 GET /25105
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105",
+  "userId": null
+}
+2025-06-25 10:43:14 [INFO]: [0mGET /api/v1/players/25105 [36m304[0m 729.437 ms - -[0m
+2025-06-25 10:43:15 [INFO]: 📡 GET /25105/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/matches",
+  "userId": null
+}
+2025-06-25 10:43:15 [INFO]: [0mGET /api/v1/players/25105/matches?limit=100&offset=0 [32m200[0m 84.111 ms - -[0m
+2025-06-25 10:43:15 [INFO]: 📡 GET /25105/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/stats",
+  "userId": null
+}
+2025-06-25 10:43:15 [INFO]: [0mGET /api/v1/players/25105/stats [32m200[0m 207.305 ms - -[0m
+2025-06-25 10:49:24 [INFO]: [0mGET /player-stats/25105 [36m304[0m 5.200 ms - -[0m
+2025-06-25 10:49:24 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.414 ms - -[0m
+2025-06-25 10:49:24 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-25 10:49:24 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 117.007 ms - -[0m
+2025-06-25 10:49:25 [INFO]: 📡 GET /25105
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105",
+  "userId": null
+}
+2025-06-25 10:49:25 [INFO]: [0mGET /api/v1/players/25105 [36m304[0m 332.061 ms - -[0m
+2025-06-25 10:49:25 [INFO]: 📡 GET /25105/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/matches",
+  "userId": null
+}
+2025-06-25 10:49:25 [INFO]: [0mGET /api/v1/players/25105/matches?limit=100&offset=0 [32m200[0m 76.118 ms - -[0m
+2025-06-25 10:49:25 [INFO]: 📡 GET /25105/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/stats",
+  "userId": null
+}
+2025-06-25 10:49:25 [INFO]: [0mGET /api/v1/players/25105/stats [32m200[0m 213.347 ms - -[0m
+2025-06-25 11:05:31 [INFO]: [0mGET /player-stats/25105 [36m304[0m 15.603 ms - -[0m
+2025-06-25 11:05:31 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.729 ms - -[0m
+2025-06-25 11:05:32 [INFO]: [0mGET /favicon.ico [33m404[0m 11.602 ms - 120[0m
+2025-06-25 11:05:32 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-25 11:05:32 [INFO]: [0mGET /api/v1/players/tournament-types [32m200[0m 342.499 ms - 89[0m
+2025-06-25 11:05:33 [INFO]: 📡 GET /25105
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105",
+  "userId": null
+}
+2025-06-25 11:05:33 [INFO]: [0mGET /api/v1/players/25105 [32m200[0m 1262.333 ms - 291[0m
+2025-06-25 11:05:33 [INFO]: 📡 GET /25105/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/matches",
+  "userId": null
+}
+2025-06-25 11:05:33 [INFO]: [0mGET /api/v1/players/25105/matches?limit=100&offset=0 [32m200[0m 121.402 ms - -[0m
+2025-06-25 11:05:34 [INFO]: 📡 GET /25105/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/stats",
+  "userId": null
+}
+2025-06-25 11:05:34 [INFO]: [0mGET /api/v1/players/25105/stats [32m200[0m 341.622 ms - -[0m
+2025-06-25 11:09:41 [INFO]: [0mGET /player-stats/25105 [36m304[0m 1.657 ms - -[0m
+2025-06-25 11:09:41 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 1.040 ms - -[0m
+2025-06-25 11:09:41 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-25 11:09:41 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 140.039 ms - -[0m
+2025-06-25 11:09:42 [INFO]: 📡 GET /25105
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105",
+  "userId": null
+}
+2025-06-25 11:09:42 [INFO]: [0mGET /api/v1/players/25105 [36m304[0m 812.162 ms - -[0m
+2025-06-25 11:09:42 [INFO]: 📡 GET /25105/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/matches",
+  "userId": null
+}
+2025-06-25 11:09:42 [INFO]: [0mGET /api/v1/players/25105/matches?limit=100&offset=0 [36m304[0m 58.062 ms - -[0m
+2025-06-25 11:09:42 [INFO]: 📡 GET /25105/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/stats",
+  "userId": null
+}
+2025-06-25 11:09:42 [INFO]: [0mGET /api/v1/players/25105/stats [36m304[0m 151.585 ms - -[0m
+2025-06-25 11:09:50 [INFO]: 📡 GET /25105/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/matches",
+  "userId": null
+}
+2025-06-25 11:09:50 [INFO]: [0mGET /api/v1/players/25105/matches?limit=100&offset=0 [36m304[0m 45.008 ms - -[0m
+2025-06-25 11:09:50 [INFO]: 📡 GET /25105/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/25105/stats",
+  "userId": null
+}
+2025-06-25 11:09:50 [INFO]: [0mGET /api/v1/players/25105/stats [36m304[0m 158.572 ms - -[0m
+2025-06-25 11:09:54 [INFO]: [0mGET /rankings [36m301[0m 27.232 ms - 158[0m
+2025-06-25 11:09:54 [INFO]: [0mGET /rankings/ [32m200[0m 9.046 ms - -[0m
+2025-06-25 11:09:54 [INFO]: [0mGET /rankings/ranking.js [32m200[0m 4.770 ms - -[0m
+2025-06-25 11:09:54 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [32m200[0m 305.846 ms - -[0m
+2025-06-25 11:09:55 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-25 11:09:55 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=100 [32m200[0m 521.024 ms - -[0m
+2025-06-25 11:09:59 [INFO]: [0mGET /player-stats/29985 [32m200[0m 3.207 ms - -[0m
+2025-06-25 11:09:59 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 2.078 ms - -[0m
+2025-06-25 11:09:59 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-25 11:09:59 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 28.594 ms - -[0m
+2025-06-25 11:09:59 [INFO]: 📡 GET /29985
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985",
+  "userId": null
+}
+2025-06-25 11:09:59 [INFO]: [0mGET /api/v1/players/29985 [32m200[0m 307.548 ms - 293[0m
+2025-06-25 11:09:59 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-25 11:09:59 [INFO]: [0mGET /api/v1/players/29985/matches?limit=100&offset=0 [32m200[0m 56.078 ms - -[0m
+2025-06-25 11:10:00 [INFO]: 📡 GET /29985/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/stats",
+  "userId": null
+}
+2025-06-25 11:10:00 [INFO]: [0mGET /api/v1/players/29985/stats [32m200[0m 183.467 ms - -[0m
+2025-06-25 11:10:09 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-25 11:10:09 [INFO]: [0mGET /api/v1/players/29985/matches?limit=100&offset=100 [32m200[0m 33.828 ms - -[0m
+2025-06-25 11:10:13 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-25 11:10:13 [INFO]: [0mGET /api/v1/players/29985/matches?limit=100&offset=200 [32m200[0m 35.477 ms - -[0m
+2025-06-25 11:10:16 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-25 11:10:16 [INFO]: [0mGET /api/v1/players/29985/matches?limit=100&offset=300 [32m200[0m 31.920 ms - -[0m
+2025-06-25 11:10:20 [INFO]: 📡 GET /29985/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/29985/matches",
+  "userId": null
+}
+2025-06-25 11:10:20 [INFO]: [0mGET /api/v1/players/29985/matches?limit=100&offset=400 [32m200[0m 32.450 ms - -[0m

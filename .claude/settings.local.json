@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*)",
+      "Bash(npm install:*)",
+      "Bash(find:*)",
+      "Bash(npm run sync:incremental:*)",
+      "Bash(grep:*)",
+      "Bash(psql:*)",
+      "Bash(node:*)",
+      "Bash(npm run update:missing-score-fields:*)"
+    ],
+    "deny": []
+  }
+}
