@@ -2,3 +2,4 @@
 /backend/migrations/node_modules/
 /backend/.env
 /backend/migrations/.env
+/backend/migrations/add-elo-fields.js
