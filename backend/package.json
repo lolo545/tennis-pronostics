@@ -26,6 +26,7 @@
     "update:match-odds": "node migrations/update-match-odds.js",
     "update:match-scores": "node migrations/update-match-scores.js",
     "update:missing-score-fields": "node migrations/update-missing-score-fields.js",
+    "add:elo-fields": "node migrations/add-elo-fields.js",
     "fix:winner-loser": "node migrations/fix-winner-loser-logic.js",
     "debug:access": "node debug-access-tables.js",
     "test:queries": "node test-simple-queries.js",

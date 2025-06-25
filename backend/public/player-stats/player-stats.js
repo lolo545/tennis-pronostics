@@ -444,10 +444,10 @@ class PlayerStats {
                     mainDrawRow.innerHTML = `
                         <td class="px-2 py-0.5 text-xs text-gray-600 pl-4">→ dont tour principal</td>
                         <td class="px-1 py-0.5 text-xs text-center text-blue-600">${this.formatCompactStat(stat.main_draw.wins, stat.main_draw.matches, stat.main_draw.win_percentage)}</td>
-                        <td class="px-1 py-0.5 text-xs text-center text-gray-400">-</td>
-                        <td class="px-1 py-0.5 text-xs text-center text-gray-400">-</td>
-                        <td class="px-1 py-0.5 text-xs text-center text-gray-400">-</td>
-                        <td class="px-1 py-0.5 text-xs text-center text-gray-400">-</td>
+                        <td class="px-1 py-0.5 text-xs text-center text-blue-600">${this.formatCompactStat(stat.main_draw.periods['3m'].wins, stat.main_draw.periods['3m'].matches, stat.main_draw.periods['3m'].win_percentage)}</td>
+                        <td class="px-1 py-0.5 text-xs text-center text-blue-600">${this.formatCompactStat(stat.main_draw.periods['6m'].wins, stat.main_draw.periods['6m'].matches, stat.main_draw.periods['6m'].win_percentage)}</td>
+                        <td class="px-1 py-0.5 text-xs text-center text-blue-600">${this.formatCompactStat(stat.main_draw.periods['12m'].wins, stat.main_draw.periods['12m'].matches, stat.main_draw.periods['12m'].win_percentage)}</td>
+                        <td class="px-1 py-0.5 text-xs text-center text-blue-600">${this.formatCompactStat(stat.main_draw.periods['24m'].wins, stat.main_draw.periods['24m'].matches, stat.main_draw.periods['24m'].win_percentage)}</td>
                     `;
                     tbody.appendChild(mainDrawRow);
                 }
@@ -459,10 +459,10 @@ class PlayerStats {
                     qualifyingRow.innerHTML = `
                         <td class="px-2 py-0.5 text-xs text-gray-600 pl-4">→ dont qualifications</td>
                         <td class="px-1 py-0.5 text-xs text-center text-orange-600">${this.formatCompactStat(stat.qualifying.wins, stat.qualifying.matches, stat.qualifying.win_percentage)}</td>
-                        <td class="px-1 py-0.5 text-xs text-center text-gray-400">-</td>
-                        <td class="px-1 py-0.5 text-xs text-center text-gray-400">-</td>
-                        <td class="px-1 py-0.5 text-xs text-center text-gray-400">-</td>
-                        <td class="px-1 py-0.5 text-xs text-center text-gray-400">-</td>
+                        <td class="px-1 py-0.5 text-xs text-center text-orange-600">${this.formatCompactStat(stat.qualifying.periods['3m'].wins, stat.qualifying.periods['3m'].matches, stat.qualifying.periods['3m'].win_percentage)}</td>
+                        <td class="px-1 py-0.5 text-xs text-center text-orange-600">${this.formatCompactStat(stat.qualifying.periods['6m'].wins, stat.qualifying.periods['6m'].matches, stat.qualifying.periods['6m'].win_percentage)}</td>
+                        <td class="px-1 py-0.5 text-xs text-center text-orange-600">${this.formatCompactStat(stat.qualifying.periods['12m'].wins, stat.qualifying.periods['12m'].matches, stat.qualifying.periods['12m'].win_percentage)}</td>
+                        <td class="px-1 py-0.5 text-xs text-center text-orange-600">${this.formatCompactStat(stat.qualifying.periods['24m'].wins, stat.qualifying.periods['24m'].matches, stat.qualifying.periods['24m'].win_percentage)}</td>
                     `;
                     tbody.appendChild(qualifyingRow);
                 }

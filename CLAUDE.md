@@ -34,6 +34,7 @@ npm run sync:start-scheduler # Start automatic scheduler (2x daily)
 npm run update:match-rankings # Update missing rankings in existing matches
 npm run update:match-odds     # Update missing odds in existing matches
 npm run update:missing-score-fields # Update missing score details (sets, games, tiebreaks) from score_raw
+npm run add:elo-fields           # Add ELO rating fields to matches table
 ```
 
 ## Architecture Overview
@@ -63,6 +64,10 @@ The `matches` table contains detailed score information with these key columns:
 - **Match details**: `has_tiebreak`, `tiebreaks_count`, `is_walkover`
 - **Rankings**: `winner_ranking`, `winner_points`, `loser_ranking`, `loser_points`
 - **Odds**: `winner_odds`, `loser_odds`
+- **ELO Ratings**: 
+  - General: `winner_elo`, `loser_elo`
+  - Surface-specific: `winner_elo_clay`, `winner_elo_grass`, `winner_elo_hard`, `winner_elo_ihard`
+  - Surface-specific: `loser_elo_clay`, `loser_elo_grass`, `loser_elo_hard`, `loser_elo_ihard`
 
 ### Configuration System
 - **Location**: `backend/src/config/config.js`

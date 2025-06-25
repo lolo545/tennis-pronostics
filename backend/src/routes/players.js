@@ -618,7 +618,91 @@ router.get('/:id/stats', async (req, res) => {
                         THEN (COUNT(CASE WHEN m.winner_id = ? AND r.id <= 4 THEN 1 END) * 100.0 / COUNT(CASE WHEN r.id <= 4 THEN 1 END))
                         ELSE 0
                     END, 1
-                ) as qualifying_win_percentage
+                ) as qualifying_win_percentage,
+                
+                -- Stats tour principal par périodes
+                -- 3 mois
+                COUNT(CASE WHEN r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '3 months' THEN 1 END) as main_draw_matches_3m,
+                COUNT(CASE WHEN m.winner_id = ? AND r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '3 months' THEN 1 END) as main_draw_wins_3m,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(CASE WHEN r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '3 months' THEN 1 END) > 0 
+                        THEN (COUNT(CASE WHEN m.winner_id = ? AND r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '3 months' THEN 1 END) * 100.0 / COUNT(CASE WHEN r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '3 months' THEN 1 END))
+                        ELSE 0
+                    END, 1
+                ) as main_draw_win_percentage_3m,
+                -- 6 mois
+                COUNT(CASE WHEN r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '6 months' THEN 1 END) as main_draw_matches_6m,
+                COUNT(CASE WHEN m.winner_id = ? AND r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '6 months' THEN 1 END) as main_draw_wins_6m,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(CASE WHEN r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '6 months' THEN 1 END) > 0 
+                        THEN (COUNT(CASE WHEN m.winner_id = ? AND r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '6 months' THEN 1 END) * 100.0 / COUNT(CASE WHEN r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '6 months' THEN 1 END))
+                        ELSE 0
+                    END, 1
+                ) as main_draw_win_percentage_6m,
+                -- 12 mois
+                COUNT(CASE WHEN r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '12 months' THEN 1 END) as main_draw_matches_12m,
+                COUNT(CASE WHEN m.winner_id = ? AND r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '12 months' THEN 1 END) as main_draw_wins_12m,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(CASE WHEN r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '12 months' THEN 1 END) > 0 
+                        THEN (COUNT(CASE WHEN m.winner_id = ? AND r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '12 months' THEN 1 END) * 100.0 / COUNT(CASE WHEN r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '12 months' THEN 1 END))
+                        ELSE 0
+                    END, 1
+                ) as main_draw_win_percentage_12m,
+                -- 24 mois
+                COUNT(CASE WHEN r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '24 months' THEN 1 END) as main_draw_matches_24m,
+                COUNT(CASE WHEN m.winner_id = ? AND r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '24 months' THEN 1 END) as main_draw_wins_24m,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(CASE WHEN r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '24 months' THEN 1 END) > 0 
+                        THEN (COUNT(CASE WHEN m.winner_id = ? AND r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '24 months' THEN 1 END) * 100.0 / COUNT(CASE WHEN r.id > 4 AND m.match_date >= CURRENT_DATE - INTERVAL '24 months' THEN 1 END))
+                        ELSE 0
+                    END, 1
+                ) as main_draw_win_percentage_24m,
+                
+                -- Stats qualifications par périodes
+                -- 3 mois
+                COUNT(CASE WHEN r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '3 months' THEN 1 END) as qualifying_matches_3m,
+                COUNT(CASE WHEN m.winner_id = ? AND r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '3 months' THEN 1 END) as qualifying_wins_3m,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(CASE WHEN r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '3 months' THEN 1 END) > 0 
+                        THEN (COUNT(CASE WHEN m.winner_id = ? AND r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '3 months' THEN 1 END) * 100.0 / COUNT(CASE WHEN r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '3 months' THEN 1 END))
+                        ELSE 0
+                    END, 1
+                ) as qualifying_win_percentage_3m,
+                -- 6 mois
+                COUNT(CASE WHEN r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '6 months' THEN 1 END) as qualifying_matches_6m,
+                COUNT(CASE WHEN m.winner_id = ? AND r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '6 months' THEN 1 END) as qualifying_wins_6m,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(CASE WHEN r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '6 months' THEN 1 END) > 0 
+                        THEN (COUNT(CASE WHEN m.winner_id = ? AND r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '6 months' THEN 1 END) * 100.0 / COUNT(CASE WHEN r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '6 months' THEN 1 END))
+                        ELSE 0
+                    END, 1
+                ) as qualifying_win_percentage_6m,
+                -- 12 mois
+                COUNT(CASE WHEN r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '12 months' THEN 1 END) as qualifying_matches_12m,
+                COUNT(CASE WHEN m.winner_id = ? AND r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '12 months' THEN 1 END) as qualifying_wins_12m,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(CASE WHEN r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '12 months' THEN 1 END) > 0 
+                        THEN (COUNT(CASE WHEN m.winner_id = ? AND r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '12 months' THEN 1 END) * 100.0 / COUNT(CASE WHEN r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '12 months' THEN 1 END))
+                        ELSE 0
+                    END, 1
+                ) as qualifying_win_percentage_12m,
+                -- 24 mois
+                COUNT(CASE WHEN r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '24 months' THEN 1 END) as qualifying_matches_24m,
+                COUNT(CASE WHEN m.winner_id = ? AND r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '24 months' THEN 1 END) as qualifying_wins_24m,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(CASE WHEN r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '24 months' THEN 1 END) > 0 
+                        THEN (COUNT(CASE WHEN m.winner_id = ? AND r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '24 months' THEN 1 END) * 100.0 / COUNT(CASE WHEN r.id <= 4 AND m.match_date >= CURRENT_DATE - INTERVAL '24 months' THEN 1 END))
+                        ELSE 0
+                    END, 1
+                ) as qualifying_win_percentage_24m
             FROM matches m
             JOIN tournaments t ON m.tournament_id = t.id
             LEFT JOIN type_tournoi tt ON t.type_tournoi_id = tt.id
@@ -629,7 +713,11 @@ router.get('/:id/stats', async (req, res) => {
         `;
 
         const statsByType = await sequelize.query(statsByTypeQuery, {
-            replacements: [id, id, id, id, id, id, id, id, id, id, id, id, id, id, id, id, id, id, id],
+            replacements: [
+                id, id, id, id, id, id, id, id, id, id, id, id, id, id, id, id, id, id, id, // 19 premiers paramètres originaux
+                id, id, id, id, id, id, id, id, id, id, id, id, // 12 nouveaux paramètres pour main_draw par périodes
+                id, id, id, id, id, id, id, id, id, id, id, id  // 12 nouveaux paramètres pour qualifying par périodes
+            ],
             type: sequelize.QueryTypes.SELECT
         });
 
@@ -818,13 +906,57 @@ router.get('/:id/stats', async (req, res) => {
                         matches: parseInt(stat.main_draw_matches),
                         wins: parseInt(stat.main_draw_wins),
                         losses: parseInt(stat.main_draw_losses),
-                        win_percentage: parseFloat(stat.main_draw_win_percentage)
+                        win_percentage: parseFloat(stat.main_draw_win_percentage),
+                        periods: {
+                            '3m': {
+                                matches: parseInt(stat.main_draw_matches_3m),
+                                wins: parseInt(stat.main_draw_wins_3m),
+                                win_percentage: parseFloat(stat.main_draw_win_percentage_3m)
+                            },
+                            '6m': {
+                                matches: parseInt(stat.main_draw_matches_6m),
+                                wins: parseInt(stat.main_draw_wins_6m),
+                                win_percentage: parseFloat(stat.main_draw_win_percentage_6m)
+                            },
+                            '12m': {
+                                matches: parseInt(stat.main_draw_matches_12m),
+                                wins: parseInt(stat.main_draw_wins_12m),
+                                win_percentage: parseFloat(stat.main_draw_win_percentage_12m)
+                            },
+                            '24m': {
+                                matches: parseInt(stat.main_draw_matches_24m),
+                                wins: parseInt(stat.main_draw_wins_24m),
+                                win_percentage: parseFloat(stat.main_draw_win_percentage_24m)
+                            }
+                        }
                     },
                     qualifying: {
                         matches: parseInt(stat.qualifying_matches),
                         wins: parseInt(stat.qualifying_wins),
                         losses: parseInt(stat.qualifying_losses),
-                        win_percentage: parseFloat(stat.qualifying_win_percentage)
+                        win_percentage: parseFloat(stat.qualifying_win_percentage),
+                        periods: {
+                            '3m': {
+                                matches: parseInt(stat.qualifying_matches_3m),
+                                wins: parseInt(stat.qualifying_wins_3m),
+                                win_percentage: parseFloat(stat.qualifying_win_percentage_3m)
+                            },
+                            '6m': {
+                                matches: parseInt(stat.qualifying_matches_6m),
+                                wins: parseInt(stat.qualifying_wins_6m),
+                                win_percentage: parseFloat(stat.qualifying_win_percentage_6m)
+                            },
+                            '12m': {
+                                matches: parseInt(stat.qualifying_matches_12m),
+                                wins: parseInt(stat.qualifying_wins_12m),
+                                win_percentage: parseFloat(stat.qualifying_win_percentage_12m)
+                            },
+                            '24m': {
+                                matches: parseInt(stat.qualifying_matches_24m),
+                                wins: parseInt(stat.qualifying_wins_24m),
+                                win_percentage: parseFloat(stat.qualifying_win_percentage_24m)
+                            }
+                        }
                     }
                 })),
                 by_surface: enhancedStatsBySurface.map(stat => ({
