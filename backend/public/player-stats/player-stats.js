@@ -53,6 +53,15 @@ class PlayerStats {
         document.getElementById('clear-filters').addEventListener('click', () => {
             this.clearFilters();
         });
+
+        // Tabs pour les statistiques de cotes
+        document.getElementById('tab-specific-ranges').addEventListener('click', () => {
+            this.showOddsTab('specific-ranges');
+        });
+
+        document.getElementById('tab-deciles').addEventListener('click', () => {
+            this.showOddsTab('deciles');
+        });
     }
 
     async loadPlayerData() {
@@ -71,6 +80,7 @@ class PlayerStats {
             this.playerData = await response.json();
             this.displayPlayerInfo(this.playerData);
             this.loadPlayerStats();
+            this.loadOddsStats();
             this.loadMatches();
 
         } catch (error) {
@@ -541,6 +551,167 @@ class PlayerStats {
     hideStatsLoading() {
         document.getElementById('stats-by-type-loading').classList.add('hidden');
         document.getElementById('stats-by-surface-loading').classList.add('hidden');
+    }
+
+    async loadOddsStats() {
+        try {
+            const response = await fetch(`/api/v1/players/${this.playerId}/odds-stats`);
+            
+            if (!response.ok) {
+                const errorData = await response.json();
+                console.error('Erreur API odds stats:', response.status, errorData);
+                throw new Error(`Erreur ${response.status}: ${errorData.message || 'Erreur lors du chargement des statistiques de cotes'}`);
+            }
+            
+            const data = await response.json();
+            this.displayOddsStats(data.odds_statistics);
+            
+        } catch (error) {
+            console.error('Erreur chargement odds stats:', error);
+            this.hideOddsStatsLoading();
+        }
+    }
+
+    displayOddsStats(oddsStats) {
+        // Afficher les statistiques globales
+        this.displayGlobalOddsStats(oddsStats.global);
+        
+        // Afficher les statistiques par tranches spécifiques
+        this.displaySpecificRangesStats(oddsStats.by_specific_ranges);
+        
+        // Afficher les statistiques par déciles
+        this.displayDecilesStats(oddsStats.by_deciles);
+        
+        // Afficher la section
+        document.getElementById('odds-stats-loading').classList.add('hidden');
+        document.getElementById('odds-stats').classList.remove('hidden');
+    }
+
+    displayGlobalOddsStats(globalStats) {
+        const container = document.getElementById('odds-global-stats');
+        
+        if (!globalStats || globalStats.total_matches_with_odds === 0) {
+            container.innerHTML = '<p class="text-gray-500 text-sm">Aucune donnée de cotes disponible pour ce joueur.</p>';
+            return;
+        }
+
+        const outperformanceClass = globalStats.outperformance >= 0 ? 'text-green-600' : 'text-red-600';
+        const outperformanceSign = globalStats.outperformance >= 0 ? '+' : '';
+
+        container.innerHTML = `
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="text-center">
+                    <div class="text-lg font-bold text-gray-900">${globalStats.total_matches_with_odds}</div>
+                    <div class="text-xs text-gray-500">Matchs avec cotes</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-lg font-bold text-blue-600">${globalStats.overall_win_rate}%</div>
+                    <div class="text-xs text-gray-500">% Victoires réel</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-lg font-bold text-gray-600">${globalStats.avg_expected_win_rate}%</div>
+                    <div class="text-xs text-gray-500">% Attendu (bookmakers)</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-lg font-bold ${outperformanceClass}">${outperformanceSign}${globalStats.outperformance}%</div>
+                    <div class="text-xs text-gray-500">Efficacité vs cotes</div>
+                </div>
+            </div>
+            <div class="mt-3 pt-3 border-t border-blue-200">
+                <div class="grid grid-cols-3 gap-4 text-center">
+                    <div>
+                        <div class="text-sm font-medium text-gray-700">Meilleures cotes</div>
+                        <div class="text-xs text-gray-600">${globalStats.best_odds_taken}</div>
+                    </div>
+                    <div>
+                        <div class="text-sm font-medium text-gray-700">Cotes moyennes</div>
+                        <div class="text-xs text-gray-600">${globalStats.avg_odds}</div>
+                    </div>
+                    <div>
+                        <div class="text-sm font-medium text-gray-700">Pires cotes</div>
+                        <div class="text-xs text-gray-600">${globalStats.worst_odds_taken}</div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    displaySpecificRangesStats(specificRanges) {
+        const tbody = document.getElementById('odds-specific-ranges-tbody');
+        tbody.innerHTML = '';
+        
+        if (!specificRanges || specificRanges.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="7" class="px-2 py-3 text-center text-gray-500 text-xs">Aucune donnée disponible</td></tr>';
+            return;
+        }
+
+        specificRanges.forEach(stat => {
+            const row = document.createElement('tr');
+            row.className = 'hover:bg-gray-50';
+            
+            const efficiencyClass = stat.efficiency_difference >= 0 ? 'text-green-600' : 'text-red-600';
+            const efficiencySign = stat.efficiency_difference >= 0 ? '+' : '';
+
+            row.innerHTML = `
+                <td class="px-2 py-2 text-xs font-medium text-gray-900">${stat.probability_range}</td>
+                <td class="px-2 py-2 text-xs text-center text-gray-700">${stat.total_matches}</td>
+                <td class="px-2 py-2 text-xs text-center text-green-600">${stat.wins}</td>
+                <td class="px-2 py-2 text-xs text-center font-medium text-blue-600">${stat.win_percentage}%</td>
+                <td class="px-2 py-2 text-xs text-center text-gray-600">${stat.expected_win_rate}%</td>
+                <td class="px-2 py-2 text-xs text-center font-medium ${efficiencyClass}">${efficiencySign}${stat.efficiency_difference}%</td>
+                <td class="px-2 py-2 text-xs text-center text-gray-600">${stat.odds_range.min} - ${stat.odds_range.max}</td>
+            `;
+            tbody.appendChild(row);
+        });
+    }
+
+    displayDecilesStats(deciles) {
+        const tbody = document.getElementById('odds-deciles-tbody');
+        tbody.innerHTML = '';
+        
+        if (!deciles || deciles.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="6" class="px-2 py-3 text-center text-gray-500 text-xs">Aucune donnée disponible</td></tr>';
+            return;
+        }
+
+        deciles.forEach(stat => {
+            const row = document.createElement('tr');
+            row.className = 'hover:bg-gray-50';
+
+            row.innerHTML = `
+                <td class="px-2 py-2 text-xs font-medium text-gray-900">${stat.probability_range}</td>
+                <td class="px-2 py-2 text-xs text-center text-gray-700">${stat.total_matches}</td>
+                <td class="px-2 py-2 text-xs text-center text-green-600">${stat.wins}</td>
+                <td class="px-2 py-2 text-xs text-center font-medium text-blue-600">${stat.win_percentage}%</td>
+                <td class="px-2 py-2 text-xs text-center text-gray-600">${stat.expected_win_rate}%</td>
+                <td class="px-2 py-2 text-xs text-center text-gray-600">${stat.odds_range.min} - ${stat.odds_range.max}</td>
+            `;
+            tbody.appendChild(row);
+        });
+    }
+
+    showOddsTab(tabName) {
+        // Mettre à jour les boutons
+        document.getElementById('tab-specific-ranges').className = 
+            'px-4 py-2 text-sm font-medium ' + 
+            (tabName === 'specific-ranges' ? 'text-blue-600 border-b-2 border-blue-600 bg-blue-50' : 'text-gray-500 hover:text-gray-700');
+        
+        document.getElementById('tab-deciles').className = 
+            'px-4 py-2 text-sm font-medium ' + 
+            (tabName === 'deciles' ? 'text-blue-600 border-b-2 border-blue-600 bg-blue-50' : 'text-gray-500 hover:text-gray-700');
+
+        // Afficher/masquer les contenus
+        if (tabName === 'specific-ranges') {
+            document.getElementById('odds-specific-ranges').classList.remove('hidden');
+            document.getElementById('odds-deciles').classList.add('hidden');
+        } else {
+            document.getElementById('odds-specific-ranges').classList.add('hidden');
+            document.getElementById('odds-deciles').classList.remove('hidden');
+        }
+    }
+
+    hideOddsStatsLoading() {
+        document.getElementById('odds-stats-loading').classList.add('hidden');
     }
 
     clearFilters() {

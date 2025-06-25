@@ -529,6 +529,283 @@ router.get('/:id/matches', async (req, res) => {
  *       200:
  *         description: Statistiques détaillées du joueur
  */
+/**
+ * @swagger
+ * /api/v1/players/{id}/odds-stats:
+ *   get:
+ *     summary: Récupère les statistiques de performance par cotes d'un joueur
+ *     tags: [Players]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *         description: ID du joueur
+ *     responses:
+ *       200:
+ *         description: Statistiques de performance par cotes
+ */
+router.get('/:id/odds-stats', async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        // Vérifier que le joueur existe
+        const playerCheck = await sequelize.query('SELECT id, full_name, tour FROM players WHERE id = ?', {
+            replacements: [id],
+            type: sequelize.QueryTypes.SELECT
+        });
+
+        if (playerCheck.length === 0) {
+            return res.status(404).json({
+                error: 'Joueur non trouvé',
+                message: `Aucun joueur trouvé avec l'ID ${id}`
+            });
+        }
+
+        const player = playerCheck[0];
+
+        // Requête pour les statistiques par déciles de probabilité
+        // Probabilité = 1 / cote (ex: cote 2.0 = 50% de probabilité)
+        const oddsStatsByDecilesQuery = `
+            WITH player_matches_with_odds AS (
+                SELECT 
+                    m.id,
+                    m.match_date,
+                    CASE 
+                        WHEN m.winner_id = ? THEN 'WON'
+                        ELSE 'LOST'
+                    END as result,
+                    CASE 
+                        WHEN m.winner_id = ? THEN m.winner_odds
+                        ELSE m.loser_odds
+                    END as player_odds,
+                    CASE 
+                        WHEN m.winner_id = ? THEN m.winner_odds
+                        ELSE m.loser_odds
+                    END as odds_value
+                FROM matches m
+                WHERE (m.winner_id = ? OR m.loser_id = ?)
+                  AND ((m.winner_id = ? AND m.winner_odds IS NOT NULL) 
+                       OR (m.loser_id = ? AND m.loser_odds IS NOT NULL))
+            ),
+            odds_with_probability AS (
+                SELECT 
+                    *,
+                    (100.0 / odds_value) as probability_percentage,
+                    CASE 
+                        WHEN (100.0 / odds_value) <= 10 THEN '0-10%'
+                        WHEN (100.0 / odds_value) <= 20 THEN '10-20%'
+                        WHEN (100.0 / odds_value) <= 30 THEN '20-30%'
+                        WHEN (100.0 / odds_value) <= 40 THEN '30-40%'
+                        WHEN (100.0 / odds_value) <= 50 THEN '40-50%'
+                        WHEN (100.0 / odds_value) <= 60 THEN '50-60%'
+                        WHEN (100.0 / odds_value) <= 70 THEN '60-70%'
+                        WHEN (100.0 / odds_value) <= 80 THEN '70-80%'
+                        WHEN (100.0 / odds_value) <= 90 THEN '80-90%'
+                        ELSE '90-100%'
+                    END as probability_decile
+                FROM player_matches_with_odds
+                WHERE odds_value > 0
+            )
+            SELECT 
+                probability_decile,
+                COUNT(*) as total_matches,
+                COUNT(CASE WHEN result = 'WON' THEN 1 END) as wins,
+                COUNT(CASE WHEN result = 'LOST' THEN 1 END) as losses,
+                ROUND(COUNT(CASE WHEN result = 'WON' THEN 1 END) * 100.0 / COUNT(*), 1) as win_percentage,
+                ROUND(AVG(probability_percentage), 1) as avg_expected_win_rate,
+                ROUND(MIN(probability_percentage), 1) as min_probability,
+                ROUND(MAX(probability_percentage), 1) as max_probability,
+                ROUND(MIN(odds_value), 2) as min_odds,
+                ROUND(MAX(odds_value), 2) as max_odds
+            FROM odds_with_probability
+            GROUP BY probability_decile
+            ORDER BY 
+                CASE probability_decile
+                    WHEN '0-10%' THEN 1
+                    WHEN '10-20%' THEN 2
+                    WHEN '20-30%' THEN 3
+                    WHEN '30-40%' THEN 4
+                    WHEN '40-50%' THEN 5
+                    WHEN '50-60%' THEN 6
+                    WHEN '60-70%' THEN 7
+                    WHEN '70-80%' THEN 8
+                    WHEN '80-90%' THEN 9
+                    WHEN '90-100%' THEN 10
+                END
+        `;
+
+        const statsByDeciles = await sequelize.query(oddsStatsByDecilesQuery, {
+            replacements: [id, id, id, id, id, id, id],
+            type: sequelize.QueryTypes.SELECT
+        });
+
+        // Requête pour les tranches spécifiques de probabilité
+        const oddsStatsBySpecificRangesQuery = `
+            WITH player_matches_with_odds AS (
+                SELECT 
+                    m.id,
+                    m.match_date,
+                    CASE 
+                        WHEN m.winner_id = ? THEN 'WON'
+                        ELSE 'LOST'
+                    END as result,
+                    CASE 
+                        WHEN m.winner_id = ? THEN m.winner_odds
+                        ELSE m.loser_odds
+                    END as player_odds,
+                    CASE 
+                        WHEN m.winner_id = ? THEN m.winner_odds
+                        ELSE m.loser_odds
+                    END as odds_value
+                FROM matches m
+                WHERE (m.winner_id = ? OR m.loser_id = ?)
+                  AND ((m.winner_id = ? AND m.winner_odds IS NOT NULL) 
+                       OR (m.loser_id = ? AND m.loser_odds IS NOT NULL))
+            ),
+            odds_with_probability AS (
+                SELECT 
+                    *,
+                    (100.0 / odds_value) as probability_percentage,
+                    CASE 
+                        WHEN (100.0 / odds_value) < 35 THEN 'Moins de 35%'
+                        WHEN (100.0 / odds_value) >= 35 AND (100.0 / odds_value) < 45 THEN '35-45%'
+                        WHEN (100.0 / odds_value) >= 45 AND (100.0 / odds_value) < 55 THEN '45-55%'
+                        WHEN (100.0 / odds_value) >= 55 AND (100.0 / odds_value) < 65 THEN '55-65%'
+                        WHEN (100.0 / odds_value) >= 65 AND (100.0 / odds_value) < 75 THEN '65-75%'
+                        WHEN (100.0 / odds_value) >= 75 THEN 'Plus de 75%'
+                    END as probability_range
+                FROM player_matches_with_odds
+                WHERE odds_value > 0
+            )
+            SELECT 
+                probability_range,
+                COUNT(*) as total_matches,
+                COUNT(CASE WHEN result = 'WON' THEN 1 END) as wins,
+                COUNT(CASE WHEN result = 'LOST' THEN 1 END) as losses,
+                ROUND(COUNT(CASE WHEN result = 'WON' THEN 1 END) * 100.0 / COUNT(*), 1) as win_percentage,
+                ROUND(AVG(probability_percentage), 1) as avg_expected_win_rate,
+                ROUND(MIN(probability_percentage), 1) as min_probability,
+                ROUND(MAX(probability_percentage), 1) as max_probability,
+                ROUND(MIN(odds_value), 2) as min_odds,
+                ROUND(MAX(odds_value), 2) as max_odds,
+                -- Calcul de l'efficacité (performance vs attendu)
+                ROUND(
+                    (COUNT(CASE WHEN result = 'WON' THEN 1 END) * 100.0 / COUNT(*)) - AVG(probability_percentage), 1
+                ) as efficiency_diff
+            FROM odds_with_probability
+            WHERE probability_range IS NOT NULL
+            GROUP BY probability_range
+            ORDER BY 
+                CASE probability_range
+                    WHEN 'Moins de 35%' THEN 1
+                    WHEN '35-45%' THEN 2
+                    WHEN '45-55%' THEN 3
+                    WHEN '55-65%' THEN 4
+                    WHEN '65-75%' THEN 5
+                    WHEN 'Plus de 75%' THEN 6
+                END
+        `;
+
+        const statsBySpecificRanges = await sequelize.query(oddsStatsBySpecificRangesQuery, {
+            replacements: [id, id, id, id, id, id, id],
+            type: sequelize.QueryTypes.SELECT
+        });
+
+        // Statistiques globales sur les cotes
+        const globalOddsStatsQuery = `
+            WITH player_matches_with_odds AS (
+                SELECT 
+                    m.id,
+                    CASE 
+                        WHEN m.winner_id = ? THEN 'WON'
+                        ELSE 'LOST'
+                    END as result,
+                    CASE 
+                        WHEN m.winner_id = ? THEN m.winner_odds
+                        ELSE m.loser_odds
+                    END as odds_value
+                FROM matches m
+                WHERE (m.winner_id = ? OR m.loser_id = ?)
+                  AND ((m.winner_id = ? AND m.winner_odds IS NOT NULL) 
+                       OR (m.loser_id = ? AND m.loser_odds IS NOT NULL))
+            )
+            SELECT 
+                COUNT(*) as total_matches_with_odds,
+                COUNT(CASE WHEN result = 'WON' THEN 1 END) as total_wins,
+                ROUND(COUNT(CASE WHEN result = 'WON' THEN 1 END) * 100.0 / COUNT(*), 1) as overall_win_rate,
+                ROUND(AVG(100.0 / odds_value), 1) as avg_expected_win_rate,
+                ROUND(MIN(odds_value), 2) as best_odds_taken,
+                ROUND(MAX(odds_value), 2) as worst_odds_taken,
+                ROUND(AVG(odds_value), 2) as avg_odds,
+                -- Performance vs bookmaker expectations
+                ROUND(
+                    (COUNT(CASE WHEN result = 'WON' THEN 1 END) * 100.0 / COUNT(*)) - AVG(100.0 / odds_value), 1
+                ) as outperformance
+            FROM player_matches_with_odds
+        `;
+
+        const globalStats = await sequelize.query(globalOddsStatsQuery, {
+            replacements: [id, id, id, id, id, id],
+            type: sequelize.QueryTypes.SELECT
+        });
+
+        res.json({
+            player: {
+                id: player.id,
+                name: player.full_name,
+                tour: player.tour
+            },
+            odds_statistics: {
+                global: globalStats[0] || {},
+                by_deciles: statsByDeciles.map(stat => ({
+                    probability_range: stat.probability_decile,
+                    total_matches: parseInt(stat.total_matches),
+                    wins: parseInt(stat.wins),
+                    losses: parseInt(stat.losses),
+                    win_percentage: parseFloat(stat.win_percentage),
+                    expected_win_rate: parseFloat(stat.avg_expected_win_rate),
+                    probability_range_details: {
+                        min: parseFloat(stat.min_probability),
+                        max: parseFloat(stat.max_probability)
+                    },
+                    odds_range: {
+                        min: parseFloat(stat.min_odds),
+                        max: parseFloat(stat.max_odds)
+                    }
+                })),
+                by_specific_ranges: statsBySpecificRanges.map(stat => ({
+                    probability_range: stat.probability_range,
+                    total_matches: parseInt(stat.total_matches),
+                    wins: parseInt(stat.wins),
+                    losses: parseInt(stat.losses),
+                    win_percentage: parseFloat(stat.win_percentage),
+                    expected_win_rate: parseFloat(stat.avg_expected_win_rate),
+                    efficiency_difference: parseFloat(stat.efficiency_diff),
+                    probability_range_details: {
+                        min: parseFloat(stat.min_probability),
+                        max: parseFloat(stat.max_probability)
+                    },
+                    odds_range: {
+                        min: parseFloat(stat.min_odds),
+                        max: parseFloat(stat.max_odds)
+                    }
+                }))
+            }
+        });
+
+        logger.tennis.apiRequest('GET', req.path);
+
+    } catch (error) {
+        logger.tennis.apiError('GET', req.path, error);
+        res.status(500).json({
+            error: 'Erreur serveur',
+            message: 'Impossible de récupérer les statistiques de cotes du joueur'
+        });
+    }
+});
+
 router.get('/:id/stats', async (req, res) => {
     try {
         const { id } = req.params;
