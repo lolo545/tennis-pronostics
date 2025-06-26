@@ -150,6 +150,42 @@
                 </div>
             </div>
 
+            <!-- Statistiques par différence d'ELO -->
+            <div class="bg-white rounded-lg shadow-sm border overflow-hidden">
+                <div class="p-3 border-b bg-gray-50">
+                    <h3 class="text-md font-semibold text-gray-900">Performance par différence d'ELO</h3>
+                    <p class="text-xs text-gray-600 mt-1">Analyse basée sur la différence de rating ELO entre le joueur et ses adversaires</p>
+                </div>
+                <div id="elo-stats-loading" class="text-center py-6">
+                    <div class="loading-spinner mx-auto mb-3"></div>
+                    <p class="text-gray-600 text-xs">Chargement...</p>
+                </div>
+                <div id="elo-stats" class="hidden">
+                    <!-- Statistiques globales -->
+                    <div id="elo-global-stats" class="p-4 bg-purple-50 border-b">
+                        <!-- Inséré dynamiquement -->
+                    </div>
+                    
+                    <!-- Tableau des statistiques par tranches d'ELO -->
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-2 py-2 text-left text-xs font-medium text-gray-500 uppercase">Probabilité de victoire</th>
+                                    <th class="px-2 py-2 text-center text-xs font-medium text-gray-500 uppercase">Matchs</th>
+                                    <th class="px-2 py-2 text-center text-xs font-medium text-gray-500 uppercase">Victoires</th>
+                                    <th class="px-2 py-2 text-center text-xs font-medium text-gray-500 uppercase">% Victoires</th>
+                                    <th class="px-2 py-2 text-center text-xs font-medium text-gray-500 uppercase">Diff. Moy.</th>
+                                    <th class="px-2 py-2 text-center text-xs font-medium text-gray-500 uppercase">Range ELO</th>
+                                </tr>
+                            </thead>
+                            <tbody id="elo-stats-tbody" class="divide-y divide-gray-200">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
             <!-- Statistiques par cotes -->
             <div class="bg-white rounded-lg shadow-sm border overflow-hidden">
                 <div class="p-3 border-b bg-gray-50">

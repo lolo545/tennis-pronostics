@@ -546,6 +546,191 @@ router.get('/:id/matches', async (req, res) => {
  *       200:
  *         description: Statistiques de performance par cotes
  */
+/**
+ * @swagger
+ * /api/v1/players/{id}/elo-stats:
+ *   get:
+ *     summary: Récupère les statistiques de performance par différence d'ELO d'un joueur
+ *     tags: [Players]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: integer
+ *         description: ID du joueur
+ *     responses:
+ *       200:
+ *         description: Statistiques de performance par différence d'ELO
+ */
+router.get('/:id/elo-stats', async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        // Vérifier que le joueur existe
+        const playerCheck = await sequelize.query('SELECT id, full_name, tour FROM players WHERE id = ?', {
+            replacements: [id],
+            type: sequelize.QueryTypes.SELECT
+        });
+
+        if (playerCheck.length === 0) {
+            return res.status(404).json({
+                error: 'Joueur non trouvé',
+                message: `Aucun joueur trouvé avec l'ID ${id}`
+            });
+        }
+
+        const player = playerCheck[0];
+
+        // Requête pour les statistiques par tranches de différence d'ELO
+        const eloStatsByRangesQuery = `
+            WITH player_matches_with_elo AS (
+                SELECT 
+                    m.id,
+                    m.match_date,
+                    CASE 
+                        WHEN m.winner_id = ? THEN 'WON'
+                        ELSE 'LOST'
+                    END as result,
+                    CASE 
+                        WHEN m.winner_id = ? THEN m.winner_elo
+                        ELSE m.loser_elo
+                    END as player_elo,
+                    CASE 
+                        WHEN m.winner_id = ? THEN m.loser_elo
+                        ELSE m.winner_elo
+                    END as opponent_elo
+                FROM matches m
+                WHERE (m.winner_id = ? OR m.loser_id = ?)
+                  AND ((m.winner_id = ? AND m.winner_elo IS NOT NULL AND m.loser_elo IS NOT NULL) 
+                       OR (m.loser_id = ? AND m.winner_elo IS NOT NULL AND m.loser_elo IS NOT NULL))
+            ),
+            elo_with_difference AS (
+                SELECT 
+                    *,
+                    (player_elo - opponent_elo) as elo_difference,
+                    CASE 
+                        WHEN (player_elo - opponent_elo) < -500 THEN 'Moins de 5% (~<-500)'
+                        WHEN (player_elo - opponent_elo) >= -500 AND (player_elo - opponent_elo) < -300 THEN '5-15% (-500 à -300)'
+                        WHEN (player_elo - opponent_elo) >= -300 AND (player_elo - opponent_elo) < -200 THEN '15-25% (-300 à -200)'
+                        WHEN (player_elo - opponent_elo) >= -200 AND (player_elo - opponent_elo) < -100 THEN '25-35% (-200 à -100)'
+                        WHEN (player_elo - opponent_elo) >= -100 AND (player_elo - opponent_elo) < -50 THEN '35-45% (-100 à -50)'
+                        WHEN (player_elo - opponent_elo) >= -50 AND (player_elo - opponent_elo) < 50 THEN '45-55% (-50 à +50)'
+                        WHEN (player_elo - opponent_elo) >= 50 AND (player_elo - opponent_elo) < 100 THEN '55-65% (+50 à +100)'
+                        WHEN (player_elo - opponent_elo) >= 100 AND (player_elo - opponent_elo) < 200 THEN '65-75% (+100 à +200)'
+                        WHEN (player_elo - opponent_elo) >= 200 AND (player_elo - opponent_elo) < 300 THEN '75-85% (+200 à +300)'
+                        WHEN (player_elo - opponent_elo) >= 300 AND (player_elo - opponent_elo) < 500 THEN '85-95% (+300 à +500)'
+                        ELSE 'Plus de 95% (~>+500)'
+                    END as elo_range
+                FROM player_matches_with_elo
+                WHERE player_elo IS NOT NULL AND opponent_elo IS NOT NULL
+            )
+            SELECT 
+                elo_range,
+                COUNT(*) as total_matches,
+                COUNT(CASE WHEN result = 'WON' THEN 1 END) as wins,
+                COUNT(CASE WHEN result = 'LOST' THEN 1 END) as losses,
+                ROUND(COUNT(CASE WHEN result = 'WON' THEN 1 END) * 100.0 / COUNT(*), 1) as win_percentage,
+                ROUND(AVG(elo_difference), 0) as avg_elo_difference,
+                ROUND(MIN(elo_difference), 0) as min_elo_difference,
+                ROUND(MAX(elo_difference), 0) as max_elo_difference
+            FROM elo_with_difference
+            WHERE elo_range IS NOT NULL
+            GROUP BY elo_range
+            ORDER BY 
+                CASE elo_range
+                    WHEN 'Moins de 5% (~<-500)' THEN 1
+                    WHEN '5-15% (-500 à -300)' THEN 2
+                    WHEN '15-25% (-300 à -200)' THEN 3
+                    WHEN '25-35% (-200 à -100)' THEN 4
+                    WHEN '35-45% (-100 à -50)' THEN 5
+                    WHEN '45-55% (-50 à +50)' THEN 6
+                    WHEN '55-65% (+50 à +100)' THEN 7
+                    WHEN '65-75% (+100 à +200)' THEN 8
+                    WHEN '75-85% (+200 à +300)' THEN 9
+                    WHEN '85-95% (+300 à +500)' THEN 10
+                    WHEN 'Plus de 95% (~>+500)' THEN 11
+                END
+        `;
+
+        const statsByRanges = await sequelize.query(eloStatsByRangesQuery, {
+            replacements: [id, id, id, id, id, id, id],
+            type: sequelize.QueryTypes.SELECT
+        });
+
+        // Statistiques globales sur les ELO
+        const globalEloStatsQuery = `
+            WITH player_matches_with_elo AS (
+                SELECT 
+                    m.id,
+                    CASE 
+                        WHEN m.winner_id = ? THEN 'WON'
+                        ELSE 'LOST'
+                    END as result,
+                    CASE 
+                        WHEN m.winner_id = ? THEN m.winner_elo
+                        ELSE m.loser_elo
+                    END as player_elo,
+                    CASE 
+                        WHEN m.winner_id = ? THEN m.loser_elo
+                        ELSE m.winner_elo
+                    END as opponent_elo
+                FROM matches m
+                WHERE (m.winner_id = ? OR m.loser_id = ?)
+                  AND ((m.winner_id = ? AND m.winner_elo IS NOT NULL AND m.loser_elo IS NOT NULL) 
+                       OR (m.loser_id = ? AND m.winner_elo IS NOT NULL AND m.loser_elo IS NOT NULL))
+            )
+            SELECT 
+                COUNT(*) as total_matches_with_elo,
+                COUNT(CASE WHEN result = 'WON' THEN 1 END) as total_wins,
+                ROUND(COUNT(CASE WHEN result = 'WON' THEN 1 END) * 100.0 / COUNT(*), 1) as overall_win_rate,
+                ROUND(AVG(player_elo - opponent_elo), 0) as avg_elo_difference,
+                ROUND(MIN(player_elo - opponent_elo), 0) as min_elo_difference,
+                ROUND(MAX(player_elo - opponent_elo), 0) as max_elo_difference,
+                ROUND(AVG(player_elo), 0) as avg_player_elo,
+                ROUND(AVG(opponent_elo), 0) as avg_opponent_elo
+            FROM player_matches_with_elo
+        `;
+
+        const globalStats = await sequelize.query(globalEloStatsQuery, {
+            replacements: [id, id, id, id, id, id, id],
+            type: sequelize.QueryTypes.SELECT
+        });
+
+        res.json({
+            player: {
+                id: player.id,
+                name: player.full_name,
+                tour: player.tour
+            },
+            elo_statistics: {
+                global: globalStats[0] || {},
+                by_ranges: statsByRanges.map(stat => ({
+                    elo_range: stat.elo_range,
+                    total_matches: parseInt(stat.total_matches),
+                    wins: parseInt(stat.wins),
+                    losses: parseInt(stat.losses),
+                    win_percentage: parseFloat(stat.win_percentage),
+                    elo_difference_details: {
+                        avg: parseFloat(stat.avg_elo_difference),
+                        min: parseFloat(stat.min_elo_difference),
+                        max: parseFloat(stat.max_elo_difference)
+                    }
+                }))
+            }
+        });
+
+        logger.tennis.apiRequest('GET', req.path);
+
+    } catch (error) {
+        logger.tennis.apiError('GET', req.path, error);
+        res.status(500).json({
+            error: 'Erreur serveur',
+            message: 'Impossible de récupérer les statistiques ELO du joueur'
+        });
+    }
+});
+
 router.get('/:id/odds-stats', async (req, res) => {
     try {
         const { id } = req.params;

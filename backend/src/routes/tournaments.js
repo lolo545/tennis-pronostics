@@ -286,7 +286,7 @@ router.get('/:id', async (req, res) => {
  *         name: round
  *         schema:
  *           type: string
- *         description: Filtrer par tour (ex: Final, SF, QF)
+ *         description: Filtrer par tour ( Final, SF, QF)
  *       - in: query
  *         name: player
  *         schema:

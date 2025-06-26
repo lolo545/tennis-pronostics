@@ -80,6 +80,7 @@ class PlayerStats {
             this.playerData = await response.json();
             this.displayPlayerInfo(this.playerData);
             this.loadPlayerStats();
+            this.loadEloStats();
             this.loadOddsStats();
             this.loadMatches();
 
@@ -551,6 +552,126 @@ class PlayerStats {
     hideStatsLoading() {
         document.getElementById('stats-by-type-loading').classList.add('hidden');
         document.getElementById('stats-by-surface-loading').classList.add('hidden');
+    }
+
+    async loadEloStats() {
+        try {
+            const response = await fetch(`/api/v1/players/${this.playerId}/elo-stats`);
+            
+            if (!response.ok) {
+                const errorData = await response.json();
+                console.error('Erreur API elo stats:', response.status, errorData);
+                throw new Error(`Erreur ${response.status}: ${errorData.message || 'Erreur lors du chargement des statistiques ELO'}`);
+            }
+            
+            const data = await response.json();
+            this.displayEloStats(data.elo_statistics);
+            
+        } catch (error) {
+            console.error('Erreur chargement elo stats:', error);
+            this.hideEloStatsLoading();
+        }
+    }
+
+    displayEloStats(eloStats) {
+        // Afficher les statistiques globales
+        this.displayGlobalEloStats(eloStats.global);
+        
+        // Afficher les statistiques par tranches
+        this.displayEloRangesStats(eloStats.by_ranges);
+        
+        // Afficher la section
+        document.getElementById('elo-stats-loading').classList.add('hidden');
+        document.getElementById('elo-stats').classList.remove('hidden');
+    }
+
+    displayGlobalEloStats(globalStats) {
+        const container = document.getElementById('elo-global-stats');
+        
+        if (!globalStats || globalStats.total_matches_with_elo === 0) {
+            container.innerHTML = '<p class="text-gray-500 text-sm">Aucune donnée ELO disponible pour ce joueur.</p>';
+            return;
+        }
+
+        container.innerHTML = `
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="text-center">
+                    <div class="text-lg font-bold text-gray-900">${globalStats.total_matches_with_elo}</div>
+                    <div class="text-xs text-gray-500">Matchs avec ELO</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-lg font-bold text-purple-600">${globalStats.overall_win_rate}%</div>
+                    <div class="text-xs text-gray-500">% Victoires</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-lg font-bold text-gray-600">${globalStats.avg_elo_difference >= 0 ? '+' : ''}${globalStats.avg_elo_difference}</div>
+                    <div class="text-xs text-gray-500">Diff. ELO moyenne</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-lg font-bold text-gray-600">${globalStats.avg_player_elo}</div>
+                    <div class="text-xs text-gray-500">ELO moyen joueur</div>
+                </div>
+            </div>
+            <div class="mt-3 pt-3 border-t border-purple-200">
+                <div class="grid grid-cols-3 gap-4 text-center">
+                    <div>
+                        <div class="text-sm font-medium text-gray-700">Diff. minimale</div>
+                        <div class="text-xs text-gray-600">${globalStats.min_elo_difference >= 0 ? '+' : ''}${globalStats.min_elo_difference}</div>
+                    </div>
+                    <div>
+                        <div class="text-sm font-medium text-gray-700">Diff. maximale</div>
+                        <div class="text-xs text-gray-600">${globalStats.max_elo_difference >= 0 ? '+' : ''}${globalStats.max_elo_difference}</div>
+                    </div>
+                    <div>
+                        <div class="text-sm font-medium text-gray-700">ELO moyen adversaires</div>
+                        <div class="text-xs text-gray-600">${globalStats.avg_opponent_elo}</div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    displayEloRangesStats(eloRanges) {
+        const tbody = document.getElementById('elo-stats-tbody');
+        tbody.innerHTML = '';
+        
+        if (!eloRanges || eloRanges.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="6" class="px-2 py-3 text-center text-gray-500 text-xs">Aucune donnée disponible</td></tr>';
+            return;
+        }
+
+        eloRanges.forEach(stat => {
+            const row = document.createElement('tr');
+            row.className = 'hover:bg-gray-50';
+            
+            // Colorier selon la probabilité de victoire
+            let rangeClass = 'text-gray-600';
+            if (stat.elo_range.includes('5%') && !stat.elo_range.includes('15%')) {
+                rangeClass = 'text-red-700'; // Très difficile
+            } else if (stat.elo_range.includes('5-15%') || stat.elo_range.includes('15-25%') || stat.elo_range.includes('25-35%')) {
+                rangeClass = 'text-red-600'; // Difficile
+            } else if (stat.elo_range.includes('35-45%') || stat.elo_range.includes('45-55%')) {
+                rangeClass = 'text-gray-700'; // Équilibré
+            } else if (stat.elo_range.includes('55-65%') || stat.elo_range.includes('65-75%') || stat.elo_range.includes('75-85%')) {
+                rangeClass = 'text-green-600'; // Favorable
+            } else if (stat.elo_range.includes('85-95%') || stat.elo_range.includes('95%')) {
+                rangeClass = 'text-green-700'; // Très favorable
+            }
+
+            row.innerHTML = `
+                <td class="px-2 py-2 text-xs font-medium ${rangeClass}">${stat.elo_range}</td>
+                <td class="px-2 py-2 text-xs text-center text-gray-700">${stat.total_matches}</td>
+                <td class="px-2 py-2 text-xs text-center text-green-600">${stat.wins}</td>
+                <td class="px-2 py-2 text-xs text-center font-medium text-purple-600">${stat.win_percentage}%</td>
+                <td class="px-2 py-2 text-xs text-center text-gray-600">${stat.elo_difference_details.avg >= 0 ? '+' : ''}${stat.elo_difference_details.avg}</td>
+                <td class="px-2 py-2 text-xs text-center text-gray-600">${stat.elo_difference_details.min >= 0 ? '+' : ''}${stat.elo_difference_details.min} / ${stat.elo_difference_details.max >= 0 ? '+' : ''}${stat.elo_difference_details.max}</td>
+            `;
+            tbody.appendChild(row);
+        });
+    }
+
+    hideEloStatsLoading() {
+        document.getElementById('elo-stats-loading').classList.add('hidden');
     }
 
     async loadOddsStats() {
