@@ -1476,4 +1476,161 @@ router.get('/:id/stats', async (req, res) => {
     }
 });
 
+/**
+ * @swagger
+ * /api/v1/players/complete-stats:
+ *   get:
+ *     summary: Récupère les statistiques complètes des joueurs avec ELO et gains
+ *     tags: [Players]
+ *     parameters:
+ *       - in: query
+ *         name: tour
+ *         required: true
+ *         schema:
+ *           type: string
+ *           enum: [ATP, WTA]
+ *         description: Tour (ATP ou WTA)
+ *       - in: query
+ *         name: limit
+ *         schema:
+ *           type: integer
+ *           default: 100
+ *           maximum: 900
+ *         description: Nombre de joueurs à retourner
+ *       - in: query
+ *         name: offset
+ *         schema:
+ *           type: integer
+ *           default: 0
+ *         description: Décalage pour la pagination
+ *       - in: query
+ *         name: sort_by
+ *         schema:
+ *           type: string
+ *           enum: [current_ranking, elo_general, betting_gains_3m, betting_gains_6m, betting_gains_12m, betting_gains_24m, betting_gains_60m, betting_gains_total]
+ *           default: current_ranking
+ *         description: Colonne de tri
+ *       - in: query
+ *         name: sort_order
+ *         schema:
+ *           type: string
+ *           enum: [ASC, DESC]
+ *           default: ASC
+ *         description: Ordre de tri
+ *     responses:
+ *       200:
+ *         description: Statistiques complètes des joueurs
+ */
+router.get('/complete-stats', async (req, res) => {
+    try {
+        const { 
+            tour, 
+            limit = 100, 
+            offset = 0, 
+            sort_by = 'current_ranking', 
+            sort_order = 'ASC' 
+        } = req.query;
+
+        // Validation
+        if (!tour || !['ATP', 'WTA'].includes(tour)) {
+            return res.status(400).json({
+                error: 'Tour requis',
+                message: 'Le paramètre tour doit être ATP ou WTA'
+            });
+        }
+
+        const limitInt = Math.min(Math.max(parseInt(limit) || 100, 1), 900);
+        const offsetInt = Math.max(parseInt(offset) || 0, 0);
+
+        // Colonnes autorisées pour le tri
+        const allowedSortColumns = [
+            'current_ranking', 'ranking_points', 'elo_general', 'elo_clay', 'elo_grass', 
+            'elo_hard', 'elo_ihard', 'betting_gains_3m', 'betting_gains_6m', 
+            'betting_gains_12m', 'betting_gains_24m', 'betting_gains_60m', 'betting_gains_total'
+        ];
+
+        const sortColumn = allowedSortColumns.includes(sort_by) ? sort_by : 'current_ranking';
+        const sortDirection = ['ASC', 'DESC'].includes(sort_order.toUpperCase()) ? sort_order.toUpperCase() : 'ASC';
+
+        // Requête principale avec tri
+        const query = `
+            SELECT * FROM v_player_complete_stats
+            WHERE tour = $1
+            ORDER BY ${sortColumn} ${sortDirection}, current_ranking ASC
+            LIMIT $2 OFFSET $3
+        `;
+
+        const players = await sequelize.query(query, {
+            replacements: [tour, limitInt, offsetInt],
+            type: sequelize.QueryTypes.SELECT
+        });
+
+        // Compter le total pour la pagination
+        const countQuery = `
+            SELECT COUNT(*) as total
+            FROM v_player_complete_stats
+            WHERE tour = $1
+        `;
+
+        const countResult = await sequelize.query(countQuery, {
+            replacements: [tour],
+            type: sequelize.QueryTypes.SELECT
+        });
+
+        const totalPlayers = parseInt(countResult[0].total);
+
+        // Formater les résultats
+        const formattedPlayers = players.map(player => ({
+            player_id: player.player_id,
+            full_name: player.full_name,
+            first_name: player.first_name,
+            last_name: player.last_name,
+            tour: player.tour,
+            country_code: player.country_code,
+            ranking: {
+                date: player.ranking_date,
+                position: player.current_ranking,
+                points: player.ranking_points
+            },
+            elo_ratings: {
+                general: player.elo_general,
+                clay: player.elo_clay,
+                grass: player.elo_grass,
+                hard: player.elo_hard,
+                indoor_hard: player.elo_ihard
+            },
+            betting_gains: {
+                three_months: parseFloat(player.betting_gains_3m),
+                six_months: parseFloat(player.betting_gains_6m),
+                twelve_months: parseFloat(player.betting_gains_12m),
+                twenty_four_months: parseFloat(player.betting_gains_24m),
+                sixty_months: parseFloat(player.betting_gains_60m),
+                total: parseFloat(player.betting_gains_total)
+            }
+        }));
+
+        res.json({
+            players: formattedPlayers,
+            metadata: {
+                tour,
+                total_players: totalPlayers,
+                limit: limitInt,
+                offset: offsetInt,
+                sort_by: sortColumn,
+                sort_order: sortDirection,
+                has_more: (offsetInt + limitInt) < totalPlayers
+            }
+        });
+
+        logger.tennis.apiRequest('GET', req.path);
+
+    } catch (error) {
+        logger.tennis.apiError('GET', req.path, error);
+        res.status(500).json({
+            error: 'Erreur serveur',
+            message: 'Impossible de récupérer les statistiques complètes des joueurs'
+        });
+    }
+});
+
 module.exports = router;

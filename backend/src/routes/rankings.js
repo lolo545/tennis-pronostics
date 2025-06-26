@@ -180,7 +180,13 @@ router.get('/current', async (req, res) => {
                 CASE 
                     WHEN prev_pr.position IS NOT NULL THEN (prev_pr.position - pr.position)
                     ELSE NULL
-                END as progression
+                END as progression,
+                -- Récupération des ratings ELO les plus récents
+                latest_elo.winner_elo as current_elo,
+                latest_elo.winner_elo_clay as current_elo_clay,
+                latest_elo.winner_elo_grass as current_elo_grass,
+                latest_elo.winner_elo_hard as current_elo_hard,
+                latest_elo.winner_elo_ihard as current_elo_ihard
             FROM player_rankings pr
             JOIN players p ON pr.player_id = p.id
             LEFT JOIN countries c ON p.country_id = c.id
@@ -188,6 +194,40 @@ router.get('/current', async (req, res) => {
                 prev_pr.player_id = pr.player_id 
                 AND prev_pr.ranking_date = ?
             )
+            LEFT JOIN (
+                WITH all_player_elos AS (
+                    SELECT 
+                        m.winner_id as player_id,
+                        m.match_date,
+                        m.winner_elo as elo,
+                        m.winner_elo_clay as elo_clay,
+                        m.winner_elo_grass as elo_grass,
+                        m.winner_elo_hard as elo_hard,
+                        m.winner_elo_ihard as elo_ihard
+                    FROM matches m
+                    WHERE m.winner_elo IS NOT NULL
+                    UNION ALL
+                    SELECT 
+                        m.loser_id as player_id,
+                        m.match_date,
+                        m.loser_elo as elo,
+                        m.loser_elo_clay as elo_clay,
+                        m.loser_elo_grass as elo_grass,
+                        m.loser_elo_hard as elo_hard,
+                        m.loser_elo_ihard as elo_ihard
+                    FROM matches m
+                    WHERE m.loser_elo IS NOT NULL
+                )
+                SELECT 
+                    player_id,
+                    elo as winner_elo,
+                    elo_clay as winner_elo_clay,
+                    elo_grass as winner_elo_grass,
+                    elo_hard as winner_elo_hard,
+                    elo_ihard as winner_elo_ihard,
+                    ROW_NUMBER() OVER (PARTITION BY player_id ORDER BY match_date DESC) as rn
+                FROM all_player_elos
+            ) latest_elo ON latest_elo.player_id = pr.player_id AND latest_elo.rn = 1
             WHERE p.tour = ? 
             AND pr.ranking_date = ?
             ${whereClause}
@@ -234,6 +274,13 @@ router.get('/current', async (req, res) => {
             position: ranking.position,
             points: ranking.points,
             progression: ranking.progression,
+            elo_ratings: {
+                general: ranking.current_elo,
+                clay: ranking.current_elo_clay,
+                grass: ranking.current_elo_grass,
+                hard: ranking.current_elo_hard,
+                indoor_hard: ranking.current_elo_ihard
+            },
             player: {
                 id: ranking.player_id,
                 full_name: ranking.full_name,

@@ -133,6 +133,8 @@ class TennisRankings {
                             </div>
                         </td>
                         <td class="points">${ranking.points?.toLocaleString() || 'N/A'}</td>
+                        <td class="elo-rating">${ranking.elo_ratings?.general || 'N/A'}</td>
+                        <td class="elo-surface">${this.formatEloSurfaces(ranking.elo_ratings)}</td>
                         <td class="progression">
                             ${this.formatProgression(ranking.progression)}
                         </td>
@@ -154,6 +156,18 @@ class TennisRankings {
         document.getElementById('tour-info').textContent = metadata.tour || '-';
 
         document.getElementById('ranking-info').style.display = 'flex';
+    }
+
+    formatEloSurfaces(eloRatings) {
+        if (!eloRatings) return 'N/A';
+        
+        const surfaces = [];
+        if (eloRatings.clay) surfaces.push(`C:${eloRatings.clay}`);
+        if (eloRatings.grass) surfaces.push(`G:${eloRatings.grass}`);
+        if (eloRatings.hard) surfaces.push(`H:${eloRatings.hard}`);
+        if (eloRatings.indoor_hard) surfaces.push(`I:${eloRatings.indoor_hard}`);
+        
+        return surfaces.length > 0 ? surfaces.join('<br>') : 'N/A';
     }
 
     formatProgression(progression) {
