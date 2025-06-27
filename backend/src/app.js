@@ -148,6 +148,12 @@ app.get('/tournament-results', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/tournament-results/index.html'));
 });
 
+// Route pour servir la page complete-stats
+app.use('/complete-stats', express.static(path.join(__dirname, '../public/complete-stats')));
+app.get('/complete-stats', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/complete-stats/index.html'));
+});
+
 // =============================================
 // DOCUMENTATION API (SWAGGER)
 // =============================================

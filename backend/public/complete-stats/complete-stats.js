@@ -129,8 +129,11 @@ class CompleteStats {
             const offset = this.currentPage * this.limit;
             const url = `/api/v1/players/complete-stats?tour=${this.currentTour}&limit=${this.limit}&offset=${offset}&sort_by=${this.sortBy}&sort_order=${this.sortOrder}`;
             
-            const response = await fetch(url);
+            console.log('🎾 [FRONTEND] URL générée:', url);
+            console.log('🎾 [FRONTEND] Paramètres:', { tour: this.currentTour, limit: this.limit, offset, sortBy: this.sortBy, sortOrder: this.sortOrder });
             
+            const response = await fetch(url);
+            console.log('🎾 [FRONTEND] Réponse fetch:', response.status, response.statusText);
             if (!response.ok) {
                 throw new Error(`Erreur ${response.status}: ${response.statusText}`);
             }

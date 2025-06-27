@@ -4558,3 +4558,612 @@
 2025-06-26 20:38:07 [INFO]: 🌍 Environment: development
 2025-06-26 20:38:07 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
 2025-06-26 20:38:07 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-26 21:27:13 [INFO]: [0mGET /complete-stats/ [33m404[0m 62.537 ms - 124[0m
+2025-06-26 21:27:13 [INFO]: [0mGET /favicon.ico [33m404[0m 1.736 ms - 120[0m
+2025-06-26 22:07:50 [INFO]: [0mGET /player-stats/24612 [32m200[0m 115.220 ms - -[0m
+2025-06-26 22:07:51 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 6.423 ms - -[0m
+2025-06-26 22:07:52 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-26 22:07:52 [INFO]: [0mGET /api/v1/players/tournament-types [32m200[0m 416.357 ms - 89[0m
+2025-06-26 22:07:53 [INFO]: 📡 GET /24612
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/24612",
+  "userId": null
+}
+2025-06-26 22:07:53 [INFO]: [0mGET /api/v1/players/24612 [32m200[0m 1997.714 ms - 289[0m
+2025-06-26 22:07:56 [INFO]: 📡 GET /24612/elo-stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/24612/elo-stats",
+  "userId": null
+}
+2025-06-26 22:07:57 [INFO]: 📡 GET /24612/odds-stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/24612/odds-stats",
+  "userId": null
+}
+2025-06-26 22:07:57 [INFO]: [0mGET /api/v1/players/24612/elo-stats [32m200[0m 975.350 ms - -[0m
+2025-06-26 22:07:57 [INFO]: [0mGET /api/v1/players/24612/odds-stats [32m200[0m 1020.825 ms - -[0m
+2025-06-26 22:07:57 [INFO]: 📡 GET /24612/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/24612/matches",
+  "userId": null
+}
+2025-06-26 22:07:57 [INFO]: [0mGET /api/v1/players/24612/matches?limit=100&offset=0 [32m200[0m 1119.934 ms - -[0m
+2025-06-26 22:07:57 [INFO]: 📡 GET /24612/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/24612/stats",
+  "userId": null
+}
+2025-06-26 22:07:57 [INFO]: [0mGET /api/v1/players/24612/stats [32m200[0m 1679.249 ms - -[0m
+2025-06-26 22:08:02 [INFO]: [0mGET /complete-stats/ [33m404[0m 2.154 ms - 124[0m
+2025-06-26 22:08:02 [INFO]: [0mGET /favicon.ico [33m404[0m 0.772 ms - 120[0m
+2025-06-26 22:07:34 [INFO]: ✅ Configuration validée
+2025-06-26 22:08:04 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-26 22:08:05 [ERROR]: ❌ Erreur de connexion PostgreSQL:
+2025-06-26 22:08:28 [INFO]: [0mGET /tournament-results/ [36m304[0m 1.005 ms - -[0m
+2025-06-26 22:08:28 [INFO]: [0mGET /tournament-results/tournament-results.js [36m304[0m 1.302 ms - -[0m
+2025-06-26 22:08:29 [INFO]: [0mGET /favicon.ico [33m404[0m 0.634 ms - 120[0m
+2025-06-26 22:09:29 [INFO]: ✅ Configuration validée
+2025-06-26 22:09:31 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-26 22:09:31 [ERROR]: ❌ Erreur de connexion PostgreSQL:
+2025-06-26 22:36:06 [INFO]: ✅ Configuration validée
+2025-06-26 22:36:14 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-26 22:36:15 [ERROR]: ❌ Erreur de connexion PostgreSQL:
+2025-06-26 23:12:10 [INFO]: ✅ Configuration validée
+2025-06-26 23:12:13 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-26 23:12:13 [ERROR]: ❌ Erreur de connexion PostgreSQL:
+2025-06-26 23:13:23 [INFO]: ✅ Configuration validée
+2025-06-26 23:13:24 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-26 23:13:24 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-26 23:13:24 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-26 23:13:24 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-26 23:13:24 [INFO]: 🌍 Environment: development
+2025-06-26 23:13:24 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-26 23:13:24 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-26 23:13:37 [INFO]: [0mGET /complete-stats/ [32m200[0m 12.523 ms - -[0m
+2025-06-26 23:13:37 [INFO]: [0mGET /complete-stats/complete-stats.js [32m200[0m 4.710 ms - -[0m
+2025-06-26 23:13:38 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-26 23:13:38 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 86.990 ms - 91[0m
+2025-06-26 23:13:38 [INFO]: [0mGET /favicon.ico [33m404[0m 1.117 ms - 120[0m
+2025-06-26 23:13:45 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-26 23:13:45 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 4.982 ms - 91[0m
+2025-06-26 23:13:55 [INFO]: [0mGET /complete-stats/ [32m200[0m 2.527 ms - -[0m
+2025-06-26 23:14:01 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 2.217 ms - 142[0m
+2025-06-26 23:42:36 [INFO]: [0mGET /complete-stats/ [32m200[0m 42.234 ms - -[0m
+2025-06-26 23:42:37 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 26.893 ms - 142[0m
+2025-06-26 23:42:37 [INFO]: [0mGET /complete-stats/complete-stats.js [36m304[0m 114.327 ms - -[0m
+2025-06-26 23:42:37 [INFO]: [0mGET /favicon.ico [33m404[0m 0.866 ms - 120[0m
+2025-06-26 23:42:38 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-26 23:42:38 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 1057.268 ms - 91[0m
+2025-06-26 23:45:27 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-26 23:45:27 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 70.047 ms - 91[0m
+2025-06-26 23:45:30 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-26 23:45:30 [INFO]: [0mGET /api/v1/players/complete-stats?tour=WTA&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 2.989 ms - 91[0m
+2025-06-26 23:45:32 [INFO]: [0mGET /complete-stats/ [36m304[0m 0.739 ms - -[0m
+2025-06-26 23:45:33 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 1.462 ms - 142[0m
+2025-06-26 23:45:33 [INFO]: [0mGET /complete-stats/complete-stats.js [36m304[0m 0.704 ms - -[0m
+2025-06-26 23:45:33 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-26 23:45:33 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 3.099 ms - 91[0m
+2025-06-26 23:45:39 [INFO]: [0mGET /player-stats/22827 [32m200[0m 26.553 ms - -[0m
+2025-06-26 23:45:39 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 2.133 ms - -[0m
+2025-06-26 23:45:39 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-26 23:45:39 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 128.212 ms - -[0m
+2025-06-26 23:45:41 [INFO]: 📡 GET /22827
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22827",
+  "userId": null
+}
+2025-06-26 23:45:41 [INFO]: [0mGET /api/v1/players/22827 [36m304[0m 1795.521 ms - -[0m
+2025-06-26 23:45:42 [INFO]: 📡 GET /22827/elo-stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22827/elo-stats",
+  "userId": null
+}
+2025-06-26 23:45:42 [INFO]: [0mGET /api/v1/players/22827/elo-stats [32m200[0m 210.292 ms - -[0m
+2025-06-26 23:45:42 [INFO]: 📡 GET /22827/odds-stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22827/odds-stats",
+  "userId": null
+}
+2025-06-26 23:45:42 [INFO]: [0mGET /api/v1/players/22827/odds-stats [32m200[0m 197.079 ms - -[0m
+2025-06-26 23:45:42 [INFO]: 📡 GET /22827/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22827/matches",
+  "userId": null
+}
+2025-06-26 23:45:42 [INFO]: [0mGET /api/v1/players/22827/matches?limit=100&offset=0 [32m200[0m 286.437 ms - -[0m
+2025-06-26 23:45:43 [INFO]: 📡 GET /22827/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/22827/stats",
+  "userId": null
+}
+2025-06-26 23:45:43 [INFO]: [0mGET /api/v1/players/22827/stats [36m304[0m 816.058 ms - -[0m
+2025-06-26 23:45:50 [INFO]: [0mGET /player-stats/21139 [32m200[0m 1.573 ms - -[0m
+2025-06-26 23:45:50 [INFO]: [0mGET /player-stats/player-stats.js [36m304[0m 0.797 ms - -[0m
+2025-06-26 23:45:50 [INFO]: 📡 GET /tournament-types
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/tournament-types",
+  "userId": null
+}
+2025-06-26 23:45:50 [INFO]: [0mGET /api/v1/players/tournament-types [36m304[0m 27.212 ms - -[0m
+2025-06-26 23:45:51 [INFO]: 📡 GET /21139
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/21139",
+  "userId": null
+}
+2025-06-26 23:45:51 [INFO]: [0mGET /api/v1/players/21139 [32m200[0m 670.663 ms - 296[0m
+2025-06-26 23:45:51 [INFO]: 📡 GET /21139/elo-stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/21139/elo-stats",
+  "userId": null
+}
+2025-06-26 23:45:51 [INFO]: [0mGET /api/v1/players/21139/elo-stats [32m200[0m 20.352 ms - -[0m
+2025-06-26 23:45:51 [INFO]: 📡 GET /21139/odds-stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/21139/odds-stats",
+  "userId": null
+}
+2025-06-26 23:45:51 [INFO]: [0mGET /api/v1/players/21139/odds-stats [32m200[0m 34.978 ms - -[0m
+2025-06-26 23:45:51 [INFO]: 📡 GET /21139/matches
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/21139/matches",
+  "userId": null
+}
+2025-06-26 23:45:51 [INFO]: [0mGET /api/v1/players/21139/matches?limit=100&offset=0 [32m200[0m 84.891 ms - -[0m
+2025-06-26 23:45:51 [INFO]: 📡 GET /21139/stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/21139/stats",
+  "userId": null
+}
+2025-06-26 23:45:51 [INFO]: [0mGET /api/v1/players/21139/stats [32m200[0m 242.693 ms - -[0m
+2025-06-26 23:49:30 [INFO]: ✅ Configuration validée
+2025-06-26 23:49:32 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-26 23:49:32 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-26 23:49:32 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-26 23:49:32 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-26 23:49:32 [INFO]: 🌍 Environment: development
+2025-06-26 23:49:32 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-26 23:49:32 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-26 23:49:32 [INFO]: [0mGET /complete-stats/ [36m304[0m 8.444 ms - -[0m
+2025-06-26 23:49:33 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 4.320 ms - 142[0m
+2025-06-26 23:49:33 [INFO]: [0mGET /complete-stats/complete-stats.js [36m304[0m 2.230 ms - -[0m
+2025-06-26 23:49:33 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-26 23:49:33 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 46.024 ms - 91[0m
+2025-06-26 23:49:33 [INFO]: [0mGET /favicon.ico [33m404[0m 0.886 ms - 120[0m
+2025-06-26 23:52:56 [INFO]: ✅ Configuration validée
+2025-06-26 23:53:00 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-26 23:53:00 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-26 23:53:00 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-26 23:53:00 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-26 23:53:00 [INFO]: 🌍 Environment: development
+2025-06-26 23:53:00 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-26 23:53:00 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-26 23:54:16 [INFO]: [0mGET /complete-stats/ [36m304[0m 8.777 ms - -[0m
+2025-06-26 23:54:16 [INFO]: [0mGET /complete-stats/complete-stats.js [36m304[0m 1.887 ms - -[0m
+2025-06-26 23:54:16 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 3.947 ms - 142[0m
+2025-06-26 23:54:16 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-26 23:54:16 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 120.217 ms - 91[0m
+2025-06-26 23:54:48 [INFO]: [0mGET /complete-stats/ [32m200[0m 9.168 ms - -[0m
+2025-06-26 23:54:48 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 1.345 ms - 142[0m
+2025-06-26 23:54:48 [INFO]: [0mGET /complete-stats/complete-stats.js [36m304[0m 1.549 ms - -[0m
+2025-06-26 23:54:48 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-26 23:54:48 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 98.792 ms - 91[0m
+2025-06-26 23:57:13 [INFO]: ✅ Configuration validée
+2025-06-26 23:57:14 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-26 23:57:14 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-26 23:57:14 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-26 23:57:14 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-26 23:57:14 [INFO]: 🌍 Environment: development
+2025-06-26 23:57:14 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-26 23:57:14 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-26 23:57:18 [INFO]: [0mGET /complete-stats/ [36m304[0m 3.929 ms - -[0m
+2025-06-26 23:57:18 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 6.513 ms - 142[0m
+2025-06-26 23:57:18 [INFO]: [0mGET /complete-stats/complete-stats.js [36m304[0m 1.104 ms - -[0m
+2025-06-26 23:57:18 [INFO]: 📡 GET 111111
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "111111",
+  "userId": null
+}
+2025-06-26 23:57:18 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-26 23:57:18 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 20.073 ms - 91[0m
+2025-06-26 23:59:35 [INFO]: ✅ Configuration validée
+2025-06-26 23:59:36 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-26 23:59:37 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-26 23:59:37 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-26 23:59:37 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-26 23:59:37 [INFO]: 🌍 Environment: development
+2025-06-26 23:59:37 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-26 23:59:37 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-26 23:59:45 [INFO]: [0mGET /complete-stats/ [36m304[0m 6.537 ms - -[0m
+2025-06-26 23:59:46 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 7.387 ms - 142[0m
+2025-06-26 23:59:46 [INFO]: [0mGET /complete-stats/complete-stats.js [36m304[0m 2.490 ms - -[0m
+2025-06-26 23:59:46 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-26 23:59:46 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 10.231 ms - 91[0m
+2025-06-27 00:00:32 [INFO]: [0mGET /complete-stats/ [36m304[0m 0.807 ms - -[0m
+2025-06-27 00:00:33 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 2.192 ms - 142[0m
+2025-06-27 00:00:33 [INFO]: [0mGET /complete-stats/complete-stats.js [36m304[0m 1.442 ms - -[0m
+2025-06-27 00:00:33 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-27 00:00:33 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 106.954 ms - 91[0m
+2025-06-27 00:01:26 [INFO]: ✅ Configuration validée
+2025-06-27 00:01:27 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-27 00:01:27 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-27 00:01:27 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-27 00:01:27 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-27 00:01:27 [INFO]: 🌍 Environment: development
+2025-06-27 00:01:27 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-27 00:01:27 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-27 11:56:28 [INFO]: [0mGET /rankings [36m301[0m 31.409 ms - 158[0m
+2025-06-27 11:56:28 [INFO]: [0mGET /rankings/ [36m304[0m 3.588 ms - -[0m
+2025-06-27 11:56:28 [INFO]: [0mGET /rankings/ranking.js [36m304[0m 1.839 ms - -[0m
+2025-06-27 11:56:30 [INFO]: [0mGET /api/v1/rankings/historical?tour=ATP [36m304[0m 1228.527 ms - -[0m
+2025-06-27 11:56:36 [INFO]: 📡 GET /current
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/current",
+  "userId": null
+}
+2025-06-27 11:56:36 [INFO]: [0mGET /api/v1/rankings/current?tour=ATP&limit=100 [32m200[0m 4804.649 ms - -[0m
+2025-06-27 12:04:34 [INFO]: ✅ Configuration validée
+2025-06-27 12:04:38 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-27 12:04:38 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-27 12:04:38 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-27 12:04:38 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-27 12:04:38 [INFO]: 🌍 Environment: development
+2025-06-27 12:04:38 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-27 12:04:38 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-27 12:04:38 [INFO]: [0mGET /complete-stats/ [36m304[0m 5.401 ms - -[0m
+2025-06-27 12:04:38 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 5.907 ms - 142[0m
+2025-06-27 12:04:38 [INFO]: [0mGET /complete-stats/complete-stats.js [36m304[0m 0.802 ms - -[0m
+2025-06-27 12:04:39 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-27 12:04:39 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 39.192 ms - 91[0m
+2025-06-27 12:05:54 [INFO]: ✅ Configuration validée
+2025-06-27 12:05:55 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-27 12:05:55 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-27 12:05:55 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-27 12:05:55 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-27 12:05:55 [INFO]: 🌍 Environment: development
+2025-06-27 12:05:55 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-27 12:05:55 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-27 12:06:01 [INFO]: [0mGET /complete-stats/ [36m304[0m 5.583 ms - -[0m
+2025-06-27 12:06:01 [INFO]: [0mGET /complete-stats/complete-stats.js [36m304[0m 2.452 ms - -[0m
+2025-06-27 12:06:01 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 5.282 ms - 142[0m
+2025-06-27 12:06:01 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-27 12:06:01 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 10.220 ms - 91[0m
+2025-06-27 12:10:44 [INFO]: ✅ Configuration validée
+2025-06-27 12:10:47 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-27 12:10:47 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-27 12:10:47 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-27 12:10:47 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-27 12:10:47 [INFO]: 🌍 Environment: development
+2025-06-27 12:10:47 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-27 12:10:47 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-27 12:24:58 [INFO]: ✅ Configuration validée
+2025-06-27 12:25:01 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-27 12:25:01 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-27 12:25:01 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-27 12:25:01 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-27 12:25:01 [INFO]: 🌍 Environment: development
+2025-06-27 12:25:01 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-27 12:25:01 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-27 12:25:17 [INFO]: ✅ Configuration validée
+2025-06-27 12:25:18 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-27 12:25:18 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-27 12:25:18 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-27 12:25:18 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-27 12:25:18 [INFO]: 🌍 Environment: development
+2025-06-27 12:25:18 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-27 12:25:18 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-27 12:25:35 [INFO]: ✅ Configuration validée
+2025-06-27 12:25:36 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-27 12:25:36 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-27 12:25:36 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-27 12:25:36 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-27 12:25:36 [INFO]: 🌍 Environment: development
+2025-06-27 12:25:36 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-27 12:25:36 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-27 12:30:19 [INFO]: [0mGET /complete-stats/ [36m304[0m 12.379 ms - -[0m
+2025-06-27 12:30:20 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 6.928 ms - 142[0m
+2025-06-27 12:30:20 [INFO]: [0mGET /complete-stats/complete-stats.js [36m304[0m 9.155 ms - -[0m
+2025-06-27 12:30:20 [INFO]: [0mGET /favicon.ico [33m404[0m 0.998 ms - 120[0m
+2025-06-27 12:30:20 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-27 12:30:20 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 136.231 ms - 91[0m
+2025-06-27 12:35:45 [INFO]: [0mGET /complete-stats/ [36m304[0m 0.864 ms - -[0m
+2025-06-27 12:35:46 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 1.106 ms - 142[0m
+2025-06-27 12:35:46 [INFO]: [0mGET /complete-stats/complete-stats.js [32m200[0m 5.815 ms - -[0m
+2025-06-27 12:35:46 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-27 12:35:46 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 113.344 ms - 91[0m
+2025-06-27 12:37:56 [INFO]: [0mGET /complete-stats/ [36m304[0m 1.230 ms - -[0m
+2025-06-27 12:37:56 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 5.192 ms - 142[0m
+2025-06-27 12:37:56 [INFO]: [0mGET /complete-stats/complete-stats.js [32m200[0m 11.732 ms - -[0m
+2025-06-27 12:37:56 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "syntaxe en entrée invalide pour le type integer : « complete-stats »",
+  "userId": null
+}
+2025-06-27 12:37:56 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 186.664 ms - 91[0m
+2025-06-27 12:40:54 [INFO]: ✅ Configuration validée
+2025-06-27 12:40:56 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-27 12:40:56 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-27 12:40:56 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-27 12:40:56 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-27 12:40:56 [INFO]: 🌍 Environment: development
+2025-06-27 12:40:56 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-27 12:40:56 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-27 12:41:22 [INFO]: ✅ Configuration validée
+2025-06-27 12:41:23 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-27 12:41:23 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-27 12:41:23 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-27 12:41:23 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-27 12:41:23 [INFO]: 🌍 Environment: development
+2025-06-27 12:41:23 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-27 12:41:23 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-27 12:42:49 [INFO]: [0mGET /complete-stats/ [36m304[0m 6.597 ms - -[0m
+2025-06-27 12:42:50 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 6.616 ms - 142[0m
+2025-06-27 12:42:50 [INFO]: [0mGET /complete-stats/complete-stats.js [36m304[0m 2.250 ms - -[0m
+2025-06-27 12:42:50 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "il n'y a pas de paramètre $1",
+  "userId": null
+}
+2025-06-27 12:42:50 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 148.783 ms - 144[0m
+2025-06-27 12:43:00 [INFO]: 🛑 Signal SIGINT reçu. Arrêt du serveur...
+2025-06-27 12:43:10 [INFO]: ✅ Configuration validée
+2025-06-27 12:43:11 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-27 12:43:11 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-27 12:43:11 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-27 12:43:11 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-27 12:43:11 [INFO]: 🌍 Environment: development
+2025-06-27 12:43:11 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-27 12:43:11 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-27 12:43:40 [INFO]: [0mGET /complete-stats/ [36m304[0m 4.569 ms - -[0m
+2025-06-27 12:43:40 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 3.878 ms - 142[0m
+2025-06-27 12:43:40 [INFO]: [0mGET /complete-stats/complete-stats.js [36m304[0m 3.392 ms - -[0m
+2025-06-27 12:43:40 [ERROR]: ❌ API Error GET /complete-stats
+{
+  "action": "api_error",
+  "method": "GET",
+  "url": "/complete-stats",
+  "error": "il n'y a pas de paramètre $1",
+  "userId": null
+}
+2025-06-27 12:43:40 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [31m500[0m 140.993 ms - 144[0m
+2025-06-27 12:44:50 [INFO]: ✅ Configuration validée
+2025-06-27 12:44:51 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-27 12:44:52 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-27 12:44:52 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-27 12:44:52 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-27 12:44:52 [INFO]: 🌍 Environment: development
+2025-06-27 12:44:52 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-27 12:44:52 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-27 12:44:59 [INFO]: ✅ Configuration validée
+2025-06-27 12:45:00 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-27 12:45:00 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-27 12:45:00 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-27 12:45:00 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-27 12:45:00 [INFO]: 🌍 Environment: development
+2025-06-27 12:45:00 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-27 12:45:00 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-27 12:45:58 [INFO]: 🛑 Signal SIGINT reçu. Arrêt du serveur...
+2025-06-27 12:46:06 [INFO]: ✅ Configuration validée
+2025-06-27 12:46:07 [INFO]: 🔌 Test de connexion à PostgreSQL...
+2025-06-27 12:46:07 [INFO]: ✅ Connexion PostgreSQL établie avec succès
+2025-06-27 12:46:07 [INFO]: 🚀 Serveur Tennis Pronostics démarré
+2025-06-27 12:46:07 [INFO]: 📡 API disponible sur: http://localhost:3001/api/v1
+2025-06-27 12:46:07 [INFO]: 🌍 Environment: development
+2025-06-27 12:46:07 [INFO]: 📚 Documentation API: http://localhost:3001/api-docs
+2025-06-27 12:46:07 [INFO]: ⏰ Synchronisation automatique activée: 0 7,13,19 * * *
+2025-06-27 12:46:12 [INFO]: [0mGET /complete-stats/ [36m304[0m 5.623 ms - -[0m
+2025-06-27 12:46:12 [INFO]: [0mGET /complete-stats/complete-stats.js [36m304[0m 6.737 ms - -[0m
+2025-06-27 12:46:12 [INFO]: [0mGET /complete-stats/installHook.js.map [33m404[0m 7.656 ms - 142[0m
+2025-06-27 12:46:23 [INFO]: 📡 GET /complete-stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/complete-stats",
+  "userId": null
+}
+2025-06-27 12:46:23 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=current_ranking&sort_order=ASC [32m200[0m 10255.779 ms - -[0m
+2025-06-27 12:46:39 [INFO]: 📡 GET /complete-stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/complete-stats",
+  "userId": null
+}
+2025-06-27 12:46:39 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=100&offset=0&sort_by=betting_gains_3m&sort_order=ASC [32m200[0m 5540.145 ms - -[0m
+2025-06-27 12:47:09 [INFO]: 📡 GET /complete-stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/complete-stats",
+  "userId": null
+}
+2025-06-27 12:47:09 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=900&offset=0&sort_by=betting_gains_3m&sort_order=ASC [32m200[0m 5153.508 ms - -[0m
+2025-06-27 12:47:54 [INFO]: 📡 GET /complete-stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/complete-stats",
+  "userId": null
+}
+2025-06-27 12:47:54 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=900&offset=0&sort_by=betting_gains_3m&sort_order=DESC [32m200[0m 6800.155 ms - -[0m
+2025-06-27 12:48:24 [INFO]: 📡 GET /complete-stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/complete-stats",
+  "userId": null
+}
+2025-06-27 12:48:24 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=900&offset=0&sort_by=betting_gains_total&sort_order=ASC [32m200[0m 5618.700 ms - -[0m
+2025-06-27 12:52:14 [INFO]: 📡 GET /complete-stats
+{
+  "action": "api_request",
+  "method": "GET",
+  "url": "/complete-stats",
+  "userId": null
+}
+2025-06-27 12:52:14 [INFO]: [0mGET /api/v1/players/complete-stats?tour=ATP&limit=900&offset=0&sort_by=betting_gains_12m&sort_order=ASC [32m200[0m 5457.388 ms - -[0m

@@ -102,7 +102,7 @@ sudo service postgresql start
 sudo netstat -plunt | grep postgres
 
 # Modifier .env si nécessaire
-PG_PORT=5432  # Port par défaut
+PG_PORT=5433  # Port par défaut
 ```
 
 ### Base Access inaccessible
