@@ -7,6 +7,9 @@ const schedule = require('node-schedule');
 const syncMonitoring = require('../src/services/syncMonitoring');
 require('dotenv').config();
 
+// Importer la logique de calcul ELO
+const { calculateAllElo } = require('./calculate-all-elo');
+
 // Logger simple pour la synchronisation
 const logger = {
     info: (message) => console.log(`ℹ️  ${message}`),
@@ -101,6 +104,9 @@ async function performSync() {
         
         await syncOdds('ATP', lastSync, sessionId);
         await syncOdds('WTA', lastSync, sessionId);
+        
+        // Mettre à jour les ELO pour les matchs qui n'en ont pas
+        await updateMissingElo();
         
         // Enregistrer la date de synchronisation
         await updateSyncDate();
@@ -1015,6 +1021,100 @@ function parseSet(setStr) {
     } catch (error) {
         return null;
     }
+}
+
+// =============================================
+// MISE À JOUR DES ELO MANQUANTS
+// =============================================
+
+async function updateMissingElo() {
+    console.log('\n⚡ Mise à jour des ELO manquants...');
+    
+    try {
+        // Vérifier s'il y a des matchs sans ELO
+        const missingEloQuery = `
+            SELECT COUNT(*) as count
+            FROM matches 
+            WHERE winner_elo IS NULL OR loser_elo IS NULL
+        `;
+        
+        const result = await pgDB.query(missingEloQuery);
+        const missingCount = parseInt(result.rows[0].count);
+        
+        if (missingCount === 0) {
+            console.log('  ✅ Tous les matchs ont déjà leurs ELO calculés');
+            return;
+        }
+        
+        console.log(`  📊 ${missingCount} matchs sans ELO trouvés`);
+        
+        // Stratégie optimisée : calculer seulement pour les matchs récents manquants
+        if (missingCount < 1000) {
+            console.log('  🔄 Calcul ELO incrémental pour les nouveaux matchs...');
+            await calculateIncrementalElo();
+        } else {
+            console.log('  🔄 Trop de matchs manquants, lancement du calcul ELO complet...');
+            
+            // Fermer temporairement la connexion PostgreSQL car calculateAllElo gère sa propre connexion
+            await pgDB.end();
+            pgDB = null;
+            
+            // Exécuter le calcul ELO complet
+            await calculateAllElo();
+            
+            // Rouvrir la connexion
+            pgDB = new Client(pgConfig);
+            await pgDB.connect();
+        }
+        
+        console.log('  ✅ ELO mis à jour avec succès');
+        
+    } catch (error) {
+        console.error('  ❌ Erreur mise à jour ELO:', error.message);
+        
+        // S'assurer que la connexion est rétablie même en cas d'erreur
+        if (!pgDB || pgDB._connected === false) {
+            try {
+                pgDB = new Client(pgConfig);
+                await pgDB.connect();
+            } catch (reconnectError) {
+                console.error('  ❌ Erreur reconnexion PostgreSQL:', reconnectError.message);
+            }
+        }
+        
+        syncStats.errors++;
+    }
+}
+
+async function calculateIncrementalElo() {
+    // Recalculer l'ELO pour tous les matchs à partir du dernier match avec ELO
+    // Cette approche garantit la cohérence tout en étant plus efficace qu'un recalcul complet
+    
+    const lastEloMatchQuery = `
+        SELECT match_date 
+        FROM matches 
+        WHERE winner_elo IS NOT NULL 
+        ORDER BY match_date DESC, id DESC 
+        LIMIT 1
+    `;
+    
+    const lastEloResult = await pgDB.query(lastEloMatchQuery);
+    const startDate = lastEloResult.rows.length > 0 
+        ? lastEloResult.rows[0].match_date 
+        : new Date('2000-01-01'); // Si aucun match avec ELO, commencer depuis le début
+    
+    console.log(`    📅 Calcul ELO depuis: ${startDate.toLocaleDateString('fr-FR')}`);
+    
+    // Fermer et rouvrir la connexion pour le calcul ELO
+    await pgDB.end();
+    pgDB = null;
+    
+    // Utiliser le calcul ELO complet (il est assez optimisé)
+    await calculateAllElo();
+    
+    // Rouvrir la connexion
+    pgDB = new Client(pgConfig);
+    await pgDB.connect();
 }
 
 // =============================================
