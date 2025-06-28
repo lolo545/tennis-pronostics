@@ -284,15 +284,201 @@ class PlayerStats {
                 ${match.result.score || 'N/A'}
                 ${match.result.is_walkover ? '<span class="text-xs text-red-600">(W/O)</span>' : ''}
             </td>
+            <td class="px-2 py-1 text-xs text-center text-blue-600">
+                ${match.elo_ratings && match.elo_ratings.winner_elo ? match.elo_ratings.winner_elo : 'N/A'}
+            </td>
+            <td class="px-2 py-1 text-xs text-center text-blue-600">
+                ${match.elo_ratings && match.elo_ratings.loser_elo ? match.elo_ratings.loser_elo : 'N/A'}
+            </td>
+            <td class="px-2 py-1 text-xs text-center text-purple-600">
+                ${this.getWinnerSurfaceElo(match)}
+            </td>
+            <td class="px-2 py-1 text-xs text-center text-purple-600">
+                ${this.getLoserSurfaceElo(match)}
+            </td>
+            <td class="px-2 py-1 text-xs text-center text-green-600 font-medium">
+                ${this.calculateWinnerEloWinProbability(match)}
+            </td>
+            <td class="px-2 py-1 text-xs text-center text-red-600 font-medium">
+                ${this.calculateLoserEloWinProbability(match)}
+            </td>
+            <td class="px-2 py-1 text-xs text-center text-green-600 font-medium">
+                ${this.calculateWinnerSurfaceEloWinProbability(match)}
+            </td>
+            <td class="px-2 py-1 text-xs text-center text-red-600 font-medium">
+                ${this.calculateLoserSurfaceEloWinProbability(match)}
+            </td>
             <td class="px-2 py-1 text-xs text-gray-600">
                 ${match.odds.winner_odds ? match.odds.winner_odds.toFixed(2) : 'N/A'}
             </td>
             <td class="px-2 py-1 text-xs text-gray-600">
                 ${match.odds.loser_odds ? match.odds.loser_odds.toFixed(2) : 'N/A'}
             </td>
+            <td class="px-2 py-1 text-xs text-center text-green-600">
+                ${this.calculateWinnerProbability(match)}
+            </td>
+            <td class="px-2 py-1 text-xs text-center text-green-600">
+                ${this.calculateLoserProbability(match)}
+            </td>
         `;
 
         return row;
+    }
+
+    getWinnerSurfaceElo(match) {
+        if (!match.elo_ratings) return 'N/A';
+        
+        const surface = match.tournament.surface;
+        if (!surface) return match.elo_ratings.winner_elo || 'N/A';
+        
+        const surfaceLower = surface.toLowerCase();
+        
+        if (surfaceLower.includes('clay')) {
+            return match.elo_ratings.winner_elo_clay || 'N/A';
+        } else if (surfaceLower.includes('grass')) {
+            return match.elo_ratings.winner_elo_grass || 'N/A';
+        } else if (surfaceLower.includes('hard') && surfaceLower.includes('indoor')) {
+            return match.elo_ratings.winner_elo_ihard || 'N/A';
+        } else if (surfaceLower.includes('hard')) {
+            return match.elo_ratings.winner_elo_hard || 'N/A';
+        }
+        
+        return match.elo_ratings.winner_elo || 'N/A';
+    }
+    
+    getLoserSurfaceElo(match) {
+        if (!match.elo_ratings) return 'N/A';
+        
+        const surface = match.tournament.surface;
+        if (!surface) return match.elo_ratings.loser_elo || 'N/A';
+        
+        const surfaceLower = surface.toLowerCase();
+        
+        if (surfaceLower.includes('clay')) {
+            return match.elo_ratings.loser_elo_clay || 'N/A';
+        } else if (surfaceLower.includes('grass')) {
+            return match.elo_ratings.loser_elo_grass || 'N/A';
+        } else if (surfaceLower.includes('hard') && surfaceLower.includes('indoor')) {
+            return match.elo_ratings.loser_elo_ihard || 'N/A';
+        } else if (surfaceLower.includes('hard')) {
+            return match.elo_ratings.loser_elo_hard || 'N/A';
+        }
+        
+        return match.elo_ratings.loser_elo || 'N/A';
+    }
+
+    calculateWinnerProbability(match) {
+        if (!match.odds || !match.odds.winner_odds || match.odds.winner_odds <= 0) {
+            return 'N/A';
+        }
+        
+        const probability = (100.0 / match.odds.winner_odds);
+        return probability.toFixed(1) + '%';
+    }
+    
+    calculateLoserProbability(match) {
+        if (!match.odds || !match.odds.loser_odds || match.odds.loser_odds <= 0) {
+            return 'N/A';
+        }
+        
+        const probability = (100.0 / match.odds.loser_odds);
+        return probability.toFixed(1) + '%';
+    }
+    
+    calculateWinnerEloWinProbability(match) {
+        if (!match.elo_ratings || !match.elo_ratings.winner_elo || !match.elo_ratings.loser_elo) {
+            return 'N/A';
+        }
+        
+        const eloDifference = match.elo_ratings.winner_elo - match.elo_ratings.loser_elo;
+        const probability = this.eloToProbability(eloDifference);
+        return `${probability.toFixed(1)}%`;
+    }
+    
+    calculateLoserEloWinProbability(match) {
+        if (!match.elo_ratings || !match.elo_ratings.winner_elo || !match.elo_ratings.loser_elo) {
+            return 'N/A';
+        }
+        
+        const eloDifference = match.elo_ratings.loser_elo - match.elo_ratings.winner_elo;
+        const probability = this.eloToProbability(eloDifference);
+        return `${probability.toFixed(1)}%`;
+    }
+    
+    calculateWinnerSurfaceEloWinProbability(match) {
+        const winnerSurfaceElo = this.getWinnerSurfaceEloValue(match);
+        const loserSurfaceElo = this.getLoserSurfaceEloValue(match);
+        
+        if (winnerSurfaceElo === null || loserSurfaceElo === null) {
+            return 'N/A';
+        }
+        
+        const eloDifference = winnerSurfaceElo - loserSurfaceElo;
+        const probability = this.eloToProbability(eloDifference);
+        return `${probability.toFixed(1)}%`;
+    }
+    
+    calculateLoserSurfaceEloWinProbability(match) {
+        const winnerSurfaceElo = this.getWinnerSurfaceEloValue(match);
+        const loserSurfaceElo = this.getLoserSurfaceEloValue(match);
+        
+        if (winnerSurfaceElo === null || loserSurfaceElo === null) {
+            return 'N/A';
+        }
+        
+        const eloDifference = loserSurfaceElo - winnerSurfaceElo;
+        const probability = this.eloToProbability(eloDifference);
+        return `${probability.toFixed(1)}%`;
+    }
+    
+    eloToProbability(eloDifference) {
+        // Formule ELO précise : P(A gagne) = 1 / (1 + 10^((EloB - EloA)/400))
+        // eloDifference = EloA - EloB, donc on utilise -eloDifference dans la formule
+        
+        const probability = 1 / (1 + Math.pow(10, (-eloDifference) / 400));
+        return probability * 100; // Convertir en pourcentage
+    }
+    
+    getWinnerSurfaceEloValue(match) {
+        if (!match.elo_ratings) return null;
+        
+        const surface = match.tournament.surface;
+        if (!surface) return match.elo_ratings.winner_elo || null;
+        
+        const surfaceLower = surface.toLowerCase();
+        
+        if (surfaceLower.includes('clay')) {
+            return match.elo_ratings.winner_elo_clay || null;
+        } else if (surfaceLower.includes('grass')) {
+            return match.elo_ratings.winner_elo_grass || null;
+        } else if (surfaceLower.includes('hard') && surfaceLower.includes('indoor')) {
+            return match.elo_ratings.winner_elo_ihard || null;
+        } else if (surfaceLower.includes('hard')) {
+            return match.elo_ratings.winner_elo_hard || null;
+        }
+        
+        return match.elo_ratings.winner_elo || null;
+    }
+    
+    getLoserSurfaceEloValue(match) {
+        if (!match.elo_ratings) return null;
+        
+        const surface = match.tournament.surface;
+        if (!surface) return match.elo_ratings.loser_elo || null;
+        
+        const surfaceLower = surface.toLowerCase();
+        
+        if (surfaceLower.includes('clay')) {
+            return match.elo_ratings.loser_elo_clay || null;
+        } else if (surfaceLower.includes('grass')) {
+            return match.elo_ratings.loser_elo_grass || null;
+        } else if (surfaceLower.includes('hard') && surfaceLower.includes('indoor')) {
+            return match.elo_ratings.loser_elo_ihard || null;
+        } else if (surfaceLower.includes('hard')) {
+            return match.elo_ratings.loser_elo_hard || null;
+        }
+        
+        return match.elo_ratings.loser_elo || null;
     }
 
     getSurfaceClass(surface) {

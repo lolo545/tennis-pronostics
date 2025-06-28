@@ -468,7 +468,7 @@ router.get('/:id/matches', async (req, res) => {
 
         // Construire les conditions de filtrage
         let whereConditions = ['(m.winner_id = ? OR m.loser_id = ?)'];
-        let replacements = [id, id, id, id, id, id, id];
+        let replacements = [id, id, id, id, id, id, id, id, id, id, id];
         
         // Filtrage par tournoi (nom du tournoi)
         if (tournament && tournament.trim()) {
@@ -511,6 +511,17 @@ router.get('/:id/matches', async (req, res) => {
                 m.is_walkover,
                 m.winner_ranking,
                 m.loser_ranking,
+                -- ELO ratings
+                m.winner_elo,
+                m.loser_elo,
+                m.winner_elo_clay,
+                m.winner_elo_grass,
+                m.winner_elo_hard,
+                m.winner_elo_ihard,
+                m.loser_elo_clay,
+                m.loser_elo_grass,
+                m.loser_elo_hard,
+                m.loser_elo_ihard,
                 -- Informations du tournoi
                 t.name as tournament_name,
                 tt.name as tournament_type,
@@ -540,6 +551,54 @@ router.get('/:id/matches', async (req, res) => {
                     WHEN m.winner_id = ? THEN m.loser_odds
                     ELSE m.winner_odds
                 END as opponent_odds,
+                -- ELO du joueur (général)
+                CASE 
+                    WHEN m.winner_id = ? THEN m.winner_elo
+                    ELSE m.loser_elo
+                END as player_elo,
+                -- ELO de l'adversaire (général)
+                CASE 
+                    WHEN m.winner_id = ? THEN m.loser_elo
+                    ELSE m.winner_elo
+                END as opponent_elo,
+                -- ELO spécifique à la surface du joueur
+                CASE 
+                    WHEN m.winner_id = ? THEN 
+                        CASE 
+                            WHEN LOWER(cs.name) LIKE '%clay%' THEN m.winner_elo_clay
+                            WHEN LOWER(cs.name) LIKE '%grass%' THEN m.winner_elo_grass
+                            WHEN LOWER(cs.name) LIKE '%hard%' AND LOWER(cs.name) LIKE '%indoor%' THEN m.winner_elo_ihard
+                            WHEN LOWER(cs.name) LIKE '%hard%' THEN m.winner_elo_hard
+                            ELSE m.winner_elo
+                        END
+                    ELSE 
+                        CASE 
+                            WHEN LOWER(cs.name) LIKE '%clay%' THEN m.loser_elo_clay
+                            WHEN LOWER(cs.name) LIKE '%grass%' THEN m.loser_elo_grass
+                            WHEN LOWER(cs.name) LIKE '%hard%' AND LOWER(cs.name) LIKE '%indoor%' THEN m.loser_elo_ihard
+                            WHEN LOWER(cs.name) LIKE '%hard%' THEN m.loser_elo_hard
+                            ELSE m.loser_elo
+                        END
+                END as player_surface_elo,
+                -- ELO spécifique à la surface de l'adversaire
+                CASE 
+                    WHEN m.winner_id = ? THEN 
+                        CASE 
+                            WHEN LOWER(cs.name) LIKE '%clay%' THEN m.loser_elo_clay
+                            WHEN LOWER(cs.name) LIKE '%grass%' THEN m.loser_elo_grass
+                            WHEN LOWER(cs.name) LIKE '%hard%' AND LOWER(cs.name) LIKE '%indoor%' THEN m.loser_elo_ihard
+                            WHEN LOWER(cs.name) LIKE '%hard%' THEN m.loser_elo_hard
+                            ELSE m.loser_elo
+                        END
+                    ELSE 
+                        CASE 
+                            WHEN LOWER(cs.name) LIKE '%clay%' THEN m.winner_elo_clay
+                            WHEN LOWER(cs.name) LIKE '%grass%' THEN m.winner_elo_grass
+                            WHEN LOWER(cs.name) LIKE '%hard%' AND LOWER(cs.name) LIKE '%indoor%' THEN m.winner_elo_ihard
+                            WHEN LOWER(cs.name) LIKE '%hard%' THEN m.winner_elo_hard
+                            ELSE m.winner_elo
+                        END
+                END as opponent_surface_elo,
                 -- Classement du joueur
                 CASE 
                     WHEN m.winner_id = ? THEN m.winner_ranking
@@ -564,6 +623,10 @@ router.get('/:id/matches', async (req, res) => {
         `;
 
         replacements.push(limitInt, offsetInt);
+
+        console.log('🎾 [MATCHES] Query:', matchesQuery);
+        console.log('🎾 [MATCHES] Replacements length:', replacements.length);
+        console.log('🎾 [MATCHES] Replacements:', replacements);
 
         const matches = await sequelize.query(matchesQuery, {
             replacements,
@@ -658,6 +721,22 @@ router.get('/:id/matches', async (req, res) => {
                 loser_odds: match.loser_odds ? parseFloat(match.loser_odds) : null,
                 available: !!(match.player_odds && match.opponent_odds)
             },
+            elo_ratings: {
+                winner_elo: match.winner_elo,
+                loser_elo: match.loser_elo,
+                winner_elo_clay: match.winner_elo_clay,
+                winner_elo_grass: match.winner_elo_grass,
+                winner_elo_hard: match.winner_elo_hard,
+                winner_elo_ihard: match.winner_elo_ihard,
+                loser_elo_clay: match.loser_elo_clay,
+                loser_elo_grass: match.loser_elo_grass,
+                loser_elo_hard: match.loser_elo_hard,
+                loser_elo_ihard: match.loser_elo_ihard,
+                player_elo: match.player_elo,
+                opponent_elo: match.opponent_elo,
+                player_surface_elo: match.player_surface_elo,
+                opponent_surface_elo: match.opponent_surface_elo
+            },
             rankings: {
                 player_ranking: match.player_ranking,
                 opponent_ranking: match.opponent_ranking
@@ -682,10 +761,14 @@ router.get('/:id/matches', async (req, res) => {
         logger.tennis.apiRequest('GET', req.path);
 
     } catch (error) {
+        console.error('❌ [MATCHES] Erreur:', error.message);
+        console.error('❌ [MATCHES] Stack:', error.stack);
+        
         logger.tennis.apiError('GET', req.path, error);
         res.status(500).json({
             error: 'Erreur serveur',
-            message: 'Impossible de récupérer les matchs du joueur'
+            message: 'Impossible de récupérer les matchs du joueur',
+            debug: error.message
         });
     }
 });
