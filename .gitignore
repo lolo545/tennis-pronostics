@@ -5,3 +5,4 @@
 /backend/migrations/add-elo-fields.js
 /.claude/settings.local.json
 /backend/test-db-connection.js
+/backend/test-elo-sync.js

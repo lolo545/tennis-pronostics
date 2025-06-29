@@ -34,6 +34,8 @@
     "create:elo-view": "node migrations/create-elo-view.js",
     "create:player-matches-view": "node migrations/create-player-matches-view.js",
     "fix:winner-loser": "node migrations/fix-winner-loser-logic.js",
+    "sync:today-matches": "node migrations/today-matches-sync.js",
+    "create:today-matches-table": "node migrations/create-today-matches-table.js",
     "debug:access": "node debug-access-tables.js",
     "test:queries": "node test-simple-queries.js",
     "db:add-constraints": "psql -h $PG_HOST -p $PG_PORT -d $PG_DATABASE -U $PG_USER -f add-unique-constraints.sql"
